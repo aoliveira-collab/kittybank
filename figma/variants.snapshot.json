@@ -1,0 +1,4737 @@
+[
+  {
+    "id": "5:182",
+    "name": "KittyBank/Brand/Logo",
+    "variants": [
+      {
+        "id": "5:167",
+        "name": "Tone=Primary",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "kittybank",
+            "text": "kittybank",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      },
+      {
+        "id": "5:172",
+        "name": "Tone=White",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "kittybank",
+            "text": "kittybank",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      },
+      {
+        "id": "5:177",
+        "name": "Tone=Coral",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "kittybank",
+            "text": "kittybank",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6:124",
+    "name": "KittyBank/Button",
+    "variants": [
+      {
+        "id": "6:49",
+        "name": "Hierarchy=Primary, State=Default",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/ArrowRight",
+            "visible": false,
+            "properties": {},
+            "mainComponentId": "5:6",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Continuar",
+            "text": "Continuar",
+            "visible": true,
+            "references": {
+              "characters": "Label#6:47"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6:54",
+        "name": "Hierarchy=Primary, State=Pressed",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/ArrowRight",
+            "visible": false,
+            "properties": {},
+            "mainComponentId": "5:6",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Continuar",
+            "text": "Continuar",
+            "visible": true,
+            "references": {
+              "characters": "Label#6:47"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6:59",
+        "name": "Hierarchy=Primary, State=Focus",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/ArrowRight",
+            "visible": false,
+            "properties": {},
+            "mainComponentId": "5:6",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Continuar",
+            "text": "Continuar",
+            "visible": true,
+            "references": {
+              "characters": "Label#6:47"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6:64",
+        "name": "Hierarchy=Primary, State=Disabled",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/ArrowRight",
+            "visible": false,
+            "properties": {},
+            "mainComponentId": "5:6",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Continuar",
+            "text": "Continuar",
+            "visible": true,
+            "references": {
+              "characters": "Label#6:47"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6:69",
+        "name": "Hierarchy=Primary, State=Loading",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Spinner",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:159",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Aguarde…",
+            "text": "Aguarde…",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      },
+      {
+        "id": "6:74",
+        "name": "Hierarchy=Secondary, State=Default",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/ArrowRight",
+            "visible": false,
+            "properties": {},
+            "mainComponentId": "5:6",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Continuar",
+            "text": "Continuar",
+            "visible": true,
+            "references": {
+              "characters": "Label#6:47"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6:79",
+        "name": "Hierarchy=Secondary, State=Pressed",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/ArrowRight",
+            "visible": false,
+            "properties": {},
+            "mainComponentId": "5:6",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Continuar",
+            "text": "Continuar",
+            "visible": true,
+            "references": {
+              "characters": "Label#6:47"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6:84",
+        "name": "Hierarchy=Secondary, State=Focus",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/ArrowRight",
+            "visible": false,
+            "properties": {},
+            "mainComponentId": "5:6",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Continuar",
+            "text": "Continuar",
+            "visible": true,
+            "references": {
+              "characters": "Label#6:47"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6:89",
+        "name": "Hierarchy=Secondary, State=Disabled",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/ArrowRight",
+            "visible": false,
+            "properties": {},
+            "mainComponentId": "5:6",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Continuar",
+            "text": "Continuar",
+            "visible": true,
+            "references": {
+              "characters": "Label#6:47"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6:94",
+        "name": "Hierarchy=Secondary, State=Loading",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Spinner",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:159",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Aguarde…",
+            "text": "Aguarde…",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      },
+      {
+        "id": "6:99",
+        "name": "Hierarchy=Ghost, State=Default",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/ArrowRight",
+            "visible": false,
+            "properties": {},
+            "mainComponentId": "5:6",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Continuar",
+            "text": "Continuar",
+            "visible": true,
+            "references": {
+              "characters": "Label#6:47"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6:104",
+        "name": "Hierarchy=Ghost, State=Pressed",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/ArrowRight",
+            "visible": false,
+            "properties": {},
+            "mainComponentId": "5:6",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Continuar",
+            "text": "Continuar",
+            "visible": true,
+            "references": {
+              "characters": "Label#6:47"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6:109",
+        "name": "Hierarchy=Ghost, State=Focus",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/ArrowRight",
+            "visible": false,
+            "properties": {},
+            "mainComponentId": "5:6",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Continuar",
+            "text": "Continuar",
+            "visible": true,
+            "references": {
+              "characters": "Label#6:47"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6:114",
+        "name": "Hierarchy=Ghost, State=Disabled",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/ArrowRight",
+            "visible": false,
+            "properties": {},
+            "mainComponentId": "5:6",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Continuar",
+            "text": "Continuar",
+            "visible": true,
+            "references": {
+              "characters": "Label#6:47"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6:119",
+        "name": "Hierarchy=Ghost, State=Loading",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Spinner",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:159",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Aguarde…",
+            "text": "Aguarde…",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6:219",
+    "name": "KittyBank/IconButton",
+    "variants": [
+      {
+        "id": "6:203",
+        "name": "State=Default",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Help",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:86",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "6:207",
+        "name": "State=Pressed",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Help",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:86",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "6:211",
+        "name": "State=Focus",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Help",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:86",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "6:215",
+        "name": "State=Disabled",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Help",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:86",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6:314",
+    "name": "KittyBank/Field/Text",
+    "variants": [
+      {
+        "id": "6:249",
+        "name": "State=Empty, Type=Text",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Nome completo",
+            "text": "Nome completo",
+            "visible": true,
+            "references": {
+              "characters": "Label#6:93"
+            }
+          },
+          {
+            "type": "TEXT",
+            "name": "Digite aqui",
+            "text": "Digite aqui",
+            "visible": true,
+            "references": {
+              "characters": "Value#6:94"
+            }
+          },
+          {
+            "type": "TEXT",
+            "name": "Como aparece no seu documento.",
+            "text": "Como aparece no seu documento.",
+            "visible": true,
+            "references": {
+              "visible": "Show helper#6:96",
+              "characters": "Helper#6:95"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6:254",
+        "name": "State=Empty, Type=Password",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Senha",
+            "text": "Senha",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Digite aqui",
+            "text": "Digite aqui",
+            "visible": true,
+            "references": {
+              "characters": "Value#6:94"
+            }
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Eye",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:46",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Como aparece no seu documento.",
+            "text": "Use uma senha exclusiva para sua conta.",
+            "visible": true,
+            "references": {
+              "visible": "Show helper#6:96"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6:262",
+        "name": "State=Filled, Type=Text",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Nome completo",
+            "text": "Nome completo",
+            "visible": true,
+            "references": {
+              "characters": "Label#6:93"
+            }
+          },
+          {
+            "type": "TEXT",
+            "name": "Ana Oliveira",
+            "text": "Ana Oliveira",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Como aparece no seu documento.",
+            "text": "Como aparece no seu documento.",
+            "visible": true,
+            "references": {
+              "visible": "Show helper#6:96",
+              "characters": "Helper#6:95"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6:267",
+        "name": "State=Filled, Type=Password",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Senha",
+            "text": "Senha",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "••••••••••",
+            "text": "••••••••••",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Eye",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:46",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Como aparece no seu documento.",
+            "text": "Use uma senha exclusiva para sua conta.",
+            "visible": true,
+            "references": {
+              "visible": "Show helper#6:96"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6:275",
+        "name": "State=Focus, Type=Text",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Nome completo",
+            "text": "Nome completo",
+            "visible": true,
+            "references": {
+              "characters": "Label#6:93"
+            }
+          },
+          {
+            "type": "TEXT",
+            "name": "Ana Oliveira",
+            "text": "Ana Oliveira",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Como aparece no seu documento.",
+            "text": "Como aparece no seu documento.",
+            "visible": true,
+            "references": {
+              "visible": "Show helper#6:96",
+              "characters": "Helper#6:95"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6:280",
+        "name": "State=Focus, Type=Password",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Senha",
+            "text": "Senha",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "••••••••••",
+            "text": "••••••••••",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Eye",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:46",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Como aparece no seu documento.",
+            "text": "Use uma senha exclusiva para sua conta.",
+            "visible": true,
+            "references": {
+              "visible": "Show helper#6:96"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6:288",
+        "name": "State=Error, Type=Text",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Nome completo",
+            "text": "Nome completo",
+            "visible": true,
+            "references": {
+              "characters": "Label#6:93"
+            }
+          },
+          {
+            "type": "TEXT",
+            "name": "Ana Oliveira",
+            "text": "Ana Oliveira",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Revise este campo para continuar",
+            "text": "Revise este campo para continuar.",
+            "visible": true,
+            "references": {
+              "visible": "Show helper#6:96"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6:293",
+        "name": "State=Error, Type=Password",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Senha",
+            "text": "Senha",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "••••••••••",
+            "text": "••••••••••",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Eye",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:46",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Revise este campo para continuar",
+            "text": "Revise este campo para continuar.",
+            "visible": true,
+            "references": {
+              "visible": "Show helper#6:96"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6:301",
+        "name": "State=Disabled, Type=Text",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Nome completo",
+            "text": "Nome completo",
+            "visible": true,
+            "references": {
+              "characters": "Label#6:93"
+            }
+          },
+          {
+            "type": "TEXT",
+            "name": "Ana Oliveira",
+            "text": "Ana Oliveira",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Como aparece no seu documento.",
+            "text": "Como aparece no seu documento.",
+            "visible": true,
+            "references": {
+              "visible": "Show helper#6:96",
+              "characters": "Helper#6:95"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6:306",
+        "name": "State=Disabled, Type=Password",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Senha",
+            "text": "Senha",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "••••••••••",
+            "text": "••••••••••",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Eye",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:46",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Como aparece no seu documento.",
+            "text": "Use uma senha exclusiva para sua conta.",
+            "visible": true,
+            "references": {
+              "visible": "Show helper#6:96"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6:445",
+    "name": "KittyBank/Field/Select",
+    "variants": [
+      {
+        "id": "6:405",
+        "name": "State=Empty",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Tipo de documento",
+            "text": "Tipo de documento",
+            "visible": true,
+            "references": {
+              "characters": "Label#6:107"
+            }
+          },
+          {
+            "type": "TEXT",
+            "name": "Selecione uma opção",
+            "text": "Selecione uma opção",
+            "visible": true,
+            "references": {
+              "characters": "Value#6:108"
+            }
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/ChevronDown",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:38",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "6:412",
+        "name": "State=Filled",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Tipo de documento",
+            "text": "Tipo de documento",
+            "visible": true,
+            "references": {
+              "characters": "Label#6:107"
+            }
+          },
+          {
+            "type": "TEXT",
+            "name": "RG",
+            "text": "RG",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/ChevronDown",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:38",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "6:419",
+        "name": "State=Open",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Tipo de documento",
+            "text": "Tipo de documento",
+            "visible": true,
+            "references": {
+              "characters": "Label#6:107"
+            }
+          },
+          {
+            "type": "TEXT",
+            "name": "RG",
+            "text": "RG",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/ChevronDown",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:38",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "RG",
+            "text": "RG",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "CNH",
+            "text": "CNH",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "RNE",
+            "text": "RNE",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      },
+      {
+        "id": "6:430",
+        "name": "State=Error",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Tipo de documento",
+            "text": "Tipo de documento",
+            "visible": true,
+            "references": {
+              "characters": "Label#6:107"
+            }
+          },
+          {
+            "type": "TEXT",
+            "name": "RG",
+            "text": "RG",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/ChevronDown",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:38",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Escolha um documento.",
+            "text": "Escolha um documento.",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      },
+      {
+        "id": "6:438",
+        "name": "State=Disabled",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Tipo de documento",
+            "text": "Tipo de documento",
+            "visible": true,
+            "references": {
+              "characters": "Label#6:107"
+            }
+          },
+          {
+            "type": "TEXT",
+            "name": "RG",
+            "text": "RG",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/ChevronDown",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:38",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6:514",
+    "name": "KittyBank/Selection/Checkbox",
+    "variants": [
+      {
+        "id": "6:499",
+        "name": "State=Unchecked",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Li e aceito os termos de uso",
+            "text": "Li e aceito os termos de uso",
+            "visible": true,
+            "references": {
+              "characters": "Label#6:113"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6:502",
+        "name": "State=Checked",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Check",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:30",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Li e aceito os termos de uso",
+            "text": "Li e aceito os termos de uso",
+            "visible": true,
+            "references": {
+              "characters": "Label#6:113"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6:508",
+        "name": "State=Error",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Li e aceito os termos de uso",
+            "text": "Li e aceito os termos de uso",
+            "visible": true,
+            "references": {
+              "characters": "Label#6:113"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6:511",
+        "name": "State=Disabled",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Li e aceito os termos de uso",
+            "text": "Li e aceito os termos de uso",
+            "visible": true,
+            "references": {
+              "characters": "Label#6:113"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6:549",
+    "name": "KittyBank/Selection/Switch",
+    "variants": [
+      {
+        "id": "6:540",
+        "name": "State=Off",
+        "children": []
+      },
+      {
+        "id": "6:543",
+        "name": "State=On",
+        "children": []
+      },
+      {
+        "id": "6:546",
+        "name": "State=Disabled",
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "7:250",
+    "name": "KittyBank/Onboarding/ChoiceCard",
+    "variants": [
+      {
+        "id": "7:228",
+        "name": "State=Default",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Card",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:62",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Conta para você",
+            "text": "Conta para você",
+            "visible": true,
+            "references": {
+              "characters": "Title#7:10"
+            }
+          },
+          {
+            "type": "TEXT",
+            "name": "Pix, cartão e seu dinheiro em um",
+            "text": "Pix, cartão e seu dinheiro em um só lugar.",
+            "visible": true,
+            "references": {
+              "characters": "Description#7:11"
+            }
+          }
+        ]
+      },
+      {
+        "id": "7:235",
+        "name": "State=Selected",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Card",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:62",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Conta para você",
+            "text": "Conta para você",
+            "visible": true,
+            "references": {
+              "characters": "Title#7:10"
+            }
+          },
+          {
+            "type": "TEXT",
+            "name": "Pix, cartão e seu dinheiro em um",
+            "text": "Pix, cartão e seu dinheiro em um só lugar.",
+            "visible": true,
+            "references": {
+              "characters": "Description#7:11"
+            }
+          },
+          {
+            "type": "TEXT",
+            "name": "Selecionado",
+            "text": "Selecionado",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      },
+      {
+        "id": "7:243",
+        "name": "State=Disabled",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Card",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:62",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Conta para você",
+            "text": "Conta para você",
+            "visible": true,
+            "references": {
+              "characters": "Title#7:10"
+            }
+          },
+          {
+            "type": "TEXT",
+            "name": "Pix, cartão e seu dinheiro em um",
+            "text": "Pix, cartão e seu dinheiro em um só lugar.",
+            "visible": true,
+            "references": {
+              "characters": "Description#7:11"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7:289",
+    "name": "KittyBank/Security/CodeCell",
+    "variants": [
+      {
+        "id": "7:281",
+        "name": "State=Empty",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "—",
+            "text": "—",
+            "visible": true,
+            "references": {
+              "characters": "Digit#7:16"
+            }
+          }
+        ]
+      },
+      {
+        "id": "7:283",
+        "name": "State=Focus",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "|",
+            "text": "|",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      },
+      {
+        "id": "7:285",
+        "name": "State=Filled",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "2",
+            "text": "2",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      },
+      {
+        "id": "7:287",
+        "name": "State=Error",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "—",
+            "text": "—",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7:359",
+    "name": "KittyBank/Security/OTP",
+    "variants": [
+      {
+        "id": "7:308",
+        "name": "State=Empty",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Código de segurança",
+            "text": "Código de segurança",
+            "visible": true,
+            "references": {
+              "characters": "Label#7:20"
+            }
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Security/CodeCell",
+            "visible": true,
+            "properties": {
+              "Digit#7:16": {
+                "type": "TEXT",
+                "value": "—"
+              },
+              "State": {
+                "value": "Focus",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "7:283",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "|",
+                "text": "|",
+                "visible": true,
+                "references": {}
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Security/CodeCell",
+            "visible": true,
+            "properties": {
+              "Digit#7:16": {
+                "type": "TEXT",
+                "value": "—"
+              },
+              "State": {
+                "value": "Empty",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "7:281",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "—",
+                "text": "—",
+                "visible": true,
+                "references": {
+                  "characters": "Digit#7:16"
+                }
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Security/CodeCell",
+            "visible": true,
+            "properties": {
+              "Digit#7:16": {
+                "type": "TEXT",
+                "value": "—"
+              },
+              "State": {
+                "value": "Empty",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "7:281",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "—",
+                "text": "—",
+                "visible": true,
+                "references": {
+                  "characters": "Digit#7:16"
+                }
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Security/CodeCell",
+            "visible": true,
+            "properties": {
+              "Digit#7:16": {
+                "type": "TEXT",
+                "value": "—"
+              },
+              "State": {
+                "value": "Empty",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "7:281",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "—",
+                "text": "—",
+                "visible": true,
+                "references": {
+                  "characters": "Digit#7:16"
+                }
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Security/CodeCell",
+            "visible": true,
+            "properties": {
+              "Digit#7:16": {
+                "type": "TEXT",
+                "value": "—"
+              },
+              "State": {
+                "value": "Empty",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "7:281",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "—",
+                "text": "—",
+                "visible": true,
+                "references": {
+                  "characters": "Digit#7:16"
+                }
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Security/CodeCell",
+            "visible": true,
+            "properties": {
+              "Digit#7:16": {
+                "type": "TEXT",
+                "value": "—"
+              },
+              "State": {
+                "value": "Empty",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "7:281",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "—",
+                "text": "—",
+                "visible": true,
+                "references": {
+                  "characters": "Digit#7:16"
+                }
+              }
+            ]
+          },
+          {
+            "type": "TEXT",
+            "name": "Enviado para ••••••••42",
+            "text": "Enviado para ••••••••42",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Reenviar código em 00:30",
+            "text": "Reenviar código em 00:30",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      },
+      {
+        "id": "7:325",
+        "name": "State=Filled",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Código de segurança",
+            "text": "Código de segurança",
+            "visible": true,
+            "references": {
+              "characters": "Label#7:20"
+            }
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Security/CodeCell",
+            "visible": true,
+            "properties": {
+              "Digit#7:16": {
+                "type": "TEXT",
+                "value": "—"
+              },
+              "State": {
+                "value": "Filled",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "7:285",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "2",
+                "text": "2",
+                "visible": true,
+                "references": {}
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Security/CodeCell",
+            "visible": true,
+            "properties": {
+              "Digit#7:16": {
+                "type": "TEXT",
+                "value": "—"
+              },
+              "State": {
+                "value": "Filled",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "7:285",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "2",
+                "text": "2",
+                "visible": true,
+                "references": {}
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Security/CodeCell",
+            "visible": true,
+            "properties": {
+              "Digit#7:16": {
+                "type": "TEXT",
+                "value": "—"
+              },
+              "State": {
+                "value": "Filled",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "7:285",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "2",
+                "text": "2",
+                "visible": true,
+                "references": {}
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Security/CodeCell",
+            "visible": true,
+            "properties": {
+              "Digit#7:16": {
+                "type": "TEXT",
+                "value": "—"
+              },
+              "State": {
+                "value": "Filled",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "7:285",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "2",
+                "text": "2",
+                "visible": true,
+                "references": {}
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Security/CodeCell",
+            "visible": true,
+            "properties": {
+              "Digit#7:16": {
+                "type": "TEXT",
+                "value": "—"
+              },
+              "State": {
+                "value": "Filled",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "7:285",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "2",
+                "text": "2",
+                "visible": true,
+                "references": {}
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Security/CodeCell",
+            "visible": true,
+            "properties": {
+              "Digit#7:16": {
+                "type": "TEXT",
+                "value": "—"
+              },
+              "State": {
+                "value": "Filled",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "7:285",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "2",
+                "text": "2",
+                "visible": true,
+                "references": {}
+              }
+            ]
+          },
+          {
+            "type": "TEXT",
+            "name": "Enviado para ••••••••42",
+            "text": "Enviado para ••••••••42",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Reenviar código em 00:30",
+            "text": "Reenviar código em 00:30",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      },
+      {
+        "id": "7:342",
+        "name": "State=Error",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Código de segurança",
+            "text": "Código de segurança",
+            "visible": true,
+            "references": {
+              "characters": "Label#7:20"
+            }
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Security/CodeCell",
+            "visible": true,
+            "properties": {
+              "Digit#7:16": {
+                "type": "TEXT",
+                "value": "—"
+              },
+              "State": {
+                "value": "Error",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "7:287",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "—",
+                "text": "—",
+                "visible": true,
+                "references": {}
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Security/CodeCell",
+            "visible": true,
+            "properties": {
+              "Digit#7:16": {
+                "type": "TEXT",
+                "value": "—"
+              },
+              "State": {
+                "value": "Error",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "7:287",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "—",
+                "text": "—",
+                "visible": true,
+                "references": {}
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Security/CodeCell",
+            "visible": true,
+            "properties": {
+              "Digit#7:16": {
+                "type": "TEXT",
+                "value": "—"
+              },
+              "State": {
+                "value": "Error",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "7:287",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "—",
+                "text": "—",
+                "visible": true,
+                "references": {}
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Security/CodeCell",
+            "visible": true,
+            "properties": {
+              "Digit#7:16": {
+                "type": "TEXT",
+                "value": "—"
+              },
+              "State": {
+                "value": "Error",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "7:287",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "—",
+                "text": "—",
+                "visible": true,
+                "references": {}
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Security/CodeCell",
+            "visible": true,
+            "properties": {
+              "Digit#7:16": {
+                "type": "TEXT",
+                "value": "—"
+              },
+              "State": {
+                "value": "Error",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "7:287",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "—",
+                "text": "—",
+                "visible": true,
+                "references": {}
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Security/CodeCell",
+            "visible": true,
+            "properties": {
+              "Digit#7:16": {
+                "type": "TEXT",
+                "value": "—"
+              },
+              "State": {
+                "value": "Error",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "7:287",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "—",
+                "text": "—",
+                "visible": true,
+                "references": {}
+              }
+            ]
+          },
+          {
+            "type": "TEXT",
+            "name": "Código inválido. Confira e tente",
+            "text": "Código inválido. Confira e tente novamente.",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Reenviar código em 00:30",
+            "text": "Reenviar código em 00:30",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7:437",
+    "name": "KittyBank/Onboarding/StepProgress",
+    "variants": [
+      {
+        "id": "7:419",
+        "name": "Step=1",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Etapa 1 de 3",
+            "text": "Etapa 1 de 3",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      },
+      {
+        "id": "7:425",
+        "name": "Step=2",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Etapa 2 de 3",
+            "text": "Etapa 2 de 3",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      },
+      {
+        "id": "7:431",
+        "name": "Step=3",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Etapa 3 de 3",
+            "text": "Etapa 3 de 3",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7:488",
+    "name": "KittyBank/Security/DocumentUpload",
+    "variants": [
+      {
+        "id": "7:464",
+        "name": "State=Empty",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Upload",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:119",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Envie seu documento",
+            "text": "Envie seu documento",
+            "visible": true,
+            "references": {
+              "characters": "Title#7:33"
+            }
+          },
+          {
+            "type": "TEXT",
+            "name": "Frente legível, sem reflexos ou ",
+            "text": "Frente legível, sem reflexos ou cortes.",
+            "visible": true,
+            "references": {
+              "characters": "Description#7:34"
+            }
+          }
+        ]
+      },
+      {
+        "id": "7:470",
+        "name": "State=Uploading",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Spinner",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:159",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Enviando documento…",
+            "text": "Enviando documento…",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Aguarde a confirmação do envio.",
+            "text": "Aguarde a confirmação do envio.",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      },
+      {
+        "id": "7:476",
+        "name": "State=Success",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Check",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:30",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Documento recebido",
+            "text": "Documento recebido",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Você já pode continuar.",
+            "text": "Você já pode continuar.",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      },
+      {
+        "id": "7:482",
+        "name": "State=Error",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Warning",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:151",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Não foi possível enviar",
+            "text": "Não foi possível enviar",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Confira a conexão e tente novame",
+            "text": "Confira a conexão e tente novamente.",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7:548",
+    "name": "KittyBank/Security/Biometric",
+    "variants": [
+      {
+        "id": "7:524",
+        "name": "State=Ready",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Camera",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:111",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Vamos confirmar que é você",
+            "text": "Vamos confirmar que é você",
+            "visible": true,
+            "references": {
+              "characters": "Title#7:43"
+            }
+          },
+          {
+            "type": "TEXT",
+            "name": "Posicione o rosto no centro e si",
+            "text": "Posicione o rosto no centro e siga as instruções.",
+            "visible": true,
+            "references": {
+              "characters": "Instructions#7:44"
+            }
+          }
+        ]
+      },
+      {
+        "id": "7:530",
+        "name": "State=Scanning",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Camera",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:111",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Verificando sua identidade",
+            "text": "Verificando sua identidade",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Posicione o rosto no centro e si",
+            "text": "Posicione o rosto no centro e siga as instruções.",
+            "visible": true,
+            "references": {
+              "characters": "Instructions#7:44"
+            }
+          }
+        ]
+      },
+      {
+        "id": "7:536",
+        "name": "State=Success",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Check",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:30",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Identidade confirmada",
+            "text": "Identidade confirmada",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Posicione o rosto no centro e si",
+            "text": "Posicione o rosto no centro e siga as instruções.",
+            "visible": true,
+            "references": {
+              "characters": "Instructions#7:44"
+            }
+          }
+        ]
+      },
+      {
+        "id": "7:542",
+        "name": "State=Error",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Warning",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:151",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Vamos tentar mais uma vez",
+            "text": "Vamos tentar mais uma vez",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Procure um local iluminado e ret",
+            "text": "Procure um local iluminado e retire acessórios.",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7:618",
+    "name": "KittyBank/Security/PasswordRules",
+    "variants": [
+      {
+        "id": "7:584",
+        "name": "State=Pending",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Sua senha precisa ter",
+            "text": "Sua senha precisa ter",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Lock",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:95",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Pelo menos 8 caracteres",
+            "text": "Pelo menos 8 caracteres",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Lock",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:95",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Uma letra e um número",
+            "text": "Uma letra e um número",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Lock",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:95",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Um caractere especial",
+            "text": "Um caractere especial",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      },
+      {
+        "id": "7:601",
+        "name": "State=Valid",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Sua senha precisa ter",
+            "text": "Sua senha precisa ter",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Check",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:30",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Pelo menos 8 caracteres",
+            "text": "Pelo menos 8 caracteres",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Check",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:30",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Uma letra e um número",
+            "text": "Uma letra e um número",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Check",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:30",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Um caractere especial",
+            "text": "Um caractere especial",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7:692",
+    "name": "KittyBank/Onboarding/ActionFooter",
+    "variants": [
+      {
+        "id": "7:659",
+        "name": "State=Incomplete",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Onboarding/StepProgress",
+            "visible": true,
+            "properties": {
+              "Label#7:24": {
+                "type": "TEXT",
+                "value": "Etapa 1 de 3"
+              },
+              "Step": {
+                "value": "1",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "7:419",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "Etapa 1 de 3",
+                "text": "Etapa 1 de 3",
+                "visible": true,
+                "references": {}
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Button",
+            "visible": true,
+            "properties": {
+              "Icon#6:45": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:6",
+                "preferredValues": []
+              },
+              "Label#6:47": {
+                "type": "TEXT",
+                "value": "Continuar"
+              },
+              "Show icon#6:46": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Hierarchy": {
+                "value": "Primary",
+                "type": "VARIANT",
+                "boundVariables": {}
+              },
+              "State": {
+                "value": "Disabled",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "6:64",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "Continuar",
+                "text": "Continuar",
+                "visible": true,
+                "references": {
+                  "characters": "Label#6:47"
+                }
+              }
+            ]
+          },
+          {
+            "type": "TEXT",
+            "name": "Salvar e continuar depois",
+            "text": "Salvar e continuar depois",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      },
+      {
+        "id": "7:670",
+        "name": "State=Ready",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Onboarding/StepProgress",
+            "visible": true,
+            "properties": {
+              "Label#7:24": {
+                "type": "TEXT",
+                "value": "Etapa 1 de 3"
+              },
+              "Step": {
+                "value": "1",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "7:419",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "Etapa 1 de 3",
+                "text": "Etapa 1 de 3",
+                "visible": true,
+                "references": {}
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Button",
+            "visible": true,
+            "properties": {
+              "Icon#6:45": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:6",
+                "preferredValues": []
+              },
+              "Label#6:47": {
+                "type": "TEXT",
+                "value": "Continuar"
+              },
+              "Show icon#6:46": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Hierarchy": {
+                "value": "Primary",
+                "type": "VARIANT",
+                "boundVariables": {}
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "6:49",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "Continuar",
+                "text": "Continuar",
+                "visible": true,
+                "references": {
+                  "characters": "Label#6:47"
+                }
+              }
+            ]
+          },
+          {
+            "type": "TEXT",
+            "name": "Salvar e continuar depois",
+            "text": "Salvar e continuar depois",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      },
+      {
+        "id": "7:681",
+        "name": "State=Submitting",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Onboarding/StepProgress",
+            "visible": true,
+            "properties": {
+              "Label#7:24": {
+                "type": "TEXT",
+                "value": "Etapa 1 de 3"
+              },
+              "Step": {
+                "value": "1",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "7:419",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "Etapa 1 de 3",
+                "text": "Etapa 1 de 3",
+                "visible": true,
+                "references": {}
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Button",
+            "visible": true,
+            "properties": {
+              "Label#6:47": {
+                "type": "TEXT",
+                "value": "Continuar"
+              },
+              "Show icon#6:46": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Icon#6:45": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:6",
+                "preferredValues": []
+              },
+              "Hierarchy": {
+                "value": "Primary",
+                "type": "VARIANT",
+                "boundVariables": {}
+              },
+              "State": {
+                "value": "Loading",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "6:69",
+            "children": [
+              {
+                "type": "INSTANCE",
+                "name": "KittyBank/Icon/Spinner",
+                "visible": true,
+                "properties": {},
+                "mainComponentId": "5:159",
+                "children": []
+              },
+              {
+                "type": "TEXT",
+                "name": "Aguarde…",
+                "text": "Aguarde…",
+                "visible": true,
+                "references": {}
+              }
+            ]
+          },
+          {
+            "type": "TEXT",
+            "name": "Salvar e continuar depois",
+            "text": "Salvar e continuar depois",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "11:533",
+    "name": "KittyBank/Navigation/Header",
+    "variants": [
+      {
+        "id": "11:505",
+        "name": "Context=Onboarding",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/IconButton",
+            "visible": true,
+            "properties": {
+              "Icon#6:52": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:14",
+                "preferredValues": []
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "6:203",
+            "children": [
+              {
+                "type": "INSTANCE",
+                "name": "KittyBank/Icon/Back",
+                "visible": true,
+                "properties": {},
+                "mainComponentId": "5:14",
+                "children": []
+              }
+            ]
+          },
+          {
+            "type": "TEXT",
+            "name": "Abra sua conta",
+            "text": "Abra sua conta",
+            "visible": true,
+            "references": {
+              "characters": "Title#11:1"
+            }
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/IconButton",
+            "visible": true,
+            "properties": {
+              "Icon#6:52": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:86",
+                "preferredValues": []
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "6:203",
+            "children": [
+              {
+                "type": "INSTANCE",
+                "name": "KittyBank/Icon/Help",
+                "visible": true,
+                "properties": {},
+                "mainComponentId": "5:86",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "11:517",
+        "name": "Context=Account",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/IconButton",
+            "visible": true,
+            "properties": {
+              "Icon#6:52": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:14",
+                "preferredValues": []
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "6:203",
+            "children": [
+              {
+                "type": "INSTANCE",
+                "name": "KittyBank/Icon/Back",
+                "visible": true,
+                "properties": {},
+                "mainComponentId": "5:14",
+                "children": []
+              }
+            ]
+          },
+          {
+            "type": "TEXT",
+            "name": "Minha conta",
+            "text": "Minha conta",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/IconButton",
+            "visible": true,
+            "properties": {
+              "Icon#6:52": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:86",
+                "preferredValues": []
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "6:203",
+            "children": [
+              {
+                "type": "INSTANCE",
+                "name": "KittyBank/Icon/Help",
+                "visible": true,
+                "properties": {},
+                "mainComponentId": "5:86",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "11:527",
+        "name": "Context=Overlay",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/IconButton",
+            "visible": true,
+            "properties": {
+              "Icon#6:52": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:22",
+                "preferredValues": []
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "6:203",
+            "children": [
+              {
+                "type": "INSTANCE",
+                "name": "KittyBank/Icon/Close",
+                "visible": true,
+                "properties": {},
+                "mainComponentId": "5:22",
+                "children": []
+              }
+            ]
+          },
+          {
+            "type": "TEXT",
+            "name": "Como podemos ajudar?",
+            "text": "Como podemos ajudar?",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "11:582",
+    "name": "KittyBank/Navigation/TabItem",
+    "variants": [
+      {
+        "id": "11:572",
+        "name": "State=Default",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Home",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:54",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Início",
+            "text": "Início",
+            "visible": true,
+            "references": {
+              "characters": "Label#11:9"
+            }
+          }
+        ]
+      },
+      {
+        "id": "11:577",
+        "name": "State=Selected",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Home",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:54",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Início",
+            "text": "Início",
+            "visible": true,
+            "references": {
+              "characters": "Label#11:9"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "11:699",
+    "name": "KittyBank/Navigation/BottomBar",
+    "variants": [
+      {
+        "id": "11:583",
+        "name": "Active=Home",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Navigation/TabItem",
+            "visible": true,
+            "properties": {
+              "Label#11:9": {
+                "type": "TEXT",
+                "value": "Início"
+              },
+              "Icon#11:8": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:54",
+                "preferredValues": []
+              },
+              "State": {
+                "value": "Selected",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "11:577",
+            "children": [
+              {
+                "type": "INSTANCE",
+                "name": "KittyBank/Icon/Home",
+                "visible": true,
+                "properties": {},
+                "mainComponentId": "5:54",
+                "children": []
+              },
+              {
+                "type": "TEXT",
+                "name": "Início",
+                "text": "Início",
+                "visible": true,
+                "references": {
+                  "characters": "Label#11:9"
+                }
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Navigation/TabItem",
+            "visible": true,
+            "properties": {
+              "Label#11:9": {
+                "type": "TEXT",
+                "value": "Cartões"
+              },
+              "Icon#11:8": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:62",
+                "preferredValues": []
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "11:572",
+            "children": [
+              {
+                "type": "INSTANCE",
+                "name": "KittyBank/Icon/Card",
+                "visible": true,
+                "properties": {},
+                "mainComponentId": "5:62",
+                "children": []
+              },
+              {
+                "type": "TEXT",
+                "name": "Início",
+                "text": "Cartões",
+                "visible": true,
+                "references": {
+                  "characters": "Label#11:9"
+                }
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Navigation/TabItem",
+            "visible": true,
+            "properties": {
+              "Label#11:9": {
+                "type": "TEXT",
+                "value": "Extrato"
+              },
+              "Icon#11:8": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:70",
+                "preferredValues": []
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "11:572",
+            "children": [
+              {
+                "type": "INSTANCE",
+                "name": "KittyBank/Icon/Transfer",
+                "visible": true,
+                "properties": {},
+                "mainComponentId": "5:70",
+                "children": []
+              },
+              {
+                "type": "TEXT",
+                "name": "Início",
+                "text": "Extrato",
+                "visible": true,
+                "references": {
+                  "characters": "Label#11:9"
+                }
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Navigation/TabItem",
+            "visible": true,
+            "properties": {
+              "Label#11:9": {
+                "type": "TEXT",
+                "value": "Perfil"
+              },
+              "Icon#11:8": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:78",
+                "preferredValues": []
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "11:572",
+            "children": [
+              {
+                "type": "INSTANCE",
+                "name": "KittyBank/Icon/User",
+                "visible": true,
+                "properties": {},
+                "mainComponentId": "5:78",
+                "children": []
+              },
+              {
+                "type": "TEXT",
+                "name": "Início",
+                "text": "Perfil",
+                "visible": true,
+                "references": {
+                  "characters": "Label#11:9"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "11:612",
+        "name": "Active=Cards",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Navigation/TabItem",
+            "visible": true,
+            "properties": {
+              "Label#11:9": {
+                "type": "TEXT",
+                "value": "Início"
+              },
+              "Icon#11:8": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:54",
+                "preferredValues": []
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "11:572",
+            "children": [
+              {
+                "type": "INSTANCE",
+                "name": "KittyBank/Icon/Home",
+                "visible": true,
+                "properties": {},
+                "mainComponentId": "5:54",
+                "children": []
+              },
+              {
+                "type": "TEXT",
+                "name": "Início",
+                "text": "Início",
+                "visible": true,
+                "references": {
+                  "characters": "Label#11:9"
+                }
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Navigation/TabItem",
+            "visible": true,
+            "properties": {
+              "Label#11:9": {
+                "type": "TEXT",
+                "value": "Cartões"
+              },
+              "Icon#11:8": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:62",
+                "preferredValues": []
+              },
+              "State": {
+                "value": "Selected",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "11:577",
+            "children": [
+              {
+                "type": "INSTANCE",
+                "name": "KittyBank/Icon/Card",
+                "visible": true,
+                "properties": {},
+                "mainComponentId": "5:62",
+                "children": []
+              },
+              {
+                "type": "TEXT",
+                "name": "Início",
+                "text": "Cartões",
+                "visible": true,
+                "references": {
+                  "characters": "Label#11:9"
+                }
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Navigation/TabItem",
+            "visible": true,
+            "properties": {
+              "Label#11:9": {
+                "type": "TEXT",
+                "value": "Extrato"
+              },
+              "Icon#11:8": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:70",
+                "preferredValues": []
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "11:572",
+            "children": [
+              {
+                "type": "INSTANCE",
+                "name": "KittyBank/Icon/Transfer",
+                "visible": true,
+                "properties": {},
+                "mainComponentId": "5:70",
+                "children": []
+              },
+              {
+                "type": "TEXT",
+                "name": "Início",
+                "text": "Extrato",
+                "visible": true,
+                "references": {
+                  "characters": "Label#11:9"
+                }
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Navigation/TabItem",
+            "visible": true,
+            "properties": {
+              "Label#11:9": {
+                "type": "TEXT",
+                "value": "Perfil"
+              },
+              "Icon#11:8": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:78",
+                "preferredValues": []
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "11:572",
+            "children": [
+              {
+                "type": "INSTANCE",
+                "name": "KittyBank/Icon/User",
+                "visible": true,
+                "properties": {},
+                "mainComponentId": "5:78",
+                "children": []
+              },
+              {
+                "type": "TEXT",
+                "name": "Início",
+                "text": "Perfil",
+                "visible": true,
+                "references": {
+                  "characters": "Label#11:9"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "11:641",
+        "name": "Active=Activity",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Navigation/TabItem",
+            "visible": true,
+            "properties": {
+              "Label#11:9": {
+                "type": "TEXT",
+                "value": "Início"
+              },
+              "Icon#11:8": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:54",
+                "preferredValues": []
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "11:572",
+            "children": [
+              {
+                "type": "INSTANCE",
+                "name": "KittyBank/Icon/Home",
+                "visible": true,
+                "properties": {},
+                "mainComponentId": "5:54",
+                "children": []
+              },
+              {
+                "type": "TEXT",
+                "name": "Início",
+                "text": "Início",
+                "visible": true,
+                "references": {
+                  "characters": "Label#11:9"
+                }
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Navigation/TabItem",
+            "visible": true,
+            "properties": {
+              "Label#11:9": {
+                "type": "TEXT",
+                "value": "Cartões"
+              },
+              "Icon#11:8": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:62",
+                "preferredValues": []
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "11:572",
+            "children": [
+              {
+                "type": "INSTANCE",
+                "name": "KittyBank/Icon/Card",
+                "visible": true,
+                "properties": {},
+                "mainComponentId": "5:62",
+                "children": []
+              },
+              {
+                "type": "TEXT",
+                "name": "Início",
+                "text": "Cartões",
+                "visible": true,
+                "references": {
+                  "characters": "Label#11:9"
+                }
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Navigation/TabItem",
+            "visible": true,
+            "properties": {
+              "Label#11:9": {
+                "type": "TEXT",
+                "value": "Extrato"
+              },
+              "Icon#11:8": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:70",
+                "preferredValues": []
+              },
+              "State": {
+                "value": "Selected",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "11:577",
+            "children": [
+              {
+                "type": "INSTANCE",
+                "name": "KittyBank/Icon/Transfer",
+                "visible": true,
+                "properties": {},
+                "mainComponentId": "5:70",
+                "children": []
+              },
+              {
+                "type": "TEXT",
+                "name": "Início",
+                "text": "Extrato",
+                "visible": true,
+                "references": {
+                  "characters": "Label#11:9"
+                }
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Navigation/TabItem",
+            "visible": true,
+            "properties": {
+              "Label#11:9": {
+                "type": "TEXT",
+                "value": "Perfil"
+              },
+              "Icon#11:8": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:78",
+                "preferredValues": []
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "11:572",
+            "children": [
+              {
+                "type": "INSTANCE",
+                "name": "KittyBank/Icon/User",
+                "visible": true,
+                "properties": {},
+                "mainComponentId": "5:78",
+                "children": []
+              },
+              {
+                "type": "TEXT",
+                "name": "Início",
+                "text": "Perfil",
+                "visible": true,
+                "references": {
+                  "characters": "Label#11:9"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "11:670",
+        "name": "Active=Profile",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Navigation/TabItem",
+            "visible": true,
+            "properties": {
+              "Label#11:9": {
+                "type": "TEXT",
+                "value": "Início"
+              },
+              "Icon#11:8": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:54",
+                "preferredValues": []
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "11:572",
+            "children": [
+              {
+                "type": "INSTANCE",
+                "name": "KittyBank/Icon/Home",
+                "visible": true,
+                "properties": {},
+                "mainComponentId": "5:54",
+                "children": []
+              },
+              {
+                "type": "TEXT",
+                "name": "Início",
+                "text": "Início",
+                "visible": true,
+                "references": {
+                  "characters": "Label#11:9"
+                }
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Navigation/TabItem",
+            "visible": true,
+            "properties": {
+              "Label#11:9": {
+                "type": "TEXT",
+                "value": "Cartões"
+              },
+              "Icon#11:8": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:62",
+                "preferredValues": []
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "11:572",
+            "children": [
+              {
+                "type": "INSTANCE",
+                "name": "KittyBank/Icon/Card",
+                "visible": true,
+                "properties": {},
+                "mainComponentId": "5:62",
+                "children": []
+              },
+              {
+                "type": "TEXT",
+                "name": "Início",
+                "text": "Cartões",
+                "visible": true,
+                "references": {
+                  "characters": "Label#11:9"
+                }
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Navigation/TabItem",
+            "visible": true,
+            "properties": {
+              "Label#11:9": {
+                "type": "TEXT",
+                "value": "Extrato"
+              },
+              "Icon#11:8": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:70",
+                "preferredValues": []
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "11:572",
+            "children": [
+              {
+                "type": "INSTANCE",
+                "name": "KittyBank/Icon/Transfer",
+                "visible": true,
+                "properties": {},
+                "mainComponentId": "5:70",
+                "children": []
+              },
+              {
+                "type": "TEXT",
+                "name": "Início",
+                "text": "Extrato",
+                "visible": true,
+                "references": {
+                  "characters": "Label#11:9"
+                }
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Navigation/TabItem",
+            "visible": true,
+            "properties": {
+              "Label#11:9": {
+                "type": "TEXT",
+                "value": "Perfil"
+              },
+              "Icon#11:8": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:78",
+                "preferredValues": []
+              },
+              "State": {
+                "value": "Selected",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "11:577",
+            "children": [
+              {
+                "type": "INSTANCE",
+                "name": "KittyBank/Icon/User",
+                "visible": true,
+                "properties": {},
+                "mainComponentId": "5:78",
+                "children": []
+              },
+              {
+                "type": "TEXT",
+                "name": "Início",
+                "text": "Perfil",
+                "visible": true,
+                "references": {
+                  "characters": "Label#11:9"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "11:822",
+    "name": "KittyBank/Banking/Balance",
+    "variants": [
+      {
+        "id": "11:798",
+        "name": "State=Visible",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Saldo disponível",
+            "text": "Saldo disponível",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Eye",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:46",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "R$ 5.634,12",
+            "text": "R$ 5.634,12",
+            "visible": true,
+            "references": {
+              "characters": "Amount#11:11"
+            }
+          },
+          {
+            "type": "TEXT",
+            "name": "Conta KittyBank",
+            "text": "Conta KittyBank",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      },
+      {
+        "id": "11:806",
+        "name": "State=Hidden",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Saldo disponível",
+            "text": "Saldo disponível",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Eye",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:46",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "R$ ••••••",
+            "text": "R$ ••••••",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Conta KittyBank",
+            "text": "Conta KittyBank",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      },
+      {
+        "id": "11:814",
+        "name": "State=Loading",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Saldo disponível",
+            "text": "Saldo disponível",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Eye",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:46",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Carregando…",
+            "text": "Carregando…",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Conta KittyBank",
+            "text": "Conta KittyBank",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "11:875",
+    "name": "KittyBank/Banking/PaymentCard",
+    "variants": [
+      {
+        "id": "11:855",
+        "name": "State=Active",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Card",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:62",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "kittybank",
+            "text": "kittybank",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "••••  ••••  ••••  2048",
+            "text": "••••  ••••  ••••  2048",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "ANA OLIVEIRA",
+            "text": "ANA OLIVEIRA",
+            "visible": true,
+            "references": {
+              "characters": "Holder#11:16"
+            }
+          },
+          {
+            "type": "TEXT",
+            "name": "Virtual · Débito",
+            "text": "Virtual · Débito",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      },
+      {
+        "id": "11:865",
+        "name": "State=Frozen",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Lock",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:95",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "kittybank",
+            "text": "kittybank",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "••••  ••••  ••••  2048",
+            "text": "••••  ••••  ••••  2048",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "ANA OLIVEIRA",
+            "text": "ANA OLIVEIRA",
+            "visible": true,
+            "references": {
+              "characters": "Holder#11:16"
+            }
+          },
+          {
+            "type": "TEXT",
+            "name": "Bloqueado",
+            "text": "Bloqueado",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "11:930",
+    "name": "KittyBank/Banking/TransactionRow",
+    "variants": [
+      {
+        "id": "11:902",
+        "name": "Type=Incoming",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Transfer",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:70",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Pix recebido",
+            "text": "Pix recebido",
+            "visible": true,
+            "references": {
+              "characters": "Title#11:22"
+            }
+          },
+          {
+            "type": "TEXT",
+            "name": "Hoje · 14:32",
+            "text": "Hoje · 14:32",
+            "visible": true,
+            "references": {
+              "characters": "Meta#11:23"
+            }
+          },
+          {
+            "type": "TEXT",
+            "name": "+ R$ 250,00",
+            "text": "+ R$ 250,00",
+            "visible": true,
+            "references": {
+              "characters": "Amount#11:24"
+            }
+          }
+        ]
+      },
+      {
+        "id": "11:911",
+        "name": "Type=Outgoing",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Transfer",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:70",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Pix enviado",
+            "text": "Pix enviado",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Hoje · 14:32",
+            "text": "Hoje · 14:32",
+            "visible": true,
+            "references": {
+              "characters": "Meta#11:23"
+            }
+          },
+          {
+            "type": "TEXT",
+            "name": "− R$ 48,90",
+            "text": "− R$ 48,90",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      },
+      {
+        "id": "11:920",
+        "name": "Type=Pending",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Transfer",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:70",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Pix enviado",
+            "text": "Pix enviado",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Hoje · 14:32",
+            "text": "Hoje · 14:32",
+            "visible": true,
+            "references": {
+              "characters": "Meta#11:23"
+            }
+          },
+          {
+            "type": "TEXT",
+            "name": "− R$ 48,90",
+            "text": "− R$ 48,90",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Pendente",
+            "text": "Pendente",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "11:982",
+    "name": "KittyBank/Banking/QuickAction",
+    "variants": [
+      {
+        "id": "11:967",
+        "name": "State=Default",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Transfer",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:70",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Transferir",
+            "text": "Transferir",
+            "visible": true,
+            "references": {
+              "characters": "Label#11:36"
+            }
+          }
+        ]
+      },
+      {
+        "id": "11:972",
+        "name": "State=Pressed",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Transfer",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:70",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Transferir",
+            "text": "Transferir",
+            "visible": true,
+            "references": {
+              "characters": "Label#11:36"
+            }
+          }
+        ]
+      },
+      {
+        "id": "11:977",
+        "name": "State=Disabled",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Transfer",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:70",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Transferir",
+            "text": "Transferir",
+            "visible": true,
+            "references": {
+              "characters": "Label#11:36"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "11:1012",
+    "name": "KittyBank/Banking/SummaryRow",
+    "variants": [
+      {
+        "id": "11:1006",
+        "name": "Emphasis=Default",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Destinatário",
+            "text": "Destinatário",
+            "visible": true,
+            "references": {
+              "characters": "Label#11:39"
+            }
+          },
+          {
+            "type": "TEXT",
+            "name": "Ana Oliveira",
+            "text": "Ana Oliveira",
+            "visible": true,
+            "references": {
+              "characters": "Value#11:40"
+            }
+          }
+        ]
+      },
+      {
+        "id": "11:1009",
+        "name": "Emphasis=Total",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Total",
+            "text": "Total",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "R$ 250,00",
+            "text": "R$ 250,00",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "12:801",
+    "name": "KittyBank/Feedback/Badge",
+    "variants": [
+      {
+        "id": "12:793",
+        "name": "Tone=Success",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Concluído",
+            "text": "Concluído",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      },
+      {
+        "id": "12:795",
+        "name": "Tone=Warning",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Pendente",
+            "text": "Pendente",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      },
+      {
+        "id": "12:797",
+        "name": "Tone=Error",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Falhou",
+            "text": "Falhou",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      },
+      {
+        "id": "12:799",
+        "name": "Tone=Info",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Em análise",
+            "text": "Em análise",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "12:844",
+    "name": "KittyBank/Feedback/Alert",
+    "variants": [
+      {
+        "id": "12:820",
+        "name": "Tone=Success",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Check",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:30",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Tudo certo por aqui",
+            "text": "Tudo certo por aqui",
+            "visible": true,
+            "references": {
+              "characters": "Title#12:2"
+            }
+          },
+          {
+            "type": "TEXT",
+            "name": "Recebemos suas informações.",
+            "text": "Recebemos suas informações.",
+            "visible": true,
+            "references": {
+              "characters": "Description#12:3"
+            }
+          }
+        ]
+      },
+      {
+        "id": "12:826",
+        "name": "Tone=Warning",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Warning",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:151",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Revise antes de continuar",
+            "text": "Revise antes de continuar",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Confira os dados desta operação.",
+            "text": "Confira os dados desta operação.",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      },
+      {
+        "id": "12:832",
+        "name": "Tone=Error",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Warning",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:151",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Não conseguimos concluir",
+            "text": "Não conseguimos concluir",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Seus dados foram preservados. Te",
+            "text": "Seus dados foram preservados. Tente novamente.",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      },
+      {
+        "id": "12:838",
+        "name": "Tone=Info",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Help",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:86",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Seu pedido está em análise",
+            "text": "Seu pedido está em análise",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Avisaremos quando houver uma atu",
+            "text": "Avisaremos quando houver uma atualização.",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "12:921",
+    "name": "KittyBank/Feedback/StateBlock",
+    "variants": [
+      {
+        "id": "12:880",
+        "name": "State=Success",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Check",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:30",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Seu cadastro foi concluído",
+            "text": "Seu cadastro foi concluído",
+            "visible": true,
+            "references": {
+              "characters": "Title#12:12"
+            }
+          },
+          {
+            "type": "TEXT",
+            "name": "Agora você pode acessar sua cont",
+            "text": "Agora você pode acessar sua conta KittyBank.",
+            "visible": true,
+            "references": {
+              "characters": "Description#12:13"
+            }
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Button",
+            "visible": true,
+            "properties": {
+              "Icon#6:45": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:6",
+                "preferredValues": []
+              },
+              "Label#6:47": {
+                "type": "TEXT",
+                "value": "Acessar minha conta"
+              },
+              "Show icon#6:46": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Hierarchy": {
+                "value": "Primary",
+                "type": "VARIANT",
+                "boundVariables": {}
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "6:49",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "Continuar",
+                "text": "Acessar minha conta",
+                "visible": true,
+                "references": {
+                  "characters": "Label#6:47"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "12:893",
+        "name": "State=Empty",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Document",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:103",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Ainda não há movimentações",
+            "text": "Ainda não há movimentações",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Quando você movimentar sua conta",
+            "text": "Quando você movimentar sua conta, tudo aparece aqui.",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Button",
+            "visible": true,
+            "properties": {
+              "Icon#6:45": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:6",
+                "preferredValues": []
+              },
+              "Label#6:47": {
+                "type": "TEXT",
+                "value": "Atualizar"
+              },
+              "Show icon#6:46": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Hierarchy": {
+                "value": "Primary",
+                "type": "VARIANT",
+                "boundVariables": {}
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "6:49",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "Continuar",
+                "text": "Atualizar",
+                "visible": true,
+                "references": {
+                  "characters": "Label#6:47"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "12:904",
+        "name": "State=Error",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Warning",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:151",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Vamos tentar novamente?",
+            "text": "Vamos tentar novamente?",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Confira sua conexão. Seus dados ",
+            "text": "Confira sua conexão. Seus dados continuam salvos.",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Button",
+            "visible": true,
+            "properties": {
+              "Icon#6:45": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:6",
+                "preferredValues": []
+              },
+              "Label#6:47": {
+                "type": "TEXT",
+                "value": "Tentar novamente"
+              },
+              "Show icon#6:46": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Hierarchy": {
+                "value": "Primary",
+                "type": "VARIANT",
+                "boundVariables": {}
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "6:49",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "Continuar",
+                "text": "Tentar novamente",
+                "visible": true,
+                "references": {
+                  "characters": "Label#6:47"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "12:915",
+        "name": "State=Loading",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Spinner",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:159",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Estamos cuidando disso",
+            "text": "Estamos cuidando disso",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Aguarde a confirmação para conti",
+            "text": "Aguarde a confirmação para continuar.",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "12:1000",
+    "name": "KittyBank/Overlay/Confirmation",
+    "variants": [
+      {
+        "id": "12:966",
+        "name": "Intent=ResumeLater",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Document",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:103",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Continuar depois?",
+            "text": "Continuar depois?",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Seu progresso será salvo. Você p",
+            "text": "Seu progresso será salvo. Você poderá retomar do mesmo ponto.",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Button",
+            "visible": true,
+            "properties": {
+              "Icon#6:45": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:6",
+                "preferredValues": []
+              },
+              "Label#6:47": {
+                "type": "TEXT",
+                "value": "Salvar e sair"
+              },
+              "Show icon#6:46": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Hierarchy": {
+                "value": "Primary",
+                "type": "VARIANT",
+                "boundVariables": {}
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "6:49",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "Continuar",
+                "text": "Salvar e sair",
+                "visible": true,
+                "references": {
+                  "characters": "Label#6:47"
+                }
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Button",
+            "visible": true,
+            "properties": {
+              "Icon#6:45": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:6",
+                "preferredValues": []
+              },
+              "Label#6:47": {
+                "type": "TEXT",
+                "value": "Voltar"
+              },
+              "Show icon#6:46": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Hierarchy": {
+                "value": "Secondary",
+                "type": "VARIANT",
+                "boundVariables": {}
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "6:74",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "Continuar",
+                "text": "Voltar",
+                "visible": true,
+                "references": {
+                  "characters": "Label#6:47"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "12:984",
+        "name": "Intent=ConfirmTransfer",
+        "children": [
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Transfer",
+            "visible": true,
+            "properties": {},
+            "mainComponentId": "5:70",
+            "children": []
+          },
+          {
+            "type": "TEXT",
+            "name": "Confirmar transferência?",
+            "text": "Confirmar transferência?",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Envie R$ 250,00 para Ana Oliveir",
+            "text": "Envie R$ 250,00 para Ana Oliveira. Confira os dados antes de confirmar.",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Button",
+            "visible": true,
+            "properties": {
+              "Icon#6:45": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:6",
+                "preferredValues": []
+              },
+              "Label#6:47": {
+                "type": "TEXT",
+                "value": "Confirmar transferência"
+              },
+              "Show icon#6:46": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Hierarchy": {
+                "value": "Primary",
+                "type": "VARIANT",
+                "boundVariables": {}
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "6:49",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "Continuar",
+                "text": "Confirmar transferência",
+                "visible": true,
+                "references": {
+                  "characters": "Label#6:47"
+                }
+              }
+            ]
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/Button",
+            "visible": true,
+            "properties": {
+              "Icon#6:45": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:6",
+                "preferredValues": []
+              },
+              "Label#6:47": {
+                "type": "TEXT",
+                "value": "Voltar"
+              },
+              "Show icon#6:46": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Hierarchy": {
+                "value": "Secondary",
+                "type": "VARIANT",
+                "boundVariables": {}
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "6:74",
+            "children": [
+              {
+                "type": "TEXT",
+                "name": "Continuar",
+                "text": "Voltar",
+                "visible": true,
+                "references": {
+                  "characters": "Label#6:47"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "12:1037",
+    "name": "KittyBank/Help/Message",
+    "variants": [
+      {
+        "id": "12:1031",
+        "name": "Author=Assistant",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "KittyBank",
+            "text": "KittyBank",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Olá! Em qual etapa posso ajudar?",
+            "text": "Olá! Em qual etapa posso ajudar?",
+            "visible": true,
+            "references": {
+              "characters": "Message#12:21"
+            }
+          }
+        ]
+      },
+      {
+        "id": "12:1034",
+        "name": "Author=Customer",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Você",
+            "text": "Você",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "TEXT",
+            "name": "Quero ajuda para abrir minha con",
+            "text": "Quero ajuda para abrir minha conta.",
+            "visible": true,
+            "references": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "12:1068",
+    "name": "KittyBank/Help/Composer",
+    "variants": [
+      {
+        "id": "12:1050",
+        "name": "State=Empty",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Escreva sua mensagem…",
+            "text": "Escreva sua mensagem…",
+            "visible": true,
+            "references": {
+              "characters": "Message#12:24"
+            }
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/IconButton",
+            "visible": true,
+            "properties": {
+              "Icon#6:52": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:6",
+                "preferredValues": []
+              },
+              "State": {
+                "value": "Disabled",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "6:215",
+            "children": [
+              {
+                "type": "INSTANCE",
+                "name": "KittyBank/Icon/ArrowRight",
+                "visible": true,
+                "properties": {},
+                "mainComponentId": "5:6",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "12:1056",
+        "name": "State=Ready",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Preciso de ajuda",
+            "text": "Preciso de ajuda",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/IconButton",
+            "visible": true,
+            "properties": {
+              "Icon#6:52": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:6",
+                "preferredValues": []
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "6:203",
+            "children": [
+              {
+                "type": "INSTANCE",
+                "name": "KittyBank/Icon/ArrowRight",
+                "visible": true,
+                "properties": {},
+                "mainComponentId": "5:6",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "12:1062",
+        "name": "State=Sending",
+        "children": [
+          {
+            "type": "TEXT",
+            "name": "Enviando…",
+            "text": "Enviando…",
+            "visible": true,
+            "references": {}
+          },
+          {
+            "type": "INSTANCE",
+            "name": "KittyBank/IconButton",
+            "visible": true,
+            "properties": {
+              "Icon#6:52": {
+                "type": "INSTANCE_SWAP",
+                "value": "5:159",
+                "preferredValues": []
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "6:203",
+            "children": [
+              {
+                "type": "INSTANCE",
+                "name": "KittyBank/Icon/Spinner",
+                "visible": true,
+                "properties": {},
+                "mainComponentId": "5:159",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "13:941",
+    "name": "KittyBank/Brand/Mark",
+    "variants": [
+      {
+        "id": "13:933",
+        "name": "Tone=Coral",
+        "children": []
+      },
+      {
+        "id": "13:937",
+        "name": "Tone=White",
+        "children": []
+      }
+    ]
+  }
+]

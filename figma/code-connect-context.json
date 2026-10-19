@@ -1,0 +1,3096 @@
+[
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "5:182",
+    "name": "KittyBank/Brand/Logo",
+    "properties": {
+      "Tone": {
+        "name": "Tone",
+        "type": "VARIANT",
+        "key": "Tone",
+        "variantOptions": [
+          "White",
+          "Primary",
+          "Coral"
+        ]
+      }
+    },
+    "descendants": {
+      "TEXT[kittybank]": {
+        "type": "TEXT",
+        "name": "kittybank",
+        "nodeId": "5:171",
+        "textContent": "kittybank",
+        "references": {},
+        "variants": [
+          "Tone=Primary",
+          "Tone=White",
+          "Tone=Coral"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "6:124",
+    "name": "KittyBank/Button",
+    "properties": {
+      "Icon#6:45": {
+        "name": "Icon",
+        "type": "INSTANCE_SWAP",
+        "key": "Icon#6:45"
+      },
+      "Show icon#6:46": {
+        "name": "Show icon",
+        "type": "BOOLEAN",
+        "key": "Show icon#6:46"
+      },
+      "Label#6:47": {
+        "name": "Label",
+        "type": "TEXT",
+        "key": "Label#6:47"
+      },
+      "Hierarchy": {
+        "name": "Hierarchy",
+        "type": "VARIANT",
+        "key": "Hierarchy",
+        "variantOptions": [
+          "Primary",
+          "Secondary",
+          "Ghost"
+        ]
+      },
+      "State": {
+        "name": "State",
+        "type": "VARIANT",
+        "key": "State",
+        "variantOptions": [
+          "Default",
+          "Pressed",
+          "Focus",
+          "Disabled",
+          "Loading"
+        ]
+      }
+    },
+    "descendants": {
+      "INSTANCE[KittyBank/Icon/ArrowRight]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/ArrowRight",
+        "mainComponentName": "KittyBank/Icon/ArrowRight",
+        "references": {
+          "visible": "Show icon#6:46",
+          "mainComponent": "Icon#6:45"
+        },
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "Hierarchy=Primary, State=Default",
+          "Hierarchy=Primary, State=Pressed",
+          "Hierarchy=Primary, State=Focus",
+          "Hierarchy=Primary, State=Disabled",
+          "Hierarchy=Secondary, State=Default",
+          "Hierarchy=Secondary, State=Pressed",
+          "Hierarchy=Secondary, State=Focus",
+          "Hierarchy=Secondary, State=Disabled",
+          "Hierarchy=Ghost, State=Default",
+          "Hierarchy=Ghost, State=Pressed",
+          "Hierarchy=Ghost, State=Focus",
+          "Hierarchy=Ghost, State=Disabled"
+        ]
+      },
+      "TEXT[Continuar]": {
+        "type": "TEXT",
+        "name": "Continuar",
+        "nodeId": "6:53",
+        "textContent": "Continuar",
+        "references": {
+          "characters": "Label#6:47"
+        },
+        "variants": [
+          "Hierarchy=Primary, State=Default",
+          "Hierarchy=Primary, State=Pressed",
+          "Hierarchy=Primary, State=Focus",
+          "Hierarchy=Primary, State=Disabled",
+          "Hierarchy=Secondary, State=Default",
+          "Hierarchy=Secondary, State=Pressed",
+          "Hierarchy=Secondary, State=Focus",
+          "Hierarchy=Secondary, State=Disabled",
+          "Hierarchy=Ghost, State=Default",
+          "Hierarchy=Ghost, State=Pressed",
+          "Hierarchy=Ghost, State=Focus",
+          "Hierarchy=Ghost, State=Disabled"
+        ]
+      },
+      "INSTANCE[KittyBank/Icon/Spinner]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Spinner",
+        "mainComponentName": "KittyBank/Icon/Spinner",
+        "references": {},
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "Hierarchy=Primary, State=Loading",
+          "Hierarchy=Secondary, State=Loading",
+          "Hierarchy=Ghost, State=Loading"
+        ]
+      },
+      "TEXT[Aguarde…]": {
+        "type": "TEXT",
+        "name": "Aguarde…",
+        "nodeId": "6:73",
+        "textContent": "Aguarde…",
+        "references": {},
+        "variants": [
+          "Hierarchy=Primary, State=Loading",
+          "Hierarchy=Secondary, State=Loading",
+          "Hierarchy=Ghost, State=Loading"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "6:219",
+    "name": "KittyBank/IconButton",
+    "properties": {
+      "Icon#6:52": {
+        "name": "Icon",
+        "type": "INSTANCE_SWAP",
+        "key": "Icon#6:52"
+      },
+      "State": {
+        "name": "State",
+        "type": "VARIANT",
+        "key": "State",
+        "variantOptions": [
+          "Default",
+          "Pressed",
+          "Focus",
+          "Disabled"
+        ]
+      }
+    },
+    "descendants": {
+      "INSTANCE[KittyBank/Icon/Help]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Help",
+        "mainComponentName": "KittyBank/Icon/Help",
+        "references": {
+          "mainComponent": "Icon#6:52"
+        },
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "State=Default",
+          "State=Pressed",
+          "State=Focus",
+          "State=Disabled"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "6:314",
+    "name": "KittyBank/Field/Text",
+    "properties": {
+      "Label#6:93": {
+        "name": "Label",
+        "type": "TEXT",
+        "key": "Label#6:93"
+      },
+      "Value#6:94": {
+        "name": "Value",
+        "type": "TEXT",
+        "key": "Value#6:94"
+      },
+      "Helper#6:95": {
+        "name": "Helper",
+        "type": "TEXT",
+        "key": "Helper#6:95"
+      },
+      "Show helper#6:96": {
+        "name": "Show helper",
+        "type": "BOOLEAN",
+        "key": "Show helper#6:96"
+      },
+      "State": {
+        "name": "State",
+        "type": "VARIANT",
+        "key": "State",
+        "variantOptions": [
+          "Empty",
+          "Filled",
+          "Focus",
+          "Error",
+          "Disabled"
+        ]
+      },
+      "Type": {
+        "name": "Type",
+        "type": "VARIANT",
+        "key": "Type",
+        "variantOptions": [
+          "Text",
+          "Password"
+        ]
+      }
+    },
+    "descendants": {
+      "TEXT[Nome completo]": {
+        "type": "TEXT",
+        "name": "Nome completo",
+        "nodeId": "6:250",
+        "textContent": "Nome completo",
+        "references": {
+          "characters": "Label#6:93"
+        },
+        "variants": [
+          "State=Empty, Type=Text",
+          "State=Filled, Type=Text",
+          "State=Focus, Type=Text",
+          "State=Error, Type=Text",
+          "State=Disabled, Type=Text"
+        ]
+      },
+      "TEXT[Digite aqui]": {
+        "type": "TEXT",
+        "name": "Digite aqui",
+        "nodeId": "6:252",
+        "textContent": "Digite aqui",
+        "references": {
+          "characters": "Value#6:94"
+        },
+        "variants": [
+          "State=Empty, Type=Text",
+          "State=Empty, Type=Password"
+        ]
+      },
+      "TEXT[Como aparece no seu documento.]": {
+        "type": "TEXT",
+        "name": "Como aparece no seu documento.",
+        "nodeId": "6:253",
+        "textContent": "Como aparece no seu documento.",
+        "references": {
+          "visible": "Show helper#6:96",
+          "characters": "Helper#6:95"
+        },
+        "variants": [
+          "State=Empty, Type=Text",
+          "State=Filled, Type=Text",
+          "State=Focus, Type=Text",
+          "State=Disabled, Type=Text"
+        ]
+      },
+      "TEXT[Senha]": {
+        "type": "TEXT",
+        "name": "Senha",
+        "nodeId": "6:255",
+        "textContent": "Senha",
+        "references": {},
+        "variants": [
+          "State=Empty, Type=Password",
+          "State=Filled, Type=Password",
+          "State=Focus, Type=Password",
+          "State=Error, Type=Password",
+          "State=Disabled, Type=Password"
+        ]
+      },
+      "INSTANCE[KittyBank/Icon/Eye]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Eye",
+        "mainComponentName": "KittyBank/Icon/Eye",
+        "references": {},
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "State=Empty, Type=Password",
+          "State=Filled, Type=Password",
+          "State=Focus, Type=Password",
+          "State=Error, Type=Password",
+          "State=Disabled, Type=Password"
+        ]
+      },
+      "TEXT[Como aparece no seu documento.]eyJ2aXNpYmxlIjoiU2hvdyBoZWxwZXIjNjo5NiJ9": {
+        "type": "TEXT",
+        "name": "Como aparece no seu documento.",
+        "nodeId": "6:261",
+        "textContent": "Use uma senha exclusiva para sua conta.",
+        "references": {
+          "visible": "Show helper#6:96"
+        },
+        "variants": [
+          "State=Empty, Type=Password",
+          "State=Filled, Type=Password",
+          "State=Focus, Type=Password",
+          "State=Disabled, Type=Password"
+        ]
+      },
+      "TEXT[Ana Oliveira]": {
+        "type": "TEXT",
+        "name": "Ana Oliveira",
+        "nodeId": "6:265",
+        "textContent": "Ana Oliveira",
+        "references": {},
+        "variants": [
+          "State=Filled, Type=Text",
+          "State=Focus, Type=Text",
+          "State=Error, Type=Text",
+          "State=Disabled, Type=Text"
+        ]
+      },
+      "TEXT[••••••••••]": {
+        "type": "TEXT",
+        "name": "••••••••••",
+        "nodeId": "6:270",
+        "textContent": "••••••••••",
+        "references": {},
+        "variants": [
+          "State=Filled, Type=Password",
+          "State=Focus, Type=Password",
+          "State=Error, Type=Password",
+          "State=Disabled, Type=Password"
+        ]
+      },
+      "TEXT[Revise este campo para continuar]": {
+        "type": "TEXT",
+        "name": "Revise este campo para continuar",
+        "nodeId": "6:292",
+        "textContent": "Revise este campo para continuar.",
+        "references": {
+          "visible": "Show helper#6:96"
+        },
+        "variants": [
+          "State=Error, Type=Text",
+          "State=Error, Type=Password"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "6:445",
+    "name": "KittyBank/Field/Select",
+    "properties": {
+      "Label#6:107": {
+        "name": "Label",
+        "type": "TEXT",
+        "key": "Label#6:107"
+      },
+      "Value#6:108": {
+        "name": "Value",
+        "type": "TEXT",
+        "key": "Value#6:108"
+      },
+      "State": {
+        "name": "State",
+        "type": "VARIANT",
+        "key": "State",
+        "variantOptions": [
+          "Empty",
+          "Filled",
+          "Open",
+          "Error",
+          "Disabled"
+        ]
+      }
+    },
+    "descendants": {
+      "TEXT[Tipo de documento]": {
+        "type": "TEXT",
+        "name": "Tipo de documento",
+        "nodeId": "6:406",
+        "textContent": "Tipo de documento",
+        "references": {
+          "characters": "Label#6:107"
+        },
+        "variants": [
+          "State=Empty",
+          "State=Filled",
+          "State=Open",
+          "State=Error",
+          "State=Disabled"
+        ]
+      },
+      "TEXT[Selecione uma opção]": {
+        "type": "TEXT",
+        "name": "Selecione uma opção",
+        "nodeId": "6:408",
+        "textContent": "Selecione uma opção",
+        "references": {
+          "characters": "Value#6:108"
+        },
+        "variants": [
+          "State=Empty"
+        ]
+      },
+      "INSTANCE[KittyBank/Icon/ChevronDown]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/ChevronDown",
+        "mainComponentName": "KittyBank/Icon/ChevronDown",
+        "references": {},
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "State=Empty",
+          "State=Filled",
+          "State=Open",
+          "State=Error",
+          "State=Disabled"
+        ]
+      },
+      "TEXT[RG]": {
+        "type": "TEXT",
+        "name": "RG",
+        "nodeId": "6:415",
+        "textContent": "RG",
+        "references": {},
+        "variants": [
+          "State=Filled",
+          "State=Open",
+          "State=Open",
+          "State=Error",
+          "State=Disabled"
+        ]
+      },
+      "TEXT[CNH]": {
+        "type": "TEXT",
+        "name": "CNH",
+        "nodeId": "6:428",
+        "textContent": "CNH",
+        "references": {},
+        "variants": [
+          "State=Open"
+        ]
+      },
+      "TEXT[RNE]": {
+        "type": "TEXT",
+        "name": "RNE",
+        "nodeId": "6:429",
+        "textContent": "RNE",
+        "references": {},
+        "variants": [
+          "State=Open"
+        ]
+      },
+      "TEXT[Escolha um documento.]": {
+        "type": "TEXT",
+        "name": "Escolha um documento.",
+        "nodeId": "6:437",
+        "textContent": "Escolha um documento.",
+        "references": {},
+        "variants": [
+          "State=Error"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "6:514",
+    "name": "KittyBank/Selection/Checkbox",
+    "properties": {
+      "Label#6:113": {
+        "name": "Label",
+        "type": "TEXT",
+        "key": "Label#6:113"
+      },
+      "State": {
+        "name": "State",
+        "type": "VARIANT",
+        "key": "State",
+        "variantOptions": [
+          "Unchecked",
+          "Checked",
+          "Error",
+          "Disabled"
+        ]
+      }
+    },
+    "descendants": {
+      "TEXT[Li e aceito os termos de uso]": {
+        "type": "TEXT",
+        "name": "Li e aceito os termos de uso",
+        "nodeId": "6:501",
+        "textContent": "Li e aceito os termos de uso",
+        "references": {
+          "characters": "Label#6:113"
+        },
+        "variants": [
+          "State=Unchecked",
+          "State=Checked",
+          "State=Error",
+          "State=Disabled"
+        ]
+      },
+      "INSTANCE[KittyBank/Icon/Check]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Check",
+        "mainComponentName": "KittyBank/Icon/Check",
+        "references": {},
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "State=Checked"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "6:549",
+    "name": "KittyBank/Selection/Switch",
+    "properties": {
+      "State": {
+        "name": "State",
+        "type": "VARIANT",
+        "key": "State",
+        "variantOptions": [
+          "Off",
+          "On",
+          "Disabled"
+        ]
+      }
+    },
+    "descendants": {}
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "7:250",
+    "name": "KittyBank/Onboarding/ChoiceCard",
+    "properties": {
+      "Icon#7:9": {
+        "name": "Icon",
+        "type": "INSTANCE_SWAP",
+        "key": "Icon#7:9"
+      },
+      "Title#7:10": {
+        "name": "Title",
+        "type": "TEXT",
+        "key": "Title#7:10"
+      },
+      "Description#7:11": {
+        "name": "Description",
+        "type": "TEXT",
+        "key": "Description#7:11"
+      },
+      "State": {
+        "name": "State",
+        "type": "VARIANT",
+        "key": "State",
+        "variantOptions": [
+          "Default",
+          "Selected",
+          "Disabled"
+        ]
+      }
+    },
+    "descendants": {
+      "INSTANCE[KittyBank/Icon/Card]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Card",
+        "mainComponentName": "KittyBank/Icon/Card",
+        "references": {
+          "mainComponent": "Icon#7:9"
+        },
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "State=Default",
+          "State=Selected",
+          "State=Disabled"
+        ]
+      },
+      "TEXT[Conta para você]": {
+        "type": "TEXT",
+        "name": "Conta para você",
+        "nodeId": "7:233",
+        "textContent": "Conta para você",
+        "references": {
+          "characters": "Title#7:10"
+        },
+        "variants": [
+          "State=Default",
+          "State=Selected",
+          "State=Disabled"
+        ]
+      },
+      "TEXT[Pix, cartão e seu dinheiro em um]": {
+        "type": "TEXT",
+        "name": "Pix, cartão e seu dinheiro em um",
+        "nodeId": "7:234",
+        "textContent": "Pix, cartão e seu dinheiro em um só lugar.",
+        "references": {
+          "characters": "Description#7:11"
+        },
+        "variants": [
+          "State=Default",
+          "State=Selected",
+          "State=Disabled"
+        ]
+      },
+      "TEXT[Selecionado]": {
+        "type": "TEXT",
+        "name": "Selecionado",
+        "nodeId": "7:242",
+        "textContent": "Selecionado",
+        "references": {},
+        "variants": [
+          "State=Selected"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "7:289",
+    "name": "KittyBank/Security/CodeCell",
+    "properties": {
+      "Digit#7:16": {
+        "name": "Digit",
+        "type": "TEXT",
+        "key": "Digit#7:16"
+      },
+      "State": {
+        "name": "State",
+        "type": "VARIANT",
+        "key": "State",
+        "variantOptions": [
+          "Empty",
+          "Focus",
+          "Filled",
+          "Error"
+        ]
+      }
+    },
+    "descendants": {
+      "TEXT[—]": {
+        "type": "TEXT",
+        "name": "—",
+        "nodeId": "7:282",
+        "textContent": "—",
+        "references": {
+          "characters": "Digit#7:16"
+        },
+        "variants": [
+          "State=Empty"
+        ]
+      },
+      "TEXT[|]": {
+        "type": "TEXT",
+        "name": "|",
+        "nodeId": "7:284",
+        "textContent": "|",
+        "references": {},
+        "variants": [
+          "State=Focus"
+        ]
+      },
+      "TEXT[2]": {
+        "type": "TEXT",
+        "name": "2",
+        "nodeId": "7:286",
+        "textContent": "2",
+        "references": {},
+        "variants": [
+          "State=Filled"
+        ]
+      },
+      "TEXT[—]e30=": {
+        "type": "TEXT",
+        "name": "—",
+        "nodeId": "7:288",
+        "textContent": "—",
+        "references": {},
+        "variants": [
+          "State=Error"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "7:359",
+    "name": "KittyBank/Security/OTP",
+    "properties": {
+      "Label#7:20": {
+        "name": "Label",
+        "type": "TEXT",
+        "key": "Label#7:20"
+      },
+      "State": {
+        "name": "State",
+        "type": "VARIANT",
+        "key": "State",
+        "variantOptions": [
+          "Empty",
+          "Filled",
+          "Error"
+        ]
+      }
+    },
+    "descendants": {
+      "TEXT[Código de segurança]": {
+        "type": "TEXT",
+        "name": "Código de segurança",
+        "nodeId": "7:309",
+        "textContent": "Código de segurança",
+        "references": {
+          "characters": "Label#7:20"
+        },
+        "variants": [
+          "State=Empty",
+          "State=Filled",
+          "State=Error"
+        ]
+      },
+      "INSTANCE[KittyBank/Security/CodeCell]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Security/CodeCell",
+        "mainComponentName": "KittyBank/Security/CodeCell",
+        "references": {},
+        "properties": {
+          "Digit#7:16": {
+            "name": "Digit",
+            "type": "TEXT",
+            "key": "Digit#7:16"
+          },
+          "State": {
+            "name": "State",
+            "type": "VARIANT",
+            "key": "State",
+            "variantOptions": [
+              "Empty",
+              "Focus",
+              "Filled",
+              "Error"
+            ]
+          }
+        },
+        "descendants": {
+          "TEXT[—]": {
+            "type": "TEXT",
+            "name": "—",
+            "nodeId": "7:282",
+            "textContent": "—",
+            "references": {
+              "characters": "Digit#7:16"
+            },
+            "variants": [
+              "State=Empty",
+              "State=Empty",
+              "State=Empty",
+              "State=Empty",
+              "State=Empty",
+              "State=Empty",
+              "State=Empty",
+              "State=Empty",
+              "State=Empty",
+              "State=Empty",
+              "State=Empty",
+              "State=Empty",
+              "State=Empty",
+              "State=Empty",
+              "State=Empty",
+              "State=Empty",
+              "State=Empty",
+              "State=Empty"
+            ]
+          },
+          "TEXT[|]": {
+            "type": "TEXT",
+            "name": "|",
+            "nodeId": "7:284",
+            "textContent": "|",
+            "references": {},
+            "variants": [
+              "State=Focus",
+              "State=Focus",
+              "State=Focus",
+              "State=Focus",
+              "State=Focus",
+              "State=Focus",
+              "State=Focus",
+              "State=Focus",
+              "State=Focus",
+              "State=Focus",
+              "State=Focus",
+              "State=Focus",
+              "State=Focus",
+              "State=Focus",
+              "State=Focus",
+              "State=Focus",
+              "State=Focus",
+              "State=Focus"
+            ]
+          },
+          "TEXT[2]": {
+            "type": "TEXT",
+            "name": "2",
+            "nodeId": "7:286",
+            "textContent": "2",
+            "references": {},
+            "variants": [
+              "State=Filled",
+              "State=Filled",
+              "State=Filled",
+              "State=Filled",
+              "State=Filled",
+              "State=Filled",
+              "State=Filled",
+              "State=Filled",
+              "State=Filled",
+              "State=Filled",
+              "State=Filled",
+              "State=Filled",
+              "State=Filled",
+              "State=Filled",
+              "State=Filled",
+              "State=Filled",
+              "State=Filled",
+              "State=Filled"
+            ]
+          },
+          "TEXT[—]e30=": {
+            "type": "TEXT",
+            "name": "—",
+            "nodeId": "7:288",
+            "textContent": "—",
+            "references": {},
+            "variants": [
+              "State=Error",
+              "State=Error",
+              "State=Error",
+              "State=Error",
+              "State=Error",
+              "State=Error",
+              "State=Error",
+              "State=Error",
+              "State=Error",
+              "State=Error",
+              "State=Error",
+              "State=Error",
+              "State=Error",
+              "State=Error",
+              "State=Error",
+              "State=Error",
+              "State=Error",
+              "State=Error"
+            ]
+          }
+        },
+        "variants": [
+          "State=Empty",
+          "State=Empty",
+          "State=Empty",
+          "State=Empty",
+          "State=Empty",
+          "State=Empty",
+          "State=Filled",
+          "State=Filled",
+          "State=Filled",
+          "State=Filled",
+          "State=Filled",
+          "State=Filled",
+          "State=Error",
+          "State=Error",
+          "State=Error",
+          "State=Error",
+          "State=Error",
+          "State=Error"
+        ]
+      },
+      "TEXT[Enviado para ••••••••42]": {
+        "type": "TEXT",
+        "name": "Enviado para ••••••••42",
+        "nodeId": "7:323",
+        "textContent": "Enviado para ••••••••42",
+        "references": {},
+        "variants": [
+          "State=Empty",
+          "State=Filled"
+        ]
+      },
+      "TEXT[Reenviar código em 00:30]": {
+        "type": "TEXT",
+        "name": "Reenviar código em 00:30",
+        "nodeId": "7:324",
+        "textContent": "Reenviar código em 00:30",
+        "references": {},
+        "variants": [
+          "State=Empty",
+          "State=Filled",
+          "State=Error"
+        ]
+      },
+      "TEXT[Código inválido. Confira e tente]": {
+        "type": "TEXT",
+        "name": "Código inválido. Confira e tente",
+        "nodeId": "7:357",
+        "textContent": "Código inválido. Confira e tente novamente.",
+        "references": {},
+        "variants": [
+          "State=Error"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "7:437",
+    "name": "KittyBank/Onboarding/StepProgress",
+    "properties": {
+      "Label#7:24": {
+        "name": "Label",
+        "type": "TEXT",
+        "key": "Label#7:24"
+      },
+      "Step": {
+        "name": "Step",
+        "type": "VARIANT",
+        "key": "Step",
+        "variantOptions": [
+          "1",
+          "2",
+          "3"
+        ]
+      }
+    },
+    "descendants": {
+      "TEXT[Etapa 1 de 3]": {
+        "type": "TEXT",
+        "name": "Etapa 1 de 3",
+        "nodeId": "7:420",
+        "textContent": "Etapa 1 de 3",
+        "references": {},
+        "variants": [
+          "Step=1"
+        ]
+      },
+      "TEXT[Etapa 2 de 3]": {
+        "type": "TEXT",
+        "name": "Etapa 2 de 3",
+        "nodeId": "7:426",
+        "textContent": "Etapa 2 de 3",
+        "references": {},
+        "variants": [
+          "Step=2"
+        ]
+      },
+      "TEXT[Etapa 3 de 3]": {
+        "type": "TEXT",
+        "name": "Etapa 3 de 3",
+        "nodeId": "7:432",
+        "textContent": "Etapa 3 de 3",
+        "references": {},
+        "variants": [
+          "Step=3"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "7:488",
+    "name": "KittyBank/Security/DocumentUpload",
+    "properties": {
+      "Title#7:33": {
+        "name": "Title",
+        "type": "TEXT",
+        "key": "Title#7:33"
+      },
+      "Description#7:34": {
+        "name": "Description",
+        "type": "TEXT",
+        "key": "Description#7:34"
+      },
+      "State": {
+        "name": "State",
+        "type": "VARIANT",
+        "key": "State",
+        "variantOptions": [
+          "Empty",
+          "Uploading",
+          "Success",
+          "Error"
+        ]
+      }
+    },
+    "descendants": {
+      "INSTANCE[KittyBank/Icon/Upload]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Upload",
+        "mainComponentName": "KittyBank/Icon/Upload",
+        "references": {},
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "State=Empty"
+        ]
+      },
+      "TEXT[Envie seu documento]": {
+        "type": "TEXT",
+        "name": "Envie seu documento",
+        "nodeId": "7:468",
+        "textContent": "Envie seu documento",
+        "references": {
+          "characters": "Title#7:33"
+        },
+        "variants": [
+          "State=Empty"
+        ]
+      },
+      "TEXT[Frente legível, sem reflexos ou ]": {
+        "type": "TEXT",
+        "name": "Frente legível, sem reflexos ou ",
+        "nodeId": "7:469",
+        "textContent": "Frente legível, sem reflexos ou cortes.",
+        "references": {
+          "characters": "Description#7:34"
+        },
+        "variants": [
+          "State=Empty"
+        ]
+      },
+      "INSTANCE[KittyBank/Icon/Spinner]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Spinner",
+        "mainComponentName": "KittyBank/Icon/Spinner",
+        "references": {},
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "State=Uploading"
+        ]
+      },
+      "TEXT[Enviando documento…]": {
+        "type": "TEXT",
+        "name": "Enviando documento…",
+        "nodeId": "7:474",
+        "textContent": "Enviando documento…",
+        "references": {},
+        "variants": [
+          "State=Uploading"
+        ]
+      },
+      "TEXT[Aguarde a confirmação do envio.]": {
+        "type": "TEXT",
+        "name": "Aguarde a confirmação do envio.",
+        "nodeId": "7:475",
+        "textContent": "Aguarde a confirmação do envio.",
+        "references": {},
+        "variants": [
+          "State=Uploading"
+        ]
+      },
+      "INSTANCE[KittyBank/Icon/Check]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Check",
+        "mainComponentName": "KittyBank/Icon/Check",
+        "references": {},
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "State=Success"
+        ]
+      },
+      "TEXT[Documento recebido]": {
+        "type": "TEXT",
+        "name": "Documento recebido",
+        "nodeId": "7:480",
+        "textContent": "Documento recebido",
+        "references": {},
+        "variants": [
+          "State=Success"
+        ]
+      },
+      "TEXT[Você já pode continuar.]": {
+        "type": "TEXT",
+        "name": "Você já pode continuar.",
+        "nodeId": "7:481",
+        "textContent": "Você já pode continuar.",
+        "references": {},
+        "variants": [
+          "State=Success"
+        ]
+      },
+      "INSTANCE[KittyBank/Icon/Warning]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Warning",
+        "mainComponentName": "KittyBank/Icon/Warning",
+        "references": {},
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "State=Error"
+        ]
+      },
+      "TEXT[Não foi possível enviar]": {
+        "type": "TEXT",
+        "name": "Não foi possível enviar",
+        "nodeId": "7:486",
+        "textContent": "Não foi possível enviar",
+        "references": {},
+        "variants": [
+          "State=Error"
+        ]
+      },
+      "TEXT[Confira a conexão e tente novame]": {
+        "type": "TEXT",
+        "name": "Confira a conexão e tente novame",
+        "nodeId": "7:487",
+        "textContent": "Confira a conexão e tente novamente.",
+        "references": {},
+        "variants": [
+          "State=Error"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "7:548",
+    "name": "KittyBank/Security/Biometric",
+    "properties": {
+      "Title#7:43": {
+        "name": "Title",
+        "type": "TEXT",
+        "key": "Title#7:43"
+      },
+      "Instructions#7:44": {
+        "name": "Instructions",
+        "type": "TEXT",
+        "key": "Instructions#7:44"
+      },
+      "State": {
+        "name": "State",
+        "type": "VARIANT",
+        "key": "State",
+        "variantOptions": [
+          "Ready",
+          "Scanning",
+          "Success",
+          "Error"
+        ]
+      }
+    },
+    "descendants": {
+      "INSTANCE[KittyBank/Icon/Camera]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Camera",
+        "mainComponentName": "KittyBank/Icon/Camera",
+        "references": {},
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "State=Ready",
+          "State=Scanning"
+        ]
+      },
+      "TEXT[Vamos confirmar que é você]": {
+        "type": "TEXT",
+        "name": "Vamos confirmar que é você",
+        "nodeId": "7:528",
+        "textContent": "Vamos confirmar que é você",
+        "references": {
+          "characters": "Title#7:43"
+        },
+        "variants": [
+          "State=Ready"
+        ]
+      },
+      "TEXT[Posicione o rosto no centro e si]": {
+        "type": "TEXT",
+        "name": "Posicione o rosto no centro e si",
+        "nodeId": "7:529",
+        "textContent": "Posicione o rosto no centro e siga as instruções.",
+        "references": {
+          "characters": "Instructions#7:44"
+        },
+        "variants": [
+          "State=Ready",
+          "State=Scanning",
+          "State=Success"
+        ]
+      },
+      "TEXT[Verificando sua identidade]": {
+        "type": "TEXT",
+        "name": "Verificando sua identidade",
+        "nodeId": "7:534",
+        "textContent": "Verificando sua identidade",
+        "references": {},
+        "variants": [
+          "State=Scanning"
+        ]
+      },
+      "INSTANCE[KittyBank/Icon/Check]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Check",
+        "mainComponentName": "KittyBank/Icon/Check",
+        "references": {},
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "State=Success"
+        ]
+      },
+      "TEXT[Identidade confirmada]": {
+        "type": "TEXT",
+        "name": "Identidade confirmada",
+        "nodeId": "7:540",
+        "textContent": "Identidade confirmada",
+        "references": {},
+        "variants": [
+          "State=Success"
+        ]
+      },
+      "INSTANCE[KittyBank/Icon/Warning]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Warning",
+        "mainComponentName": "KittyBank/Icon/Warning",
+        "references": {},
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "State=Error"
+        ]
+      },
+      "TEXT[Vamos tentar mais uma vez]": {
+        "type": "TEXT",
+        "name": "Vamos tentar mais uma vez",
+        "nodeId": "7:546",
+        "textContent": "Vamos tentar mais uma vez",
+        "references": {},
+        "variants": [
+          "State=Error"
+        ]
+      },
+      "TEXT[Procure um local iluminado e ret]": {
+        "type": "TEXT",
+        "name": "Procure um local iluminado e ret",
+        "nodeId": "7:547",
+        "textContent": "Procure um local iluminado e retire acessórios.",
+        "references": {},
+        "variants": [
+          "State=Error"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "7:618",
+    "name": "KittyBank/Security/PasswordRules",
+    "properties": {
+      "State": {
+        "name": "State",
+        "type": "VARIANT",
+        "key": "State",
+        "variantOptions": [
+          "Pending",
+          "Valid"
+        ]
+      }
+    },
+    "descendants": {
+      "TEXT[Sua senha precisa ter]": {
+        "type": "TEXT",
+        "name": "Sua senha precisa ter",
+        "nodeId": "7:585",
+        "textContent": "Sua senha precisa ter",
+        "references": {},
+        "variants": [
+          "State=Pending",
+          "State=Valid"
+        ]
+      },
+      "INSTANCE[KittyBank/Icon/Lock]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Lock",
+        "mainComponentName": "KittyBank/Icon/Lock",
+        "references": {},
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "State=Pending",
+          "State=Pending",
+          "State=Pending"
+        ]
+      },
+      "TEXT[Pelo menos 8 caracteres]": {
+        "type": "TEXT",
+        "name": "Pelo menos 8 caracteres",
+        "nodeId": "7:590",
+        "textContent": "Pelo menos 8 caracteres",
+        "references": {},
+        "variants": [
+          "State=Pending",
+          "State=Valid"
+        ]
+      },
+      "TEXT[Uma letra e um número]": {
+        "type": "TEXT",
+        "name": "Uma letra e um número",
+        "nodeId": "7:595",
+        "textContent": "Uma letra e um número",
+        "references": {},
+        "variants": [
+          "State=Pending",
+          "State=Valid"
+        ]
+      },
+      "TEXT[Um caractere especial]": {
+        "type": "TEXT",
+        "name": "Um caractere especial",
+        "nodeId": "7:600",
+        "textContent": "Um caractere especial",
+        "references": {},
+        "variants": [
+          "State=Pending",
+          "State=Valid"
+        ]
+      },
+      "INSTANCE[KittyBank/Icon/Check]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Check",
+        "mainComponentName": "KittyBank/Icon/Check",
+        "references": {},
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "State=Valid",
+          "State=Valid",
+          "State=Valid"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "7:692",
+    "name": "KittyBank/Onboarding/ActionFooter",
+    "properties": {
+      "State": {
+        "name": "State",
+        "type": "VARIANT",
+        "key": "State",
+        "variantOptions": [
+          "Incomplete",
+          "Ready",
+          "Submitting"
+        ]
+      }
+    },
+    "descendants": {
+      "INSTANCE[KittyBank/Onboarding/StepProgress]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Onboarding/StepProgress",
+        "mainComponentName": "KittyBank/Onboarding/StepProgress",
+        "references": {},
+        "properties": {
+          "Label#7:24": {
+            "name": "Label",
+            "type": "TEXT",
+            "key": "Label#7:24"
+          },
+          "Step": {
+            "name": "Step",
+            "type": "VARIANT",
+            "key": "Step",
+            "variantOptions": [
+              "1"
+            ]
+          }
+        },
+        "descendants": {
+          "TEXT[Etapa 1 de 3]": {
+            "type": "TEXT",
+            "name": "Etapa 1 de 3",
+            "nodeId": "7:420",
+            "textContent": "Etapa 1 de 3",
+            "references": {},
+            "variants": [
+              "Step=1",
+              "Step=1",
+              "Step=1"
+            ]
+          }
+        },
+        "variants": [
+          "State=Incomplete",
+          "State=Ready",
+          "State=Submitting"
+        ]
+      },
+      "INSTANCE[KittyBank/Button]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Button",
+        "mainComponentName": "KittyBank/Button",
+        "references": {},
+        "properties": {
+          "Icon#6:45": {
+            "name": "Icon",
+            "type": "INSTANCE_SWAP",
+            "key": "Icon#6:45"
+          },
+          "Show icon#6:46": {
+            "name": "Show icon",
+            "type": "BOOLEAN",
+            "key": "Show icon#6:46"
+          },
+          "Label#6:47": {
+            "name": "Label",
+            "type": "TEXT",
+            "key": "Label#6:47"
+          },
+          "Hierarchy": {
+            "name": "Hierarchy",
+            "type": "VARIANT",
+            "key": "Hierarchy",
+            "variantOptions": [
+              "Primary"
+            ]
+          },
+          "State": {
+            "name": "State",
+            "type": "VARIANT",
+            "key": "State",
+            "variantOptions": [
+              "Default",
+              "Disabled",
+              "Loading"
+            ]
+          }
+        },
+        "descendants": {
+          "INSTANCE[KittyBank/Icon/ArrowRight]": {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/ArrowRight",
+            "mainComponentName": "KittyBank/Icon/ArrowRight",
+            "references": {
+              "visible": "Show icon#6:46",
+              "mainComponent": "Icon#6:45"
+            },
+            "properties": {},
+            "descendants": {},
+            "variants": [
+              "Hierarchy=Primary, State=Default",
+              "Hierarchy=Primary, State=Disabled",
+              "Hierarchy=Primary, State=Default",
+              "Hierarchy=Primary, State=Disabled",
+              "Hierarchy=Primary, State=Default",
+              "Hierarchy=Primary, State=Disabled"
+            ]
+          },
+          "TEXT[Continuar]": {
+            "type": "TEXT",
+            "name": "Continuar",
+            "nodeId": "6:53",
+            "textContent": "Continuar",
+            "references": {
+              "characters": "Label#6:47"
+            },
+            "variants": [
+              "Hierarchy=Primary, State=Default",
+              "Hierarchy=Primary, State=Disabled",
+              "Hierarchy=Primary, State=Default",
+              "Hierarchy=Primary, State=Disabled",
+              "Hierarchy=Primary, State=Default",
+              "Hierarchy=Primary, State=Disabled"
+            ]
+          },
+          "INSTANCE[KittyBank/Icon/Spinner]": {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Spinner",
+            "mainComponentName": "KittyBank/Icon/Spinner",
+            "references": {},
+            "properties": {},
+            "descendants": {},
+            "variants": [
+              "Hierarchy=Primary, State=Loading",
+              "Hierarchy=Primary, State=Loading",
+              "Hierarchy=Primary, State=Loading"
+            ]
+          },
+          "TEXT[Aguarde…]": {
+            "type": "TEXT",
+            "name": "Aguarde…",
+            "nodeId": "6:73",
+            "textContent": "Aguarde…",
+            "references": {},
+            "variants": [
+              "Hierarchy=Primary, State=Loading",
+              "Hierarchy=Primary, State=Loading",
+              "Hierarchy=Primary, State=Loading"
+            ]
+          }
+        },
+        "variants": [
+          "State=Incomplete",
+          "State=Ready",
+          "State=Submitting"
+        ]
+      },
+      "TEXT[Salvar e continuar depois]": {
+        "type": "TEXT",
+        "name": "Salvar e continuar depois",
+        "nodeId": "7:669",
+        "textContent": "Salvar e continuar depois",
+        "references": {},
+        "variants": [
+          "State=Incomplete",
+          "State=Ready",
+          "State=Submitting"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "11:533",
+    "name": "KittyBank/Navigation/Header",
+    "properties": {
+      "Title#11:1": {
+        "name": "Title",
+        "type": "TEXT",
+        "key": "Title#11:1"
+      },
+      "Context": {
+        "name": "Context",
+        "type": "VARIANT",
+        "key": "Context",
+        "variantOptions": [
+          "Onboarding",
+          "Account",
+          "Overlay"
+        ]
+      }
+    },
+    "descendants": {
+      "INSTANCE[KittyBank/IconButton]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/IconButton",
+        "mainComponentName": "KittyBank/IconButton",
+        "references": {},
+        "properties": {
+          "Icon#6:52": {
+            "name": "Icon",
+            "type": "INSTANCE_SWAP",
+            "key": "Icon#6:52"
+          },
+          "State": {
+            "name": "State",
+            "type": "VARIANT",
+            "key": "State",
+            "variantOptions": [
+              "Default"
+            ]
+          }
+        },
+        "descendants": {
+          "INSTANCE[KittyBank/Icon/Help]": {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Help",
+            "mainComponentName": "KittyBank/Icon/Help",
+            "references": {
+              "mainComponent": "Icon#6:52"
+            },
+            "properties": {},
+            "descendants": {},
+            "variants": [
+              "State=Default",
+              "State=Default",
+              "State=Default",
+              "State=Default",
+              "State=Default"
+            ]
+          }
+        },
+        "variants": [
+          "Context=Onboarding",
+          "Context=Onboarding",
+          "Context=Account",
+          "Context=Account",
+          "Context=Overlay"
+        ]
+      },
+      "TEXT[Abra sua conta]": {
+        "type": "TEXT",
+        "name": "Abra sua conta",
+        "nodeId": "11:510",
+        "textContent": "Abra sua conta",
+        "references": {
+          "characters": "Title#11:1"
+        },
+        "variants": [
+          "Context=Onboarding"
+        ]
+      },
+      "TEXT[Minha conta]": {
+        "type": "TEXT",
+        "name": "Minha conta",
+        "nodeId": "11:522",
+        "textContent": "Minha conta",
+        "references": {},
+        "variants": [
+          "Context=Account"
+        ]
+      },
+      "TEXT[Como podemos ajudar?]": {
+        "type": "TEXT",
+        "name": "Como podemos ajudar?",
+        "nodeId": "11:532",
+        "textContent": "Como podemos ajudar?",
+        "references": {},
+        "variants": [
+          "Context=Overlay"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "11:582",
+    "name": "KittyBank/Navigation/TabItem",
+    "properties": {
+      "Icon#11:8": {
+        "name": "Icon",
+        "type": "INSTANCE_SWAP",
+        "key": "Icon#11:8"
+      },
+      "Label#11:9": {
+        "name": "Label",
+        "type": "TEXT",
+        "key": "Label#11:9"
+      },
+      "State": {
+        "name": "State",
+        "type": "VARIANT",
+        "key": "State",
+        "variantOptions": [
+          "Default",
+          "Selected"
+        ]
+      }
+    },
+    "descendants": {
+      "INSTANCE[KittyBank/Icon/Home]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Home",
+        "mainComponentName": "KittyBank/Icon/Home",
+        "references": {
+          "mainComponent": "Icon#11:8"
+        },
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "State=Default",
+          "State=Selected"
+        ]
+      },
+      "TEXT[Início]": {
+        "type": "TEXT",
+        "name": "Início",
+        "nodeId": "11:576",
+        "textContent": "Início",
+        "references": {
+          "characters": "Label#11:9"
+        },
+        "variants": [
+          "State=Default",
+          "State=Selected"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "11:699",
+    "name": "KittyBank/Navigation/BottomBar",
+    "properties": {
+      "Active": {
+        "name": "Active",
+        "type": "VARIANT",
+        "key": "Active",
+        "variantOptions": [
+          "Home",
+          "Cards",
+          "Activity",
+          "Profile"
+        ]
+      }
+    },
+    "descendants": {
+      "INSTANCE[KittyBank/Navigation/TabItem]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Navigation/TabItem",
+        "mainComponentName": "KittyBank/Navigation/TabItem",
+        "references": {},
+        "properties": {
+          "Icon#11:8": {
+            "name": "Icon",
+            "type": "INSTANCE_SWAP",
+            "key": "Icon#11:8"
+          },
+          "Label#11:9": {
+            "name": "Label",
+            "type": "TEXT",
+            "key": "Label#11:9"
+          },
+          "State": {
+            "name": "State",
+            "type": "VARIANT",
+            "key": "State",
+            "variantOptions": [
+              "Default",
+              "Selected"
+            ]
+          }
+        },
+        "descendants": {
+          "INSTANCE[KittyBank/Icon/Home]": {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Home",
+            "mainComponentName": "KittyBank/Icon/Home",
+            "references": {
+              "mainComponent": "Icon#11:8"
+            },
+            "properties": {},
+            "descendants": {},
+            "variants": [
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected"
+            ]
+          },
+          "TEXT[Início]": {
+            "type": "TEXT",
+            "name": "Início",
+            "nodeId": "11:576",
+            "textContent": "Início",
+            "references": {
+              "characters": "Label#11:9"
+            },
+            "variants": [
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected",
+              "State=Default",
+              "State=Selected"
+            ]
+          }
+        },
+        "variants": [
+          "Active=Home",
+          "Active=Home",
+          "Active=Home",
+          "Active=Home",
+          "Active=Cards",
+          "Active=Cards",
+          "Active=Cards",
+          "Active=Cards",
+          "Active=Activity",
+          "Active=Activity",
+          "Active=Activity",
+          "Active=Activity",
+          "Active=Profile",
+          "Active=Profile",
+          "Active=Profile",
+          "Active=Profile"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "11:822",
+    "name": "KittyBank/Banking/Balance",
+    "properties": {
+      "Amount#11:11": {
+        "name": "Amount",
+        "type": "TEXT",
+        "key": "Amount#11:11"
+      },
+      "State": {
+        "name": "State",
+        "type": "VARIANT",
+        "key": "State",
+        "variantOptions": [
+          "Visible",
+          "Hidden",
+          "Loading"
+        ]
+      }
+    },
+    "descendants": {
+      "TEXT[Saldo disponível]": {
+        "type": "TEXT",
+        "name": "Saldo disponível",
+        "nodeId": "11:800",
+        "textContent": "Saldo disponível",
+        "references": {},
+        "variants": [
+          "State=Visible",
+          "State=Hidden",
+          "State=Loading"
+        ]
+      },
+      "INSTANCE[KittyBank/Icon/Eye]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Eye",
+        "mainComponentName": "KittyBank/Icon/Eye",
+        "references": {},
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "State=Visible",
+          "State=Hidden",
+          "State=Loading"
+        ]
+      },
+      "TEXT[R$ 5.634,12]": {
+        "type": "TEXT",
+        "name": "R$ 5.634,12",
+        "nodeId": "11:804",
+        "textContent": "R$ 5.634,12",
+        "references": {
+          "characters": "Amount#11:11"
+        },
+        "variants": [
+          "State=Visible"
+        ]
+      },
+      "TEXT[Conta KittyBank]": {
+        "type": "TEXT",
+        "name": "Conta KittyBank",
+        "nodeId": "11:805",
+        "textContent": "Conta KittyBank",
+        "references": {},
+        "variants": [
+          "State=Visible",
+          "State=Hidden",
+          "State=Loading"
+        ]
+      },
+      "TEXT[R$ ••••••]": {
+        "type": "TEXT",
+        "name": "R$ ••••••",
+        "nodeId": "11:812",
+        "textContent": "R$ ••••••",
+        "references": {},
+        "variants": [
+          "State=Hidden"
+        ]
+      },
+      "TEXT[Carregando…]": {
+        "type": "TEXT",
+        "name": "Carregando…",
+        "nodeId": "11:820",
+        "textContent": "Carregando…",
+        "references": {},
+        "variants": [
+          "State=Loading"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "11:875",
+    "name": "KittyBank/Banking/PaymentCard",
+    "properties": {
+      "Holder#11:16": {
+        "name": "Holder",
+        "type": "TEXT",
+        "key": "Holder#11:16"
+      },
+      "State": {
+        "name": "State",
+        "type": "VARIANT",
+        "key": "State",
+        "variantOptions": [
+          "Active",
+          "Frozen"
+        ]
+      }
+    },
+    "descendants": {
+      "INSTANCE[KittyBank/Icon/Card]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Card",
+        "mainComponentName": "KittyBank/Icon/Card",
+        "references": {},
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "State=Active"
+        ]
+      },
+      "TEXT[kittybank]": {
+        "type": "TEXT",
+        "name": "kittybank",
+        "nodeId": "11:860",
+        "textContent": "kittybank",
+        "references": {},
+        "variants": [
+          "State=Active",
+          "State=Frozen"
+        ]
+      },
+      "TEXT[••••  ••••  ••••  2048]": {
+        "type": "TEXT",
+        "name": "••••  ••••  ••••  2048",
+        "nodeId": "11:861",
+        "textContent": "••••  ••••  ••••  2048",
+        "references": {},
+        "variants": [
+          "State=Active",
+          "State=Frozen"
+        ]
+      },
+      "TEXT[ANA OLIVEIRA]": {
+        "type": "TEXT",
+        "name": "ANA OLIVEIRA",
+        "nodeId": "11:863",
+        "textContent": "ANA OLIVEIRA",
+        "references": {
+          "characters": "Holder#11:16"
+        },
+        "variants": [
+          "State=Active",
+          "State=Frozen"
+        ]
+      },
+      "TEXT[Virtual · Débito]": {
+        "type": "TEXT",
+        "name": "Virtual · Débito",
+        "nodeId": "11:864",
+        "textContent": "Virtual · Débito",
+        "references": {},
+        "variants": [
+          "State=Active"
+        ]
+      },
+      "INSTANCE[KittyBank/Icon/Lock]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Lock",
+        "mainComponentName": "KittyBank/Icon/Lock",
+        "references": {},
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "State=Frozen"
+        ]
+      },
+      "TEXT[Bloqueado]": {
+        "type": "TEXT",
+        "name": "Bloqueado",
+        "nodeId": "11:874",
+        "textContent": "Bloqueado",
+        "references": {},
+        "variants": [
+          "State=Frozen"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "11:930",
+    "name": "KittyBank/Banking/TransactionRow",
+    "properties": {
+      "Title#11:22": {
+        "name": "Title",
+        "type": "TEXT",
+        "key": "Title#11:22"
+      },
+      "Meta#11:23": {
+        "name": "Meta",
+        "type": "TEXT",
+        "key": "Meta#11:23"
+      },
+      "Amount#11:24": {
+        "name": "Amount",
+        "type": "TEXT",
+        "key": "Amount#11:24"
+      },
+      "Type": {
+        "name": "Type",
+        "type": "VARIANT",
+        "key": "Type",
+        "variantOptions": [
+          "Incoming",
+          "Outgoing",
+          "Pending"
+        ]
+      }
+    },
+    "descendants": {
+      "INSTANCE[KittyBank/Icon/Transfer]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Transfer",
+        "mainComponentName": "KittyBank/Icon/Transfer",
+        "references": {},
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "Type=Incoming",
+          "Type=Outgoing",
+          "Type=Pending"
+        ]
+      },
+      "TEXT[Pix recebido]": {
+        "type": "TEXT",
+        "name": "Pix recebido",
+        "nodeId": "11:907",
+        "textContent": "Pix recebido",
+        "references": {
+          "characters": "Title#11:22"
+        },
+        "variants": [
+          "Type=Incoming"
+        ]
+      },
+      "TEXT[Hoje · 14:32]": {
+        "type": "TEXT",
+        "name": "Hoje · 14:32",
+        "nodeId": "11:908",
+        "textContent": "Hoje · 14:32",
+        "references": {
+          "characters": "Meta#11:23"
+        },
+        "variants": [
+          "Type=Incoming",
+          "Type=Outgoing",
+          "Type=Pending"
+        ]
+      },
+      "TEXT[+ R$ 250,00]": {
+        "type": "TEXT",
+        "name": "+ R$ 250,00",
+        "nodeId": "11:910",
+        "textContent": "+ R$ 250,00",
+        "references": {
+          "characters": "Amount#11:24"
+        },
+        "variants": [
+          "Type=Incoming"
+        ]
+      },
+      "TEXT[Pix enviado]": {
+        "type": "TEXT",
+        "name": "Pix enviado",
+        "nodeId": "11:916",
+        "textContent": "Pix enviado",
+        "references": {},
+        "variants": [
+          "Type=Outgoing",
+          "Type=Pending"
+        ]
+      },
+      "TEXT[− R$ 48,90]": {
+        "type": "TEXT",
+        "name": "− R$ 48,90",
+        "nodeId": "11:919",
+        "textContent": "− R$ 48,90",
+        "references": {},
+        "variants": [
+          "Type=Outgoing",
+          "Type=Pending"
+        ]
+      },
+      "TEXT[Pendente]": {
+        "type": "TEXT",
+        "name": "Pendente",
+        "nodeId": "11:929",
+        "textContent": "Pendente",
+        "references": {},
+        "variants": [
+          "Type=Pending"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "11:982",
+    "name": "KittyBank/Banking/QuickAction",
+    "properties": {
+      "Icon#11:35": {
+        "name": "Icon",
+        "type": "INSTANCE_SWAP",
+        "key": "Icon#11:35"
+      },
+      "Label#11:36": {
+        "name": "Label",
+        "type": "TEXT",
+        "key": "Label#11:36"
+      },
+      "State": {
+        "name": "State",
+        "type": "VARIANT",
+        "key": "State",
+        "variantOptions": [
+          "Default",
+          "Pressed",
+          "Disabled"
+        ]
+      }
+    },
+    "descendants": {
+      "INSTANCE[KittyBank/Icon/Transfer]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Transfer",
+        "mainComponentName": "KittyBank/Icon/Transfer",
+        "references": {
+          "mainComponent": "Icon#11:35"
+        },
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "State=Default",
+          "State=Pressed",
+          "State=Disabled"
+        ]
+      },
+      "TEXT[Transferir]": {
+        "type": "TEXT",
+        "name": "Transferir",
+        "nodeId": "11:971",
+        "textContent": "Transferir",
+        "references": {
+          "characters": "Label#11:36"
+        },
+        "variants": [
+          "State=Default",
+          "State=Pressed",
+          "State=Disabled"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "11:1012",
+    "name": "KittyBank/Banking/SummaryRow",
+    "properties": {
+      "Label#11:39": {
+        "name": "Label",
+        "type": "TEXT",
+        "key": "Label#11:39"
+      },
+      "Value#11:40": {
+        "name": "Value",
+        "type": "TEXT",
+        "key": "Value#11:40"
+      },
+      "Emphasis": {
+        "name": "Emphasis",
+        "type": "VARIANT",
+        "key": "Emphasis",
+        "variantOptions": [
+          "Default",
+          "Total"
+        ]
+      }
+    },
+    "descendants": {
+      "TEXT[Destinatário]": {
+        "type": "TEXT",
+        "name": "Destinatário",
+        "nodeId": "11:1007",
+        "textContent": "Destinatário",
+        "references": {
+          "characters": "Label#11:39"
+        },
+        "variants": [
+          "Emphasis=Default"
+        ]
+      },
+      "TEXT[Ana Oliveira]": {
+        "type": "TEXT",
+        "name": "Ana Oliveira",
+        "nodeId": "11:1008",
+        "textContent": "Ana Oliveira",
+        "references": {
+          "characters": "Value#11:40"
+        },
+        "variants": [
+          "Emphasis=Default"
+        ]
+      },
+      "TEXT[Total]": {
+        "type": "TEXT",
+        "name": "Total",
+        "nodeId": "11:1010",
+        "textContent": "Total",
+        "references": {},
+        "variants": [
+          "Emphasis=Total"
+        ]
+      },
+      "TEXT[R$ 250,00]": {
+        "type": "TEXT",
+        "name": "R$ 250,00",
+        "nodeId": "11:1011",
+        "textContent": "R$ 250,00",
+        "references": {},
+        "variants": [
+          "Emphasis=Total"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "12:801",
+    "name": "KittyBank/Feedback/Badge",
+    "properties": {
+      "Tone": {
+        "name": "Tone",
+        "type": "VARIANT",
+        "key": "Tone",
+        "variantOptions": [
+          "Success",
+          "Warning",
+          "Error",
+          "Info"
+        ]
+      }
+    },
+    "descendants": {
+      "TEXT[Concluído]": {
+        "type": "TEXT",
+        "name": "Concluído",
+        "nodeId": "12:794",
+        "textContent": "Concluído",
+        "references": {},
+        "variants": [
+          "Tone=Success"
+        ]
+      },
+      "TEXT[Pendente]": {
+        "type": "TEXT",
+        "name": "Pendente",
+        "nodeId": "12:796",
+        "textContent": "Pendente",
+        "references": {},
+        "variants": [
+          "Tone=Warning"
+        ]
+      },
+      "TEXT[Falhou]": {
+        "type": "TEXT",
+        "name": "Falhou",
+        "nodeId": "12:798",
+        "textContent": "Falhou",
+        "references": {},
+        "variants": [
+          "Tone=Error"
+        ]
+      },
+      "TEXT[Em análise]": {
+        "type": "TEXT",
+        "name": "Em análise",
+        "nodeId": "12:800",
+        "textContent": "Em análise",
+        "references": {},
+        "variants": [
+          "Tone=Info"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "12:844",
+    "name": "KittyBank/Feedback/Alert",
+    "properties": {
+      "Title#12:2": {
+        "name": "Title",
+        "type": "TEXT",
+        "key": "Title#12:2"
+      },
+      "Description#12:3": {
+        "name": "Description",
+        "type": "TEXT",
+        "key": "Description#12:3"
+      },
+      "Tone": {
+        "name": "Tone",
+        "type": "VARIANT",
+        "key": "Tone",
+        "variantOptions": [
+          "Success",
+          "Warning",
+          "Error",
+          "Info"
+        ]
+      }
+    },
+    "descendants": {
+      "INSTANCE[KittyBank/Icon/Check]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Check",
+        "mainComponentName": "KittyBank/Icon/Check",
+        "references": {},
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "Tone=Success"
+        ]
+      },
+      "TEXT[Tudo certo por aqui]": {
+        "type": "TEXT",
+        "name": "Tudo certo por aqui",
+        "nodeId": "12:824",
+        "textContent": "Tudo certo por aqui",
+        "references": {
+          "characters": "Title#12:2"
+        },
+        "variants": [
+          "Tone=Success"
+        ]
+      },
+      "TEXT[Recebemos suas informações.]": {
+        "type": "TEXT",
+        "name": "Recebemos suas informações.",
+        "nodeId": "12:825",
+        "textContent": "Recebemos suas informações.",
+        "references": {
+          "characters": "Description#12:3"
+        },
+        "variants": [
+          "Tone=Success"
+        ]
+      },
+      "INSTANCE[KittyBank/Icon/Warning]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Warning",
+        "mainComponentName": "KittyBank/Icon/Warning",
+        "references": {},
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "Tone=Warning",
+          "Tone=Error"
+        ]
+      },
+      "TEXT[Revise antes de continuar]": {
+        "type": "TEXT",
+        "name": "Revise antes de continuar",
+        "nodeId": "12:830",
+        "textContent": "Revise antes de continuar",
+        "references": {},
+        "variants": [
+          "Tone=Warning"
+        ]
+      },
+      "TEXT[Confira os dados desta operação.]": {
+        "type": "TEXT",
+        "name": "Confira os dados desta operação.",
+        "nodeId": "12:831",
+        "textContent": "Confira os dados desta operação.",
+        "references": {},
+        "variants": [
+          "Tone=Warning"
+        ]
+      },
+      "TEXT[Não conseguimos concluir]": {
+        "type": "TEXT",
+        "name": "Não conseguimos concluir",
+        "nodeId": "12:836",
+        "textContent": "Não conseguimos concluir",
+        "references": {},
+        "variants": [
+          "Tone=Error"
+        ]
+      },
+      "TEXT[Seus dados foram preservados. Te]": {
+        "type": "TEXT",
+        "name": "Seus dados foram preservados. Te",
+        "nodeId": "12:837",
+        "textContent": "Seus dados foram preservados. Tente novamente.",
+        "references": {},
+        "variants": [
+          "Tone=Error"
+        ]
+      },
+      "INSTANCE[KittyBank/Icon/Help]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Help",
+        "mainComponentName": "KittyBank/Icon/Help",
+        "references": {},
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "Tone=Info"
+        ]
+      },
+      "TEXT[Seu pedido está em análise]": {
+        "type": "TEXT",
+        "name": "Seu pedido está em análise",
+        "nodeId": "12:842",
+        "textContent": "Seu pedido está em análise",
+        "references": {},
+        "variants": [
+          "Tone=Info"
+        ]
+      },
+      "TEXT[Avisaremos quando houver uma atu]": {
+        "type": "TEXT",
+        "name": "Avisaremos quando houver uma atu",
+        "nodeId": "12:843",
+        "textContent": "Avisaremos quando houver uma atualização.",
+        "references": {},
+        "variants": [
+          "Tone=Info"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "12:921",
+    "name": "KittyBank/Feedback/StateBlock",
+    "properties": {
+      "Title#12:12": {
+        "name": "Title",
+        "type": "TEXT",
+        "key": "Title#12:12"
+      },
+      "Description#12:13": {
+        "name": "Description",
+        "type": "TEXT",
+        "key": "Description#12:13"
+      },
+      "State": {
+        "name": "State",
+        "type": "VARIANT",
+        "key": "State",
+        "variantOptions": [
+          "Success",
+          "Empty",
+          "Error",
+          "Loading"
+        ]
+      }
+    },
+    "descendants": {
+      "INSTANCE[KittyBank/Icon/Check]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Check",
+        "mainComponentName": "KittyBank/Icon/Check",
+        "references": {},
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "State=Success"
+        ]
+      },
+      "TEXT[Seu cadastro foi concluído]": {
+        "type": "TEXT",
+        "name": "Seu cadastro foi concluído",
+        "nodeId": "12:884",
+        "textContent": "Seu cadastro foi concluído",
+        "references": {
+          "characters": "Title#12:12"
+        },
+        "variants": [
+          "State=Success"
+        ]
+      },
+      "TEXT[Agora você pode acessar sua cont]": {
+        "type": "TEXT",
+        "name": "Agora você pode acessar sua cont",
+        "nodeId": "12:885",
+        "textContent": "Agora você pode acessar sua conta KittyBank.",
+        "references": {
+          "characters": "Description#12:13"
+        },
+        "variants": [
+          "State=Success"
+        ]
+      },
+      "INSTANCE[KittyBank/Button]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Button",
+        "mainComponentName": "KittyBank/Button",
+        "references": {},
+        "properties": {
+          "Icon#6:45": {
+            "name": "Icon",
+            "type": "INSTANCE_SWAP",
+            "key": "Icon#6:45"
+          },
+          "Show icon#6:46": {
+            "name": "Show icon",
+            "type": "BOOLEAN",
+            "key": "Show icon#6:46"
+          },
+          "Label#6:47": {
+            "name": "Label",
+            "type": "TEXT",
+            "key": "Label#6:47"
+          },
+          "Hierarchy": {
+            "name": "Hierarchy",
+            "type": "VARIANT",
+            "key": "Hierarchy",
+            "variantOptions": [
+              "Primary"
+            ]
+          },
+          "State": {
+            "name": "State",
+            "type": "VARIANT",
+            "key": "State",
+            "variantOptions": [
+              "Default"
+            ]
+          }
+        },
+        "descendants": {
+          "INSTANCE[KittyBank/Icon/ArrowRight]": {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/ArrowRight",
+            "mainComponentName": "KittyBank/Icon/ArrowRight",
+            "references": {
+              "visible": "Show icon#6:46",
+              "mainComponent": "Icon#6:45"
+            },
+            "properties": {},
+            "descendants": {},
+            "variants": [
+              "Hierarchy=Primary, State=Default",
+              "Hierarchy=Primary, State=Default",
+              "Hierarchy=Primary, State=Default"
+            ]
+          },
+          "TEXT[Continuar]": {
+            "type": "TEXT",
+            "name": "Continuar",
+            "nodeId": "6:53",
+            "textContent": "Continuar",
+            "references": {
+              "characters": "Label#6:47"
+            },
+            "variants": [
+              "Hierarchy=Primary, State=Default",
+              "Hierarchy=Primary, State=Default",
+              "Hierarchy=Primary, State=Default"
+            ]
+          }
+        },
+        "variants": [
+          "State=Success",
+          "State=Empty",
+          "State=Error"
+        ]
+      },
+      "INSTANCE[KittyBank/Icon/Document]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Document",
+        "mainComponentName": "KittyBank/Icon/Document",
+        "references": {},
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "State=Empty"
+        ]
+      },
+      "TEXT[Ainda não há movimentações]": {
+        "type": "TEXT",
+        "name": "Ainda não há movimentações",
+        "nodeId": "12:897",
+        "textContent": "Ainda não há movimentações",
+        "references": {},
+        "variants": [
+          "State=Empty"
+        ]
+      },
+      "TEXT[Quando você movimentar sua conta]": {
+        "type": "TEXT",
+        "name": "Quando você movimentar sua conta",
+        "nodeId": "12:898",
+        "textContent": "Quando você movimentar sua conta, tudo aparece aqui.",
+        "references": {},
+        "variants": [
+          "State=Empty"
+        ]
+      },
+      "INSTANCE[KittyBank/Icon/Warning]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Warning",
+        "mainComponentName": "KittyBank/Icon/Warning",
+        "references": {},
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "State=Error"
+        ]
+      },
+      "TEXT[Vamos tentar novamente?]": {
+        "type": "TEXT",
+        "name": "Vamos tentar novamente?",
+        "nodeId": "12:908",
+        "textContent": "Vamos tentar novamente?",
+        "references": {},
+        "variants": [
+          "State=Error"
+        ]
+      },
+      "TEXT[Confira sua conexão. Seus dados ]": {
+        "type": "TEXT",
+        "name": "Confira sua conexão. Seus dados ",
+        "nodeId": "12:909",
+        "textContent": "Confira sua conexão. Seus dados continuam salvos.",
+        "references": {},
+        "variants": [
+          "State=Error"
+        ]
+      },
+      "INSTANCE[KittyBank/Icon/Spinner]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Spinner",
+        "mainComponentName": "KittyBank/Icon/Spinner",
+        "references": {},
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "State=Loading"
+        ]
+      },
+      "TEXT[Estamos cuidando disso]": {
+        "type": "TEXT",
+        "name": "Estamos cuidando disso",
+        "nodeId": "12:919",
+        "textContent": "Estamos cuidando disso",
+        "references": {},
+        "variants": [
+          "State=Loading"
+        ]
+      },
+      "TEXT[Aguarde a confirmação para conti]": {
+        "type": "TEXT",
+        "name": "Aguarde a confirmação para conti",
+        "nodeId": "12:920",
+        "textContent": "Aguarde a confirmação para continuar.",
+        "references": {},
+        "variants": [
+          "State=Loading"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "12:1000",
+    "name": "KittyBank/Overlay/Confirmation",
+    "properties": {
+      "Intent": {
+        "name": "Intent",
+        "type": "VARIANT",
+        "key": "Intent",
+        "variantOptions": [
+          "ResumeLater",
+          "ConfirmTransfer"
+        ]
+      }
+    },
+    "descendants": {
+      "INSTANCE[KittyBank/Icon/Document]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Document",
+        "mainComponentName": "KittyBank/Icon/Document",
+        "references": {},
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "Intent=ResumeLater"
+        ]
+      },
+      "TEXT[Continuar depois?]": {
+        "type": "TEXT",
+        "name": "Continuar depois?",
+        "nodeId": "12:970",
+        "textContent": "Continuar depois?",
+        "references": {},
+        "variants": [
+          "Intent=ResumeLater"
+        ]
+      },
+      "TEXT[Seu progresso será salvo. Você p]": {
+        "type": "TEXT",
+        "name": "Seu progresso será salvo. Você p",
+        "nodeId": "12:971",
+        "textContent": "Seu progresso será salvo. Você poderá retomar do mesmo ponto.",
+        "references": {},
+        "variants": [
+          "Intent=ResumeLater"
+        ]
+      },
+      "INSTANCE[KittyBank/Button]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Button",
+        "mainComponentName": "KittyBank/Button",
+        "references": {},
+        "properties": {
+          "Icon#6:45": {
+            "name": "Icon",
+            "type": "INSTANCE_SWAP",
+            "key": "Icon#6:45"
+          },
+          "Show icon#6:46": {
+            "name": "Show icon",
+            "type": "BOOLEAN",
+            "key": "Show icon#6:46"
+          },
+          "Label#6:47": {
+            "name": "Label",
+            "type": "TEXT",
+            "key": "Label#6:47"
+          },
+          "Hierarchy": {
+            "name": "Hierarchy",
+            "type": "VARIANT",
+            "key": "Hierarchy",
+            "variantOptions": [
+              "Primary",
+              "Secondary"
+            ]
+          },
+          "State": {
+            "name": "State",
+            "type": "VARIANT",
+            "key": "State",
+            "variantOptions": [
+              "Default"
+            ]
+          }
+        },
+        "descendants": {
+          "INSTANCE[KittyBank/Icon/ArrowRight]": {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/ArrowRight",
+            "mainComponentName": "KittyBank/Icon/ArrowRight",
+            "references": {
+              "visible": "Show icon#6:46",
+              "mainComponent": "Icon#6:45"
+            },
+            "properties": {},
+            "descendants": {},
+            "variants": [
+              "Hierarchy=Primary, State=Default",
+              "Hierarchy=Secondary, State=Default",
+              "Hierarchy=Primary, State=Default",
+              "Hierarchy=Secondary, State=Default",
+              "Hierarchy=Primary, State=Default",
+              "Hierarchy=Secondary, State=Default",
+              "Hierarchy=Primary, State=Default",
+              "Hierarchy=Secondary, State=Default"
+            ]
+          },
+          "TEXT[Continuar]": {
+            "type": "TEXT",
+            "name": "Continuar",
+            "nodeId": "6:53",
+            "textContent": "Continuar",
+            "references": {
+              "characters": "Label#6:47"
+            },
+            "variants": [
+              "Hierarchy=Primary, State=Default",
+              "Hierarchy=Secondary, State=Default",
+              "Hierarchy=Primary, State=Default",
+              "Hierarchy=Secondary, State=Default",
+              "Hierarchy=Primary, State=Default",
+              "Hierarchy=Secondary, State=Default",
+              "Hierarchy=Primary, State=Default",
+              "Hierarchy=Secondary, State=Default"
+            ]
+          }
+        },
+        "variants": [
+          "Intent=ResumeLater",
+          "Intent=ResumeLater",
+          "Intent=ConfirmTransfer",
+          "Intent=ConfirmTransfer"
+        ]
+      },
+      "INSTANCE[KittyBank/Icon/Transfer]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/Icon/Transfer",
+        "mainComponentName": "KittyBank/Icon/Transfer",
+        "references": {},
+        "properties": {},
+        "descendants": {},
+        "variants": [
+          "Intent=ConfirmTransfer"
+        ]
+      },
+      "TEXT[Confirmar transferência?]": {
+        "type": "TEXT",
+        "name": "Confirmar transferência?",
+        "nodeId": "12:988",
+        "textContent": "Confirmar transferência?",
+        "references": {},
+        "variants": [
+          "Intent=ConfirmTransfer"
+        ]
+      },
+      "TEXT[Envie R$ 250,00 para Ana Oliveir]": {
+        "type": "TEXT",
+        "name": "Envie R$ 250,00 para Ana Oliveir",
+        "nodeId": "12:989",
+        "textContent": "Envie R$ 250,00 para Ana Oliveira. Confira os dados antes de confirmar.",
+        "references": {},
+        "variants": [
+          "Intent=ConfirmTransfer"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "12:1037",
+    "name": "KittyBank/Help/Message",
+    "properties": {
+      "Message#12:21": {
+        "name": "Message",
+        "type": "TEXT",
+        "key": "Message#12:21"
+      },
+      "Author": {
+        "name": "Author",
+        "type": "VARIANT",
+        "key": "Author",
+        "variantOptions": [
+          "Assistant",
+          "Customer"
+        ]
+      }
+    },
+    "descendants": {
+      "TEXT[KittyBank]": {
+        "type": "TEXT",
+        "name": "KittyBank",
+        "nodeId": "12:1032",
+        "textContent": "KittyBank",
+        "references": {},
+        "variants": [
+          "Author=Assistant"
+        ]
+      },
+      "TEXT[Olá! Em qual etapa posso ajudar?]": {
+        "type": "TEXT",
+        "name": "Olá! Em qual etapa posso ajudar?",
+        "nodeId": "12:1033",
+        "textContent": "Olá! Em qual etapa posso ajudar?",
+        "references": {
+          "characters": "Message#12:21"
+        },
+        "variants": [
+          "Author=Assistant"
+        ]
+      },
+      "TEXT[Você]": {
+        "type": "TEXT",
+        "name": "Você",
+        "nodeId": "12:1035",
+        "textContent": "Você",
+        "references": {},
+        "variants": [
+          "Author=Customer"
+        ]
+      },
+      "TEXT[Quero ajuda para abrir minha con]": {
+        "type": "TEXT",
+        "name": "Quero ajuda para abrir minha con",
+        "nodeId": "12:1036",
+        "textContent": "Quero ajuda para abrir minha conta.",
+        "references": {},
+        "variants": [
+          "Author=Customer"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "12:1068",
+    "name": "KittyBank/Help/Composer",
+    "properties": {
+      "Message#12:24": {
+        "name": "Message",
+        "type": "TEXT",
+        "key": "Message#12:24"
+      },
+      "State": {
+        "name": "State",
+        "type": "VARIANT",
+        "key": "State",
+        "variantOptions": [
+          "Empty",
+          "Ready",
+          "Sending"
+        ]
+      }
+    },
+    "descendants": {
+      "TEXT[Escreva sua mensagem…]": {
+        "type": "TEXT",
+        "name": "Escreva sua mensagem…",
+        "nodeId": "12:1051",
+        "textContent": "Escreva sua mensagem…",
+        "references": {
+          "characters": "Message#12:24"
+        },
+        "variants": [
+          "State=Empty"
+        ]
+      },
+      "INSTANCE[KittyBank/IconButton]": {
+        "type": "INSTANCE",
+        "name": "KittyBank/IconButton",
+        "mainComponentName": "KittyBank/IconButton",
+        "references": {},
+        "properties": {
+          "Icon#6:52": {
+            "name": "Icon",
+            "type": "INSTANCE_SWAP",
+            "key": "Icon#6:52"
+          },
+          "State": {
+            "name": "State",
+            "type": "VARIANT",
+            "key": "State",
+            "variantOptions": [
+              "Default",
+              "Disabled"
+            ]
+          }
+        },
+        "descendants": {
+          "INSTANCE[KittyBank/Icon/Help]": {
+            "type": "INSTANCE",
+            "name": "KittyBank/Icon/Help",
+            "mainComponentName": "KittyBank/Icon/Help",
+            "references": {
+              "mainComponent": "Icon#6:52"
+            },
+            "properties": {},
+            "descendants": {},
+            "variants": [
+              "State=Default",
+              "State=Disabled",
+              "State=Default",
+              "State=Disabled",
+              "State=Default",
+              "State=Disabled"
+            ]
+          }
+        },
+        "variants": [
+          "State=Empty",
+          "State=Ready",
+          "State=Sending"
+        ]
+      },
+      "TEXT[Preciso de ajuda]": {
+        "type": "TEXT",
+        "name": "Preciso de ajuda",
+        "nodeId": "12:1057",
+        "textContent": "Preciso de ajuda",
+        "references": {},
+        "variants": [
+          "State=Ready"
+        ]
+      },
+      "TEXT[Enviando…]": {
+        "type": "TEXT",
+        "name": "Enviando…",
+        "nodeId": "12:1063",
+        "textContent": "Enviando…",
+        "references": {},
+        "variants": [
+          "State=Sending"
+        ]
+      }
+    }
+  },
+  {
+    "fileKey": "RJaBgLXi6Vf9whEbBVw3tY",
+    "nodeId": "13:941",
+    "name": "KittyBank/Brand/Mark",
+    "properties": {
+      "Tone": {
+        "name": "Tone",
+        "type": "VARIANT",
+        "key": "Tone",
+        "variantOptions": [
+          "Coral",
+          "White"
+        ]
+      }
+    },
+    "descendants": {}
+  }
+]

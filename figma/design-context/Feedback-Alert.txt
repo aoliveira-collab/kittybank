@@ -1,0 +1,99 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/5c2a8f43-6ffe-4743-8f67-ccf71486e515";
+const imgFrame = `${assetPathPrefix}/04185.svg`;
+const imgFrame1 = `${assetPathPrefix}/fb2eb.svg`;
+const imgFrame2 = `${assetPathPrefix}/d6530.svg`;
+
+type KittyBankFeedbackAlertProps = {
+  className?: string;
+  description?: string;
+  title?: string;
+  tone?: "Success" | "Warning" | "Error" | "Info";
+};
+
+export default function KittyBankFeedbackAlert({ className, description = "Recebemos suas informações.", title = "Tudo certo por aqui", tone = "Success" }: KittyBankFeedbackAlertProps) {
+  const isError = tone === "Error";
+  const isInfo = tone === "Info";
+  const isSuccess = tone === "Success";
+  const isWarning = tone === "Warning";
+  const isWarningOrError = ["Warning", "Error"].includes(tone);
+  return (
+    <div className={className || `content-stretch flex flex-col gap-[var(--kb-space-12,12px)] items-start p-[var(--kb-space-16,16px)] relative rounded-[var(--kb-radius-12,12px)] w-[390px] ${isInfo ? "bg-[var(--kb-color-bg-info,#d9eeff)]" : isError ? "bg-[var(--kb-color-bg-error,#fff0ee)]" : isWarning ? "bg-[var(--kb-color-bg-warning,#fff3cf)]" : "bg-[var(--kb-color-bg-success,#cffbec)]"}`} id={isInfo ? "node-12_838" : isError ? "node-12_832" : isWarning ? "node-12_826" : "node-12_820"}>
+      {isWarningOrError && (
+        <>
+          <div className="content-stretch flex gap-[var(--kb-space-0,0px)] items-start p-[var(--kb-space-0,0px)] relative shrink-0 w-[24px]" id={isError ? "node-12_833" : "node-12_827"} data-name="KittyBank/Icon/Warning">
+            <div className="relative shrink-0 size-[24px]" id={isError ? "node-I12_833-5_152" : "node-I12_827-5_152"} data-name="Frame">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame1} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] font-['Poppins:SemiBold'] leading-[20px] not-italic relative shrink-0 text-[14px] text-[color:var(--kb-color-text-primary,#39242c)] whitespace-nowrap" id={isError ? "node-12_836" : "node-12_830"}>
+            {isError ? "Não conseguimos concluir" : isWarning ? "Revise antes de continuar" : ""}
+          </p>
+          <p className="[word-break:break-word] font-['Poppins:Regular'] leading-[20px] min-w-full not-italic relative shrink-0 text-[14px] text-[color:var(--kb-color-text-secondary,#6e5058)] w-[min-content]" id={isError ? "node-12_837" : "node-12_831"}>
+            {isError ? "Seus dados foram preservados. Tente novamente." : isWarning ? "Confira os dados desta operação." : ""}
+          </p>
+        </>
+      )}
+      {isSuccess && (
+        <>
+          <div className="content-stretch flex gap-[var(--kb-space-0,0px)] items-start p-[var(--kb-space-0,0px)] relative shrink-0 w-[24px]" data-node-id="12:821" data-name="KittyBank/Icon/Check">
+            <div className="relative shrink-0 size-[24px]" data-node-id="I12:821;5:31" data-name="Frame">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] font-['Poppins:SemiBold'] leading-[20px] not-italic relative shrink-0 text-[14px] text-[color:var(--kb-color-text-primary,#39242c)] whitespace-nowrap" data-node-id="12:824">
+            {title}
+          </p>
+          <p className="[word-break:break-word] font-['Poppins:Regular'] leading-[20px] min-w-full not-italic relative shrink-0 text-[14px] text-[color:var(--kb-color-text-secondary,#6e5058)] w-[min-content]" data-node-id="12:825">
+            {description}
+          </p>
+        </>
+      )}
+      {isInfo && (
+        <>
+          <div className="content-stretch flex gap-[var(--kb-space-0,0px)] items-start p-[var(--kb-space-0,0px)] relative shrink-0 w-[24px]" data-node-id="12:839" data-name="KittyBank/Icon/Help">
+            <div className="relative shrink-0 size-[24px]" data-node-id="I12:839;5:87" data-name="Frame">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame2} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] font-['Poppins:SemiBold'] leading-[20px] not-italic relative shrink-0 text-[14px] text-[color:var(--kb-color-text-primary,#39242c)] whitespace-nowrap" data-node-id="12:842">
+            Seu pedido está em análise
+          </p>
+          <p className="[word-break:break-word] font-['Poppins:Regular'] leading-[20px] min-w-full not-italic relative shrink-0 text-[14px] text-[color:var(--kb-color-text-secondary,#6e5058)] w-[min-content]" data-node-id="12:843">
+            Avisaremos quando houver uma atualização.
+          </p>
+        </>
+      )}
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: KittyBank/Label: Font(family: "Poppins", style: SemiBold, size: 14, weight: 600, lineHeight: 20, letterSpacing: 0), KittyBank/Body/Small: Font(family: "Poppins", style: Regular, size: 14, weight: 400, lineHeight: 20, letterSpacing: 0).
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## KittyBank/Feedback/Alert
+**Node ID:** 12:844
+
+Feedback persistente em situações importantes. Erro contém recuperação. Não usar toast como única confirmação financeira.
+
+## KittyBank/Icon/Check
+**Node ID:** 5:30
+
+Ícone Check. Usar como instância dentro de uma área de toque de 44 px.
+
+## KittyBank/Icon/Warning
+**Node ID:** 5:151
+
+Ícone Warning. Usar como instância dentro de uma área de toque de 44 px.
+
+## KittyBank/Icon/Help
+**Node ID:** 5:86
+
+Ícone Help. Usar como instância dentro de uma área de toque de 44 px.
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

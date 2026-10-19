@@ -1,0 +1,166 @@
+{
+  "Security-Biometric": {
+    "imgFrame": "d15cd.svg",
+    "imgFrame1": "04185.svg",
+    "imgFrame2": "b3de1.svg"
+  },
+  "Icon-Bell": {
+    "imgFrame": "2b3b2.svg"
+  },
+  "Navigation-BottomBar": {
+    "imgFrame": "53b88.svg",
+    "imgFrame1": "82356.svg",
+    "imgFrame2": "d1987.svg",
+    "imgFrame3": "b1127.svg",
+    "imgFrame4": "a8815.svg",
+    "imgFrame5": "440a1.svg",
+    "imgFrame6": "8026d.svg"
+  },
+  "Icon-Card": {
+    "imgFrame": "82356.svg"
+  },
+  "Icon-Warning": {
+    "imgFrame": "fb2eb.svg"
+  },
+  "Selection-Switch": {
+    "imgTrack": "a4e9d.svg",
+    "imgTrack1": "8d143.svg"
+  },
+  "Icon-Plus": {
+    "imgFrame": "218df.svg"
+  },
+  "Field-Text": {
+    "imgFrame": "3a5bf.svg"
+  },
+  "Brand-Logo": {
+    "imgFrame": "f6c6a.svg",
+    "imgFrame1": "7f098.svg",
+    "imgFrame2": "419fd.svg"
+  },
+  "Icon-Lock": {
+    "imgFrame": "9e24d.svg"
+  },
+  "Security-PasswordRules": {
+    "imgFrame": "846e3.svg",
+    "imgFrame1": "04185.svg"
+  },
+  "Icon-Eye": {
+    "imgFrame": "3a5bf.svg"
+  },
+  "Help-Composer": {
+    "imgFrame": "f7450.svg",
+    "imgFrame1": "298fd.svg"
+  },
+  "Navigation-TabItem": {
+    "imgFrame": "53b88.svg",
+    "imgFrame1": "b2a63.svg"
+  },
+  "Icon-ChevronDown": {
+    "imgFrame": "d8615.svg"
+  },
+  "Icon-Search": {
+    "imgFrame": "b4218.svg"
+  },
+  "Brand-Mark": {
+    "imgVector": "5dccc.svg",
+    "imgVector1": "23f55.svg",
+    "imgVector2": "1f378.svg"
+  },
+  "Icon-User": {
+    "imgFrame": "b1127.svg"
+  },
+  "Icon-Home": {
+    "imgFrame": "53b88.svg"
+  },
+  "Feedback-StateBlock": {
+    "imgFrame": "04185.svg",
+    "imgFrame1": "e78a8.svg",
+    "imgFrame2": "b3de1.svg",
+    "imgFrame3": "85ac7.svg"
+  },
+  "Icon-Close": {
+    "imgFrame": "0fd7e.svg"
+  },
+  "Feedback-Alert": {
+    "imgFrame": "04185.svg",
+    "imgFrame1": "fb2eb.svg",
+    "imgFrame2": "d6530.svg"
+  },
+  "Banking-Balance": {
+    "imgFrame": "ace68.svg"
+  },
+  "Overlay-Confirmation": {
+    "imgFrame": "e78a8.svg",
+    "imgFrame1": "440a1.svg"
+  },
+  "Icon-Upload": {
+    "imgFrame": "a1a83.svg"
+  },
+  "Icon-Check": {
+    "imgFrame": "de516.svg"
+  },
+  "Icon-Help": {
+    "imgFrame": "d6530.svg"
+  },
+  "Icon-Document": {
+    "imgFrame": "8a18a.svg"
+  },
+  "Security-DocumentUpload": {
+    "imgFrame": "e04fb.svg",
+    "imgFrame1": "85ac7.svg",
+    "imgFrame2": "04185.svg",
+    "imgFrame3": "b3de1.svg"
+  },
+  "Field-Select": {
+    "imgFrame": "d8615.svg"
+  },
+  "Onboarding-ChoiceCard": {
+    "imgFrame": "a8815.svg"
+  },
+  "IconButton": {
+    "imgFrame": "d6530.svg"
+  },
+  "Banking-PaymentCard": {
+    "imgFrame": "dffc4.svg",
+    "imgFrame1": "846e3.svg"
+  },
+  "Button": {
+    "imgFrame": "12f18.svg",
+    "imgFrame1": "d9cf7.svg",
+    "imgFrame2": "512ef.svg",
+    "imgFrame3": "85ac7.svg"
+  },
+  "Banking-TransactionRow": {
+    "imgFrame": "8da83.svg",
+    "imgFrame1": "440a1.svg"
+  },
+  "Selection-Checkbox": {
+    "imgFrame": "440ab.svg"
+  },
+  "Onboarding-ActionFooter": {
+    "imgFrame": "512ef.svg"
+  },
+  "Icon-Spinner": {
+    "imgFrame": "298fd.svg"
+  },
+  "Icon-ArrowRight": {
+    "imgFrame": "f7450.svg"
+  },
+  "Icon-Transfer": {
+    "imgFrame": "d1987.svg"
+  },
+  "Banking-QuickAction": {
+    "imgFrame": "440a1.svg"
+  },
+  "Navigation-Header": {
+    "imgFrame": "6ee56.svg",
+    "imgFrame1": "d6530.svg",
+    "imgFrame2": "0fd7e.svg"
+  },
+  "Icon-Back": {
+    "imgFrame": "6ee56.svg"
+  },
+  "Icon-Camera": {
+    "imgFrame": "74dba.svg"
+  }
+}

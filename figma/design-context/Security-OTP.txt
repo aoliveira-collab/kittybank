@@ -1,0 +1,78 @@
+type KittyBankSecurityCodeCellProps = {
+  className?: string;
+  digit?: string;
+  state?: "Empty" | "Focus" | "Filled" | "Error";
+};
+
+function KittyBankSecurityCodeCell({ className, digit = "—", state = "Empty" }: KittyBankSecurityCodeCellProps) {
+  const isError = state === "Error";
+  const isFilled = state === "Filled";
+  const isFocus = state === "Focus";
+  return (
+    <div className={className || `bg-[var(--kb-color-bg-surface,white)] border-[length:var(--kb-stroke-1,1px)] border-solid content-stretch flex gap-[var(--kb-space-8,8px)] h-[56px] items-center justify-center p-[var(--kb-space-0,0px)] relative rounded-[var(--kb-radius-8,8px)] w-[48px] ${isError ? "border-[var(--kb-color-border-error,#b42318)]" : isFocus ? "border-[var(--kb-color-border-focus,#ad285e)]" : "border-[var(--kb-color-border-default,#78616a)]"}`} id={isError ? "node-7_287" : isFilled ? "node-7_285" : isFocus ? "node-7_283" : "node-7_281"}>
+      {["Focus", "Filled", "Error"].includes(state) && (
+        <p className="[word-break:break-word] font-['Poppins:SemiBold'] leading-[28px] not-italic relative shrink-0 text-[20px] text-[color:var(--kb-color-text-primary,#39242c)] whitespace-nowrap" id={isError ? "node-7_288" : isFilled ? "node-7_286" : "node-7_284"}>
+          {isError ? "—" : isFilled ? "2" : isFocus ? "|" : ""}
+        </p>
+      )}
+      {state === "Empty" && (
+        <p className="[word-break:break-word] font-['Poppins:SemiBold'] leading-[28px] not-italic relative shrink-0 text-[20px] text-[color:var(--kb-color-text-primary,#39242c)] whitespace-nowrap" data-node-id="7:282">
+          {digit}
+        </p>
+      )}
+    </div>
+  );
+}
+
+type KittyBankSecurityOtpProps = {
+  className?: string;
+  label?: string;
+  state?: "Empty" | "Filled" | "Error";
+};
+
+export default function KittyBankSecurityOtp({ className, label = "Código de segurança", state = "Empty" }: KittyBankSecurityOtpProps) {
+  const isError = state === "Error";
+  const isFilled = state === "Filled";
+  return (
+    <div className={className || "content-stretch flex flex-col gap-[var(--kb-space-8,8px)] items-start p-[var(--kb-space-0,0px)] relative w-[360px]"} id={isError ? "node-7_342" : isFilled ? "node-7_325" : "node-7_308"}>
+      <p className="[word-break:break-word] font-['Poppins:SemiBold'] leading-[20px] not-italic relative shrink-0 text-[14px] text-[color:var(--kb-color-text-primary,#39242c)] whitespace-nowrap" data-node-id="7:309">
+        {label}
+      </p>
+      <div className="content-stretch flex gap-[var(--kb-space-8,8px)] items-start p-[var(--kb-space-0,0px)] relative shrink-0 w-full" id={isError ? "node-7_344" : isFilled ? "node-7_327" : "node-7_310"} data-name="Digits">
+        <KittyBankSecurityCodeCell className={`bg-[var(--kb-color-bg-surface,white)] border-[length:var(--kb-stroke-1,1px)] border-solid content-stretch flex gap-[var(--kb-space-8,8px)] h-[56px] items-center justify-center p-[var(--kb-space-0,0px)] relative rounded-[var(--kb-radius-8,8px)] shrink-0 w-[48px] ${isError ? "border-[var(--kb-color-border-error,#b42318)]" : isFilled ? "border-[var(--kb-color-border-default,#78616a)]" : "border-[var(--kb-color-border-focus,#ad285e)]"}`} state={isError ? "Error" : isFilled ? "Filled" : "Focus"} />
+        <KittyBankSecurityCodeCell className={`bg-[var(--kb-color-bg-surface,white)] border-[length:var(--kb-stroke-1,1px)] border-solid content-stretch flex gap-[var(--kb-space-8,8px)] h-[56px] items-center justify-center p-[var(--kb-space-0,0px)] relative rounded-[var(--kb-radius-8,8px)] shrink-0 w-[48px] ${isError ? "border-[var(--kb-color-border-error,#b42318)]" : "border-[var(--kb-color-border-default,#78616a)]"}`} state={isError ? "Error" : isFilled ? "Filled" : undefined} />
+        <KittyBankSecurityCodeCell className={`bg-[var(--kb-color-bg-surface,white)] border-[length:var(--kb-stroke-1,1px)] border-solid content-stretch flex gap-[var(--kb-space-8,8px)] h-[56px] items-center justify-center p-[var(--kb-space-0,0px)] relative rounded-[var(--kb-radius-8,8px)] shrink-0 w-[48px] ${isError ? "border-[var(--kb-color-border-error,#b42318)]" : "border-[var(--kb-color-border-default,#78616a)]"}`} state={isError ? "Error" : isFilled ? "Filled" : undefined} />
+        <KittyBankSecurityCodeCell className={`bg-[var(--kb-color-bg-surface,white)] border-[length:var(--kb-stroke-1,1px)] border-solid content-stretch flex gap-[var(--kb-space-8,8px)] h-[56px] items-center justify-center p-[var(--kb-space-0,0px)] relative rounded-[var(--kb-radius-8,8px)] shrink-0 w-[48px] ${isError ? "border-[var(--kb-color-border-error,#b42318)]" : "border-[var(--kb-color-border-default,#78616a)]"}`} state={isError ? "Error" : isFilled ? "Filled" : undefined} />
+        <KittyBankSecurityCodeCell className={`bg-[var(--kb-color-bg-surface,white)] border-[length:var(--kb-stroke-1,1px)] border-solid content-stretch flex gap-[var(--kb-space-8,8px)] h-[56px] items-center justify-center p-[var(--kb-space-0,0px)] relative rounded-[var(--kb-radius-8,8px)] shrink-0 w-[48px] ${isError ? "border-[var(--kb-color-border-error,#b42318)]" : "border-[var(--kb-color-border-default,#78616a)]"}`} state={isError ? "Error" : isFilled ? "Filled" : undefined} />
+        <KittyBankSecurityCodeCell className={`bg-[var(--kb-color-bg-surface,white)] border-[length:var(--kb-stroke-1,1px)] border-solid content-stretch flex gap-[var(--kb-space-8,8px)] h-[56px] items-center justify-center p-[var(--kb-space-0,0px)] relative rounded-[var(--kb-radius-8,8px)] shrink-0 w-[48px] ${isError ? "border-[var(--kb-color-border-error,#b42318)]" : "border-[var(--kb-color-border-default,#78616a)]"}`} state={isError ? "Error" : isFilled ? "Filled" : undefined} />
+      </div>
+      <p className={`[word-break:break-word] font-["Poppins:Medium"] leading-[16px] min-w-full not-italic relative shrink-0 text-[12px] w-[min-content] ${isError ? "text-[color:var(--kb-color-text-error,#b42318)]" : "text-[color:var(--kb-color-text-secondary,#6e5058)]"}`} id={isError ? "node-7_357" : isFilled ? "node-7_340" : "node-7_323"}>
+        {isError ? "Código inválido. Confira e tente novamente." : isFilled ? "Enviado para ••••••••42" : "Enviado para ••••••••42"}
+      </p>
+      <p className="[word-break:break-word] font-['Poppins:SemiBold'] leading-[20px] not-italic relative shrink-0 text-[14px] text-[color:var(--kb-color-text-secondary,#6e5058)] whitespace-nowrap" id={isError ? "node-7_358" : isFilled ? "node-7_341" : "node-7_324"}>
+        Reenviar código em 00:30
+      </p>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: KittyBank/Label: Font(family: "Poppins", style: SemiBold, size: 14, weight: 600, lineHeight: 20, letterSpacing: 0), KittyBank/Heading/Small: Font(family: "Poppins", style: SemiBold, size: 20, weight: 600, lineHeight: 28, letterSpacing: 0), KittyBank/Caption: Font(family: "Poppins", style: Medium, size: 12, weight: 500, lineHeight: 16, letterSpacing: 0).
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## KittyBank/Security/OTP
+**Node ID:** 7:359
+
+6 posições. Permitir colar e preenchimento automático; temporizador e reenvio são contratos de implementação.
+
+## KittyBank/Security/CodeCell
+**Node ID:** 7:289
+
+Célula de código com uma posição. A implementação usa um único input acessível.
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

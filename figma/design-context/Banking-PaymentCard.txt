@@ -1,0 +1,93 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/af6ad6b1-5480-4861-8fcc-d08702b7daf6";
+const imgFrame = `${assetPathPrefix}/dffc4.svg`;
+const imgFrame1 = `${assetPathPrefix}/846e3.svg`;
+
+type KittyBankBankingPaymentCardProps = {
+  className?: string;
+  holder?: string;
+  state?: "Active" | "Frozen";
+};
+
+export default function KittyBankBankingPaymentCard({ className, holder = "ANA OLIVEIRA", state = "Active" }: KittyBankBankingPaymentCardProps) {
+  const isActive = state === "Active";
+  const isFrozen = state === "Frozen";
+  return (
+    <div className={className || `content-stretch drop-shadow-[0px_4px_8px_rgba(74,32,42,0.06)] flex flex-col gap-[var(--kb-space-24,24px)] items-start p-[var(--kb-space-24,24px)] relative rounded-[var(--kb-radius-24,24px)] w-[360px] ${isFrozen ? "bg-[var(--kb-color-bg-subtle,#f5eae5)]" : "bg-gradient-to-r from-[var(--kb-coral-500,#ff8a6a)] to-[var(--kb-sand-300,#f2cc8f)] via-1/2 via-[var(--kb-blush-300,#f2a29b)]"}`} id={isFrozen ? "node-11_865" : "node-11_855"}>
+      <div className="content-stretch flex gap-[var(--kb-space-16,16px)] items-start p-[var(--kb-space-0,0px)] relative shrink-0 w-full" id={isFrozen ? "node-11_866" : "node-11_856"} data-name="Brand row">
+        {isActive && (
+          <>
+            <div className="content-stretch flex gap-[var(--kb-space-0,0px)] items-start p-[var(--kb-space-0,0px)] relative shrink-0 w-[24px]" data-node-id="11:857" data-name="KittyBank/Icon/Card">
+              <div className="relative shrink-0 size-[24px]" data-node-id="I11:857;5:63" data-name="Frame">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Poppins:SemiBold'] leading-[28px] not-italic relative shrink-0 text-[20px] text-[color:var(--kb-color-text-on-brand,#4a202a)] whitespace-nowrap" data-node-id="11:860">
+              kittybank
+            </p>
+          </>
+        )}
+        {isFrozen && (
+          <>
+            <div className="content-stretch flex gap-[var(--kb-space-0,0px)] items-start p-[var(--kb-space-0,0px)] relative shrink-0 w-[24px]" data-node-id="11:867" data-name="KittyBank/Icon/Lock">
+              <div className="relative shrink-0 size-[24px]" data-node-id="I11:867;5:96" data-name="Frame">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame1} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Poppins:SemiBold'] leading-[28px] not-italic relative shrink-0 text-[20px] text-[color:var(--kb-color-text-primary,#39242c)] whitespace-nowrap" data-node-id="11:870">
+              kittybank
+            </p>
+          </>
+        )}
+      </div>
+      <p className={`[word-break:break-word] font-["Poppins:SemiBold"] leading-[28px] not-italic relative shrink-0 text-[20px] whitespace-pre ${isFrozen ? "text-[color:var(--kb-color-text-primary,#39242c)]" : "text-[color:var(--kb-color-text-on-brand,#4a202a)]"}`} id={isFrozen ? "node-11_871" : "node-11_861"}>{`••••  ••••  ••••  2048`}</p>
+      <div className={`[word-break:break-word] content-stretch flex font-["Poppins:Medium"] gap-[var(--kb-space-16,16px)] items-start leading-[16px] not-italic p-[var(--kb-space-0,0px)] relative shrink-0 text-[12px] w-full ${isFrozen ? "" : "text-[color:var(--kb-color-text-on-brand,#4a202a)]"}`} id={isFrozen ? "node-11_872" : "node-11_862"} data-name="Details">
+        {isActive && (
+          <>
+            <p className="flex-[1_0_0] min-w-px relative" data-node-id="11:863">
+              {holder}
+            </p>
+            <p className="relative shrink-0 whitespace-nowrap" data-node-id="11:864">
+              Virtual · Débito
+            </p>
+          </>
+        )}
+        {isFrozen && (
+          <>
+            <p className="flex-[1_0_0] min-w-px relative text-[color:var(--kb-color-text-primary,#39242c)]" data-node-id="11:873">
+              {holder}
+            </p>
+            <p className="relative shrink-0 text-[color:var(--kb-color-text-brand,#923c2d)] whitespace-nowrap" data-node-id="11:874">
+              Bloqueado
+            </p>
+          </>
+        )}
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: KittyBank/Heading/Small: Font(family: "Poppins", style: SemiBold, size: 20, weight: 600, lineHeight: 28, letterSpacing: 0), KittyBank/Caption: Font(family: "Poppins", style: Medium, size: 12, weight: 500, lineHeight: 16, letterSpacing: 0), KittyBank/Brand/Sunrise: , KittyBank/Card: Effect(type: DROP_SHADOW, color: #4A202A0F, offset: (0, 4), radius: 16, spread: 0).
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## KittyBank/Banking/PaymentCard
+**Node ID:** 11:875
+
+Mostrar somente últimos quatro dígitos. Bloqueio usa texto e ícone. Nunca armazenar PAN ou CVV reais no arquivo.
+
+## KittyBank/Icon/Card
+**Node ID:** 5:62
+
+Ícone Card. Usar como instância dentro de uma área de toque de 44 px.
+
+## KittyBank/Icon/Lock
+**Node ID:** 5:95
+
+Ícone Lock. Usar como instância dentro de uma área de toque de 44 px.
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

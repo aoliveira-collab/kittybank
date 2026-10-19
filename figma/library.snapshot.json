@@ -1,0 +1,1904 @@
+{
+  "pages": [
+    {
+      "id": "1:2",
+      "name": "app-ref"
+    },
+    {
+      "id": "2:2",
+      "name": "design system"
+    },
+    {
+      "id": "20:975",
+      "name": "screens"
+    }
+  ],
+  "sets": [
+    {
+      "id": "5:182",
+      "name": "KittyBank/Brand/Logo",
+      "props": {
+        "Tone": {
+          "type": "VARIANT",
+          "defaultValue": "Primary",
+          "variantOptions": [
+            "White",
+            "Primary",
+            "Coral"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "5:167",
+          "name": "Tone=Primary",
+          "w": 177,
+          "h": 48
+        },
+        {
+          "id": "5:172",
+          "name": "Tone=White",
+          "w": 177,
+          "h": 48
+        },
+        {
+          "id": "5:177",
+          "name": "Tone=Coral",
+          "w": 177,
+          "h": 48
+        }
+      ]
+    },
+    {
+      "id": "6:124",
+      "name": "KittyBank/Button",
+      "props": {
+        "Icon#6:45": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "5:6",
+          "preferredValues": []
+        },
+        "Show icon#6:46": {
+          "type": "BOOLEAN",
+          "defaultValue": false
+        },
+        "Label#6:47": {
+          "type": "TEXT",
+          "defaultValue": "Continuar"
+        },
+        "Hierarchy": {
+          "type": "VARIANT",
+          "defaultValue": "Primary",
+          "variantOptions": [
+            "Primary",
+            "Secondary",
+            "Ghost"
+          ]
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Pressed",
+            "Focus",
+            "Disabled",
+            "Loading"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "6:49",
+          "name": "Hierarchy=Primary, State=Default",
+          "w": 240,
+          "h": 56
+        },
+        {
+          "id": "6:54",
+          "name": "Hierarchy=Primary, State=Pressed",
+          "w": 240,
+          "h": 56
+        },
+        {
+          "id": "6:59",
+          "name": "Hierarchy=Primary, State=Focus",
+          "w": 240,
+          "h": 56
+        },
+        {
+          "id": "6:64",
+          "name": "Hierarchy=Primary, State=Disabled",
+          "w": 240,
+          "h": 56
+        },
+        {
+          "id": "6:69",
+          "name": "Hierarchy=Primary, State=Loading",
+          "w": 240,
+          "h": 56
+        },
+        {
+          "id": "6:74",
+          "name": "Hierarchy=Secondary, State=Default",
+          "w": 240,
+          "h": 56
+        },
+        {
+          "id": "6:79",
+          "name": "Hierarchy=Secondary, State=Pressed",
+          "w": 240,
+          "h": 56
+        },
+        {
+          "id": "6:84",
+          "name": "Hierarchy=Secondary, State=Focus",
+          "w": 240,
+          "h": 56
+        },
+        {
+          "id": "6:89",
+          "name": "Hierarchy=Secondary, State=Disabled",
+          "w": 240,
+          "h": 56
+        },
+        {
+          "id": "6:94",
+          "name": "Hierarchy=Secondary, State=Loading",
+          "w": 240,
+          "h": 56
+        },
+        {
+          "id": "6:99",
+          "name": "Hierarchy=Ghost, State=Default",
+          "w": 240,
+          "h": 56
+        },
+        {
+          "id": "6:104",
+          "name": "Hierarchy=Ghost, State=Pressed",
+          "w": 240,
+          "h": 56
+        },
+        {
+          "id": "6:109",
+          "name": "Hierarchy=Ghost, State=Focus",
+          "w": 240,
+          "h": 56
+        },
+        {
+          "id": "6:114",
+          "name": "Hierarchy=Ghost, State=Disabled",
+          "w": 240,
+          "h": 56
+        },
+        {
+          "id": "6:119",
+          "name": "Hierarchy=Ghost, State=Loading",
+          "w": 240,
+          "h": 56
+        }
+      ]
+    },
+    {
+      "id": "6:219",
+      "name": "KittyBank/IconButton",
+      "props": {
+        "Icon#6:52": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "5:86",
+          "preferredValues": []
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Pressed",
+            "Focus",
+            "Disabled"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "6:203",
+          "name": "State=Default",
+          "w": 48,
+          "h": 48
+        },
+        {
+          "id": "6:207",
+          "name": "State=Pressed",
+          "w": 48,
+          "h": 48
+        },
+        {
+          "id": "6:211",
+          "name": "State=Focus",
+          "w": 48,
+          "h": 48
+        },
+        {
+          "id": "6:215",
+          "name": "State=Disabled",
+          "w": 48,
+          "h": 48
+        }
+      ]
+    },
+    {
+      "id": "6:314",
+      "name": "KittyBank/Field/Text",
+      "props": {
+        "Label#6:93": {
+          "type": "TEXT",
+          "defaultValue": "Nome completo"
+        },
+        "Value#6:94": {
+          "type": "TEXT",
+          "defaultValue": "Digite aqui"
+        },
+        "Helper#6:95": {
+          "type": "TEXT",
+          "defaultValue": "Como aparece no seu documento."
+        },
+        "Show helper#6:96": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Empty",
+          "variantOptions": [
+            "Empty",
+            "Filled",
+            "Focus",
+            "Error",
+            "Disabled"
+          ]
+        },
+        "Type": {
+          "type": "VARIANT",
+          "defaultValue": "Text",
+          "variantOptions": [
+            "Text",
+            "Password"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "6:249",
+          "name": "State=Empty, Type=Text",
+          "w": 360,
+          "h": 108
+        },
+        {
+          "id": "6:254",
+          "name": "State=Empty, Type=Password",
+          "w": 360,
+          "h": 108
+        },
+        {
+          "id": "6:262",
+          "name": "State=Filled, Type=Text",
+          "w": 360,
+          "h": 108
+        },
+        {
+          "id": "6:267",
+          "name": "State=Filled, Type=Password",
+          "w": 360,
+          "h": 108
+        },
+        {
+          "id": "6:275",
+          "name": "State=Focus, Type=Text",
+          "w": 360,
+          "h": 108
+        },
+        {
+          "id": "6:280",
+          "name": "State=Focus, Type=Password",
+          "w": 360,
+          "h": 108
+        },
+        {
+          "id": "6:288",
+          "name": "State=Error, Type=Text",
+          "w": 360,
+          "h": 108
+        },
+        {
+          "id": "6:293",
+          "name": "State=Error, Type=Password",
+          "w": 360,
+          "h": 108
+        },
+        {
+          "id": "6:301",
+          "name": "State=Disabled, Type=Text",
+          "w": 360,
+          "h": 108
+        },
+        {
+          "id": "6:306",
+          "name": "State=Disabled, Type=Password",
+          "w": 360,
+          "h": 108
+        }
+      ]
+    },
+    {
+      "id": "6:445",
+      "name": "KittyBank/Field/Select",
+      "props": {
+        "Label#6:107": {
+          "type": "TEXT",
+          "defaultValue": "Tipo de documento"
+        },
+        "Value#6:108": {
+          "type": "TEXT",
+          "defaultValue": "Selecione uma opção"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Empty",
+          "variantOptions": [
+            "Empty",
+            "Filled",
+            "Open",
+            "Error",
+            "Disabled"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "6:405",
+          "name": "State=Empty",
+          "w": 360,
+          "h": 86
+        },
+        {
+          "id": "6:412",
+          "name": "State=Filled",
+          "w": 360,
+          "h": 86
+        },
+        {
+          "id": "6:419",
+          "name": "State=Open",
+          "w": 360,
+          "h": 228
+        },
+        {
+          "id": "6:430",
+          "name": "State=Error",
+          "w": 360,
+          "h": 110
+        },
+        {
+          "id": "6:438",
+          "name": "State=Disabled",
+          "w": 360,
+          "h": 86
+        }
+      ]
+    },
+    {
+      "id": "6:514",
+      "name": "KittyBank/Selection/Checkbox",
+      "props": {
+        "Label#6:113": {
+          "type": "TEXT",
+          "defaultValue": "Li e aceito os termos de uso"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Unchecked",
+          "variantOptions": [
+            "Unchecked",
+            "Checked",
+            "Error",
+            "Disabled"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "6:499",
+          "name": "State=Unchecked",
+          "w": 255,
+          "h": 48
+        },
+        {
+          "id": "6:502",
+          "name": "State=Checked",
+          "w": 255,
+          "h": 48
+        },
+        {
+          "id": "6:508",
+          "name": "State=Error",
+          "w": 255,
+          "h": 48
+        },
+        {
+          "id": "6:511",
+          "name": "State=Disabled",
+          "w": 255,
+          "h": 48
+        }
+      ]
+    },
+    {
+      "id": "6:549",
+      "name": "KittyBank/Selection/Switch",
+      "props": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Off",
+          "variantOptions": [
+            "Off",
+            "On",
+            "Disabled"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "6:540",
+          "name": "State=Off",
+          "w": 60,
+          "h": 44
+        },
+        {
+          "id": "6:543",
+          "name": "State=On",
+          "w": 60,
+          "h": 44
+        },
+        {
+          "id": "6:546",
+          "name": "State=Disabled",
+          "w": 60,
+          "h": 44
+        }
+      ]
+    },
+    {
+      "id": "7:250",
+      "name": "KittyBank/Onboarding/ChoiceCard",
+      "props": {
+        "Icon#7:9": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "5:62",
+          "preferredValues": []
+        },
+        "Title#7:10": {
+          "type": "TEXT",
+          "defaultValue": "Conta para você"
+        },
+        "Description#7:11": {
+          "type": "TEXT",
+          "defaultValue": "Pix, cartão e seu dinheiro em um só lugar."
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Selected",
+            "Disabled"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "7:228",
+          "name": "State=Default",
+          "w": 360,
+          "h": 146
+        },
+        {
+          "id": "7:235",
+          "name": "State=Selected",
+          "w": 360,
+          "h": 178
+        },
+        {
+          "id": "7:243",
+          "name": "State=Disabled",
+          "w": 360,
+          "h": 146
+        }
+      ]
+    },
+    {
+      "id": "7:289",
+      "name": "KittyBank/Security/CodeCell",
+      "props": {
+        "Digit#7:16": {
+          "type": "TEXT",
+          "defaultValue": "—"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Empty",
+          "variantOptions": [
+            "Empty",
+            "Focus",
+            "Filled",
+            "Error"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "7:281",
+          "name": "State=Empty",
+          "w": 48,
+          "h": 56
+        },
+        {
+          "id": "7:283",
+          "name": "State=Focus",
+          "w": 48,
+          "h": 56
+        },
+        {
+          "id": "7:285",
+          "name": "State=Filled",
+          "w": 48,
+          "h": 56
+        },
+        {
+          "id": "7:287",
+          "name": "State=Error",
+          "w": 48,
+          "h": 56
+        }
+      ]
+    },
+    {
+      "id": "7:359",
+      "name": "KittyBank/Security/OTP",
+      "props": {
+        "Label#7:20": {
+          "type": "TEXT",
+          "defaultValue": "Código de segurança"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Empty",
+          "variantOptions": [
+            "Empty",
+            "Filled",
+            "Error"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "7:308",
+          "name": "State=Empty",
+          "w": 360,
+          "h": 136
+        },
+        {
+          "id": "7:325",
+          "name": "State=Filled",
+          "w": 360,
+          "h": 136
+        },
+        {
+          "id": "7:342",
+          "name": "State=Error",
+          "w": 360,
+          "h": 136
+        }
+      ]
+    },
+    {
+      "id": "7:437",
+      "name": "KittyBank/Onboarding/StepProgress",
+      "props": {
+        "Label#7:24": {
+          "type": "TEXT",
+          "defaultValue": "Etapa 1 de 3"
+        },
+        "Step": {
+          "type": "VARIANT",
+          "defaultValue": "1",
+          "variantOptions": [
+            "1",
+            "2",
+            "3"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "7:419",
+          "name": "Step=1",
+          "w": 360,
+          "h": 28
+        },
+        {
+          "id": "7:425",
+          "name": "Step=2",
+          "w": 360,
+          "h": 28
+        },
+        {
+          "id": "7:431",
+          "name": "Step=3",
+          "w": 360,
+          "h": 28
+        }
+      ]
+    },
+    {
+      "id": "7:488",
+      "name": "KittyBank/Security/DocumentUpload",
+      "props": {
+        "Title#7:33": {
+          "type": "TEXT",
+          "defaultValue": "Envie seu documento"
+        },
+        "Description#7:34": {
+          "type": "TEXT",
+          "defaultValue": "Frente legível, sem reflexos ou cortes."
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Empty",
+          "variantOptions": [
+            "Empty",
+            "Uploading",
+            "Success",
+            "Error"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "7:464",
+          "name": "State=Empty",
+          "w": 360,
+          "h": 146
+        },
+        {
+          "id": "7:470",
+          "name": "State=Uploading",
+          "w": 360,
+          "h": 146
+        },
+        {
+          "id": "7:476",
+          "name": "State=Success",
+          "w": 360,
+          "h": 146
+        },
+        {
+          "id": "7:482",
+          "name": "State=Error",
+          "w": 360,
+          "h": 146
+        }
+      ]
+    },
+    {
+      "id": "7:548",
+      "name": "KittyBank/Security/Biometric",
+      "props": {
+        "Title#7:43": {
+          "type": "TEXT",
+          "defaultValue": "Vamos confirmar que é você"
+        },
+        "Instructions#7:44": {
+          "type": "TEXT",
+          "defaultValue": "Posicione o rosto no centro e siga as instruções."
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Ready",
+          "variantOptions": [
+            "Ready",
+            "Scanning",
+            "Success",
+            "Error"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "7:524",
+          "name": "State=Ready",
+          "w": 360,
+          "h": 172
+        },
+        {
+          "id": "7:530",
+          "name": "State=Scanning",
+          "w": 360,
+          "h": 172
+        },
+        {
+          "id": "7:536",
+          "name": "State=Success",
+          "w": 360,
+          "h": 172
+        },
+        {
+          "id": "7:542",
+          "name": "State=Error",
+          "w": 360,
+          "h": 172
+        }
+      ]
+    },
+    {
+      "id": "7:618",
+      "name": "KittyBank/Security/PasswordRules",
+      "props": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Pending",
+          "variantOptions": [
+            "Pending",
+            "Valid"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "7:584",
+          "name": "State=Pending",
+          "w": 360,
+          "h": 148
+        },
+        {
+          "id": "7:601",
+          "name": "State=Valid",
+          "w": 360,
+          "h": 148
+        }
+      ]
+    },
+    {
+      "id": "7:692",
+      "name": "KittyBank/Onboarding/ActionFooter",
+      "props": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Incomplete",
+          "variantOptions": [
+            "Incomplete",
+            "Ready",
+            "Submitting"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "7:659",
+          "name": "State=Incomplete",
+          "w": 390,
+          "h": 186
+        },
+        {
+          "id": "7:670",
+          "name": "State=Ready",
+          "w": 390,
+          "h": 186
+        },
+        {
+          "id": "7:681",
+          "name": "State=Submitting",
+          "w": 390,
+          "h": 186
+        }
+      ]
+    },
+    {
+      "id": "11:533",
+      "name": "KittyBank/Navigation/Header",
+      "props": {
+        "Title#11:1": {
+          "type": "TEXT",
+          "defaultValue": "Abra sua conta"
+        },
+        "Context": {
+          "type": "VARIANT",
+          "defaultValue": "Onboarding",
+          "variantOptions": [
+            "Onboarding",
+            "Account",
+            "Overlay"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "11:505",
+          "name": "Context=Onboarding",
+          "w": 390,
+          "h": 80
+        },
+        {
+          "id": "11:517",
+          "name": "Context=Account",
+          "w": 390,
+          "h": 80
+        },
+        {
+          "id": "11:527",
+          "name": "Context=Overlay",
+          "w": 390,
+          "h": 80
+        }
+      ]
+    },
+    {
+      "id": "11:582",
+      "name": "KittyBank/Navigation/TabItem",
+      "props": {
+        "Icon#11:8": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "5:54",
+          "preferredValues": []
+        },
+        "Label#11:9": {
+          "type": "TEXT",
+          "defaultValue": "Início"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Selected"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "11:572",
+          "name": "State=Default",
+          "w": 80,
+          "h": 60
+        },
+        {
+          "id": "11:577",
+          "name": "State=Selected",
+          "w": 80,
+          "h": 60
+        }
+      ]
+    },
+    {
+      "id": "11:699",
+      "name": "KittyBank/Navigation/BottomBar",
+      "props": {
+        "Active": {
+          "type": "VARIANT",
+          "defaultValue": "Home",
+          "variantOptions": [
+            "Home",
+            "Cards",
+            "Activity",
+            "Profile"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "11:583",
+          "name": "Active=Home",
+          "w": 390,
+          "h": 94
+        },
+        {
+          "id": "11:612",
+          "name": "Active=Cards",
+          "w": 390,
+          "h": 94
+        },
+        {
+          "id": "11:641",
+          "name": "Active=Activity",
+          "w": 390,
+          "h": 94
+        },
+        {
+          "id": "11:670",
+          "name": "Active=Profile",
+          "w": 390,
+          "h": 94
+        }
+      ]
+    },
+    {
+      "id": "11:822",
+      "name": "KittyBank/Banking/Balance",
+      "props": {
+        "Amount#11:11": {
+          "type": "TEXT",
+          "defaultValue": "R$ 5.634,12"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Visible",
+          "variantOptions": [
+            "Visible",
+            "Hidden",
+            "Loading"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "11:798",
+          "name": "State=Visible",
+          "w": 360,
+          "h": 180
+        },
+        {
+          "id": "11:806",
+          "name": "State=Hidden",
+          "w": 360,
+          "h": 180
+        },
+        {
+          "id": "11:814",
+          "name": "State=Loading",
+          "w": 360,
+          "h": 180
+        }
+      ]
+    },
+    {
+      "id": "11:875",
+      "name": "KittyBank/Banking/PaymentCard",
+      "props": {
+        "Holder#11:16": {
+          "type": "TEXT",
+          "defaultValue": "ANA OLIVEIRA"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Active",
+          "variantOptions": [
+            "Active",
+            "Frozen"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "11:855",
+          "name": "State=Active",
+          "w": 360,
+          "h": 168
+        },
+        {
+          "id": "11:865",
+          "name": "State=Frozen",
+          "w": 360,
+          "h": 168
+        }
+      ]
+    },
+    {
+      "id": "11:930",
+      "name": "KittyBank/Banking/TransactionRow",
+      "props": {
+        "Title#11:22": {
+          "type": "TEXT",
+          "defaultValue": "Pix recebido"
+        },
+        "Meta#11:23": {
+          "type": "TEXT",
+          "defaultValue": "Hoje · 14:32"
+        },
+        "Amount#11:24": {
+          "type": "TEXT",
+          "defaultValue": "+ R$ 250,00"
+        },
+        "Type": {
+          "type": "VARIANT",
+          "defaultValue": "Incoming",
+          "variantOptions": [
+            "Incoming",
+            "Outgoing",
+            "Pending"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "11:902",
+          "name": "Type=Incoming",
+          "w": 390,
+          "h": 72
+        },
+        {
+          "id": "11:911",
+          "name": "Type=Outgoing",
+          "w": 390,
+          "h": 72
+        },
+        {
+          "id": "11:920",
+          "name": "Type=Pending",
+          "w": 390,
+          "h": 72
+        }
+      ]
+    },
+    {
+      "id": "11:982",
+      "name": "KittyBank/Banking/QuickAction",
+      "props": {
+        "Icon#11:35": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "5:70",
+          "preferredValues": []
+        },
+        "Label#11:36": {
+          "type": "TEXT",
+          "defaultValue": "Transferir"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Pressed",
+            "Disabled"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "11:967",
+          "name": "State=Default",
+          "w": 104,
+          "h": 80
+        },
+        {
+          "id": "11:972",
+          "name": "State=Pressed",
+          "w": 104,
+          "h": 80
+        },
+        {
+          "id": "11:977",
+          "name": "State=Disabled",
+          "w": 104,
+          "h": 80
+        }
+      ]
+    },
+    {
+      "id": "11:1012",
+      "name": "KittyBank/Banking/SummaryRow",
+      "props": {
+        "Label#11:39": {
+          "type": "TEXT",
+          "defaultValue": "Destinatário"
+        },
+        "Value#11:40": {
+          "type": "TEXT",
+          "defaultValue": "Ana Oliveira"
+        },
+        "Emphasis": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Total"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "11:1006",
+          "name": "Emphasis=Default",
+          "w": 360,
+          "h": 52
+        },
+        {
+          "id": "11:1009",
+          "name": "Emphasis=Total",
+          "w": 360,
+          "h": 52
+        }
+      ]
+    },
+    {
+      "id": "12:801",
+      "name": "KittyBank/Feedback/Badge",
+      "props": {
+        "Tone": {
+          "type": "VARIANT",
+          "defaultValue": "Success",
+          "variantOptions": [
+            "Success",
+            "Warning",
+            "Error",
+            "Info"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "12:793",
+          "name": "Tone=Success",
+          "w": 160,
+          "h": 32
+        },
+        {
+          "id": "12:795",
+          "name": "Tone=Warning",
+          "w": 160,
+          "h": 32
+        },
+        {
+          "id": "12:797",
+          "name": "Tone=Error",
+          "w": 160,
+          "h": 32
+        },
+        {
+          "id": "12:799",
+          "name": "Tone=Info",
+          "w": 160,
+          "h": 32
+        }
+      ]
+    },
+    {
+      "id": "12:844",
+      "name": "KittyBank/Feedback/Alert",
+      "props": {
+        "Title#12:2": {
+          "type": "TEXT",
+          "defaultValue": "Tudo certo por aqui"
+        },
+        "Description#12:3": {
+          "type": "TEXT",
+          "defaultValue": "Recebemos suas informações."
+        },
+        "Tone": {
+          "type": "VARIANT",
+          "defaultValue": "Success",
+          "variantOptions": [
+            "Success",
+            "Warning",
+            "Error",
+            "Info"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "12:820",
+          "name": "Tone=Success",
+          "w": 390,
+          "h": 120
+        },
+        {
+          "id": "12:826",
+          "name": "Tone=Warning",
+          "w": 390,
+          "h": 120
+        },
+        {
+          "id": "12:832",
+          "name": "Tone=Error",
+          "w": 390,
+          "h": 120
+        },
+        {
+          "id": "12:838",
+          "name": "Tone=Info",
+          "w": 390,
+          "h": 120
+        }
+      ]
+    },
+    {
+      "id": "12:921",
+      "name": "KittyBank/Feedback/StateBlock",
+      "props": {
+        "Title#12:12": {
+          "type": "TEXT",
+          "defaultValue": "Seu cadastro foi concluído"
+        },
+        "Description#12:13": {
+          "type": "TEXT",
+          "defaultValue": "Agora você pode acessar sua conta KittyBank."
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Success",
+          "variantOptions": [
+            "Success",
+            "Empty",
+            "Error",
+            "Loading"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "12:880",
+          "name": "State=Success",
+          "w": 360,
+          "h": 244
+        },
+        {
+          "id": "12:893",
+          "name": "State=Empty",
+          "w": 360,
+          "h": 244
+        },
+        {
+          "id": "12:904",
+          "name": "State=Error",
+          "w": 360,
+          "h": 244
+        },
+        {
+          "id": "12:915",
+          "name": "State=Loading",
+          "w": 360,
+          "h": 152
+        }
+      ]
+    },
+    {
+      "id": "12:1000",
+      "name": "KittyBank/Overlay/Confirmation",
+      "props": {
+        "Intent": {
+          "type": "VARIANT",
+          "defaultValue": "ResumeLater",
+          "variantOptions": [
+            "ResumeLater",
+            "ConfirmTransfer"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "12:966",
+          "name": "Intent=ResumeLater",
+          "w": 390,
+          "h": 330
+        },
+        {
+          "id": "12:984",
+          "name": "Intent=ConfirmTransfer",
+          "w": 390,
+          "h": 330
+        }
+      ]
+    },
+    {
+      "id": "12:1037",
+      "name": "KittyBank/Help/Message",
+      "props": {
+        "Message#12:21": {
+          "type": "TEXT",
+          "defaultValue": "Olá! Em qual etapa posso ajudar?"
+        },
+        "Author": {
+          "type": "VARIANT",
+          "defaultValue": "Assistant",
+          "variantOptions": [
+            "Assistant",
+            "Customer"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "12:1031",
+          "name": "Author=Assistant",
+          "w": 300,
+          "h": 76
+        },
+        {
+          "id": "12:1034",
+          "name": "Author=Customer",
+          "w": 300,
+          "h": 76
+        }
+      ]
+    },
+    {
+      "id": "12:1068",
+      "name": "KittyBank/Help/Composer",
+      "props": {
+        "Message#12:24": {
+          "type": "TEXT",
+          "defaultValue": "Escreva sua mensagem…"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Empty",
+          "variantOptions": [
+            "Empty",
+            "Ready",
+            "Sending"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "12:1050",
+          "name": "State=Empty",
+          "w": 390,
+          "h": 74
+        },
+        {
+          "id": "12:1056",
+          "name": "State=Ready",
+          "w": 390,
+          "h": 74
+        },
+        {
+          "id": "12:1062",
+          "name": "State=Sending",
+          "w": 390,
+          "h": 74
+        }
+      ]
+    },
+    {
+      "id": "13:941",
+      "name": "KittyBank/Brand/Mark",
+      "props": {
+        "Tone": {
+          "type": "VARIANT",
+          "defaultValue": "Coral",
+          "variantOptions": [
+            "Coral",
+            "White"
+          ]
+        }
+      },
+      "variants": [
+        {
+          "id": "13:933",
+          "name": "Tone=Coral",
+          "w": 48,
+          "h": 48
+        },
+        {
+          "id": "13:937",
+          "name": "Tone=White",
+          "w": 48,
+          "h": 48
+        }
+      ]
+    }
+  ],
+  "icons": [
+    {
+      "id": "5:6",
+      "name": "KittyBank/Icon/ArrowRight"
+    },
+    {
+      "id": "5:14",
+      "name": "KittyBank/Icon/Back"
+    },
+    {
+      "id": "5:22",
+      "name": "KittyBank/Icon/Close"
+    },
+    {
+      "id": "5:30",
+      "name": "KittyBank/Icon/Check"
+    },
+    {
+      "id": "5:38",
+      "name": "KittyBank/Icon/ChevronDown"
+    },
+    {
+      "id": "5:46",
+      "name": "KittyBank/Icon/Eye"
+    },
+    {
+      "id": "5:54",
+      "name": "KittyBank/Icon/Home"
+    },
+    {
+      "id": "5:62",
+      "name": "KittyBank/Icon/Card"
+    },
+    {
+      "id": "5:70",
+      "name": "KittyBank/Icon/Transfer"
+    },
+    {
+      "id": "5:78",
+      "name": "KittyBank/Icon/User"
+    },
+    {
+      "id": "5:86",
+      "name": "KittyBank/Icon/Help"
+    },
+    {
+      "id": "5:95",
+      "name": "KittyBank/Icon/Lock"
+    },
+    {
+      "id": "5:103",
+      "name": "KittyBank/Icon/Document"
+    },
+    {
+      "id": "5:111",
+      "name": "KittyBank/Icon/Camera"
+    },
+    {
+      "id": "5:119",
+      "name": "KittyBank/Icon/Upload"
+    },
+    {
+      "id": "5:127",
+      "name": "KittyBank/Icon/Bell"
+    },
+    {
+      "id": "5:135",
+      "name": "KittyBank/Icon/Search"
+    },
+    {
+      "id": "5:143",
+      "name": "KittyBank/Icon/Plus"
+    },
+    {
+      "id": "5:151",
+      "name": "KittyBank/Icon/Warning"
+    },
+    {
+      "id": "5:159",
+      "name": "KittyBank/Icon/Spinner"
+    }
+  ],
+  "variables": [
+    {
+      "id": "VariableID:4:5",
+      "name": "green/100"
+    },
+    {
+      "id": "VariableID:4:6",
+      "name": "coral/500"
+    },
+    {
+      "id": "VariableID:4:7",
+      "name": "green/700"
+    },
+    {
+      "id": "VariableID:4:8",
+      "name": "coral/900"
+    },
+    {
+      "id": "VariableID:4:9",
+      "name": "plum/900"
+    },
+    {
+      "id": "VariableID:4:10",
+      "name": "plum/950"
+    },
+    {
+      "id": "VariableID:4:11",
+      "name": "blue/100"
+    },
+    {
+      "id": "VariableID:4:12",
+      "name": "blue/700"
+    },
+    {
+      "id": "VariableID:4:13",
+      "name": "neutral/0"
+    },
+    {
+      "id": "VariableID:4:14",
+      "name": "neutral/50"
+    },
+    {
+      "id": "VariableID:4:15",
+      "name": "neutral/100"
+    },
+    {
+      "id": "VariableID:4:16",
+      "name": "neutral/300"
+    },
+    {
+      "id": "VariableID:4:17",
+      "name": "neutral/500"
+    },
+    {
+      "id": "VariableID:4:18",
+      "name": "neutral/600"
+    },
+    {
+      "id": "VariableID:4:19",
+      "name": "neutral/900"
+    },
+    {
+      "id": "VariableID:4:20",
+      "name": "red/100"
+    },
+    {
+      "id": "VariableID:4:21",
+      "name": "red/700"
+    },
+    {
+      "id": "VariableID:4:22",
+      "name": "amber/100"
+    },
+    {
+      "id": "VariableID:4:23",
+      "name": "amber/800"
+    },
+    {
+      "id": "VariableID:4:24",
+      "name": "color/bg/canvas"
+    },
+    {
+      "id": "VariableID:4:25",
+      "name": "color/bg/surface"
+    },
+    {
+      "id": "VariableID:4:26",
+      "name": "color/bg/subtle"
+    },
+    {
+      "id": "VariableID:4:27",
+      "name": "color/bg/brand"
+    },
+    {
+      "id": "VariableID:4:28",
+      "name": "color/bg/brand-pressed"
+    },
+    {
+      "id": "VariableID:4:29",
+      "name": "color/bg/brand-soft"
+    },
+    {
+      "id": "VariableID:4:30",
+      "name": "color/bg/brand-strong"
+    },
+    {
+      "id": "VariableID:4:31",
+      "name": "color/bg/disabled"
+    },
+    {
+      "id": "VariableID:4:32",
+      "name": "color/bg/success"
+    },
+    {
+      "id": "VariableID:4:33",
+      "name": "color/bg/error"
+    },
+    {
+      "id": "VariableID:4:34",
+      "name": "color/bg/warning"
+    },
+    {
+      "id": "VariableID:4:35",
+      "name": "color/bg/info"
+    },
+    {
+      "id": "VariableID:4:36",
+      "name": "color/text/primary"
+    },
+    {
+      "id": "VariableID:4:37",
+      "name": "color/text/secondary"
+    },
+    {
+      "id": "VariableID:4:38",
+      "name": "color/text/inverse"
+    },
+    {
+      "id": "VariableID:4:39",
+      "name": "color/text/brand"
+    },
+    {
+      "id": "VariableID:4:40",
+      "name": "color/text/disabled"
+    },
+    {
+      "id": "VariableID:4:41",
+      "name": "color/text/error"
+    },
+    {
+      "id": "VariableID:4:42",
+      "name": "color/text/warning"
+    },
+    {
+      "id": "VariableID:4:43",
+      "name": "color/text/info"
+    },
+    {
+      "id": "VariableID:4:44",
+      "name": "color/border/default"
+    },
+    {
+      "id": "VariableID:4:45",
+      "name": "color/border/subtle"
+    },
+    {
+      "id": "VariableID:4:46",
+      "name": "color/border/focus"
+    },
+    {
+      "id": "VariableID:4:47",
+      "name": "color/border/brand"
+    },
+    {
+      "id": "VariableID:4:48",
+      "name": "color/border/error"
+    },
+    {
+      "id": "VariableID:4:49",
+      "name": "color/icon/primary"
+    },
+    {
+      "id": "VariableID:4:50",
+      "name": "color/icon/brand"
+    },
+    {
+      "id": "VariableID:4:51",
+      "name": "color/icon/inverse"
+    },
+    {
+      "id": "VariableID:4:52",
+      "name": "space/0"
+    },
+    {
+      "id": "VariableID:4:53",
+      "name": "space/4"
+    },
+    {
+      "id": "VariableID:4:54",
+      "name": "space/8"
+    },
+    {
+      "id": "VariableID:4:55",
+      "name": "space/12"
+    },
+    {
+      "id": "VariableID:4:56",
+      "name": "space/16"
+    },
+    {
+      "id": "VariableID:4:57",
+      "name": "space/20"
+    },
+    {
+      "id": "VariableID:4:58",
+      "name": "space/24"
+    },
+    {
+      "id": "VariableID:4:59",
+      "name": "space/32"
+    },
+    {
+      "id": "VariableID:4:60",
+      "name": "space/40"
+    },
+    {
+      "id": "VariableID:4:61",
+      "name": "space/48"
+    },
+    {
+      "id": "VariableID:4:62",
+      "name": "space/64"
+    },
+    {
+      "id": "VariableID:4:63",
+      "name": "radius/0"
+    },
+    {
+      "id": "VariableID:4:64",
+      "name": "radius/8"
+    },
+    {
+      "id": "VariableID:4:65",
+      "name": "radius/12"
+    },
+    {
+      "id": "VariableID:4:66",
+      "name": "radius/16"
+    },
+    {
+      "id": "VariableID:4:67",
+      "name": "radius/24"
+    },
+    {
+      "id": "VariableID:4:68",
+      "name": "radius/999"
+    },
+    {
+      "id": "VariableID:4:69",
+      "name": "size/24"
+    },
+    {
+      "id": "VariableID:4:70",
+      "name": "size/44"
+    },
+    {
+      "id": "VariableID:4:71",
+      "name": "size/48"
+    },
+    {
+      "id": "VariableID:4:72",
+      "name": "size/56"
+    },
+    {
+      "id": "VariableID:4:73",
+      "name": "stroke/1"
+    },
+    {
+      "id": "VariableID:4:74",
+      "name": "stroke/2"
+    },
+    {
+      "id": "VariableID:22:950",
+      "name": "peach/100"
+    },
+    {
+      "id": "VariableID:22:951",
+      "name": "peach/300"
+    },
+    {
+      "id": "VariableID:22:952",
+      "name": "rose/500"
+    },
+    {
+      "id": "VariableID:22:953",
+      "name": "rose/700"
+    },
+    {
+      "id": "VariableID:22:954",
+      "name": "blush/300"
+    },
+    {
+      "id": "VariableID:22:955",
+      "name": "sand/300"
+    },
+    {
+      "id": "VariableID:22:956",
+      "name": "cream/50"
+    },
+    {
+      "id": "VariableID:22:957",
+      "name": "terracotta/500"
+    },
+    {
+      "id": "VariableID:22:958",
+      "name": "color/text/on-brand"
+    },
+    {
+      "id": "VariableID:22:959",
+      "name": "color/icon/on-brand"
+    },
+    {
+      "id": "VariableID:22:960",
+      "name": "color/text/success"
+    },
+    {
+      "id": "VariableID:22:961",
+      "name": "color/icon/success"
+    },
+    {
+      "id": "VariableID:22:962",
+      "name": "color/bg/accent"
+    },
+    {
+      "id": "VariableID:22:963",
+      "name": "color/bg/warm"
+    },
+    {
+      "id": "VariableID:22:964",
+      "name": "color/logo/mark"
+    },
+    {
+      "id": "VariableID:22:965",
+      "name": "color/logo/detail"
+    },
+    {
+      "id": "VariableID:23:950",
+      "name": "green/900"
+    }
+  ],
+  "styles": [
+    {
+      "id": "S:0e3ab5b180a78ac13cb1c398385e59db2944d3ab,",
+      "name": "KittyBank/Display",
+      "font": {
+        "family": "Poppins",
+        "style": "Bold"
+      }
+    },
+    {
+      "id": "S:f9aa9e6abff9ae19b13ad6267b3e69a36ce7dc45,",
+      "name": "KittyBank/Heading/Large",
+      "font": {
+        "family": "Poppins",
+        "style": "SemiBold"
+      }
+    },
+    {
+      "id": "S:34cbe827856ac05b8f2018f6af1247acc59fe74b,",
+      "name": "KittyBank/Heading/Medium",
+      "font": {
+        "family": "Poppins",
+        "style": "SemiBold"
+      }
+    },
+    {
+      "id": "S:4ef758fd21d87c98b71b42317ecfa666f79bc3e5,",
+      "name": "KittyBank/Heading/Small",
+      "font": {
+        "family": "Poppins",
+        "style": "SemiBold"
+      }
+    },
+    {
+      "id": "S:19c8cd8cadf9708c8453b8b3af0bbb968db2549e,",
+      "name": "KittyBank/Body/Large",
+      "font": {
+        "family": "Poppins",
+        "style": "Regular"
+      }
+    },
+    {
+      "id": "S:a6276f374e87515f5711dc1f595f69e0621b8a3b,",
+      "name": "KittyBank/Body/Small",
+      "font": {
+        "family": "Poppins",
+        "style": "Regular"
+      }
+    },
+    {
+      "id": "S:c1743d08b0bd7e2f90699068b97a9f85d03c8ad7,",
+      "name": "KittyBank/Label",
+      "font": {
+        "family": "Poppins",
+        "style": "SemiBold"
+      }
+    },
+    {
+      "id": "S:c1aed702d2e33c2869d6f85c04c771e3f3d0a907,",
+      "name": "KittyBank/Caption",
+      "font": {
+        "family": "Poppins",
+        "style": "Medium"
+      }
+    },
+    {
+      "id": "S:f2f6b816a091fcc977c414f67f5dfcbe7eff8de8,",
+      "name": "KittyBank/Amount",
+      "font": {
+        "family": "Poppins",
+        "style": "SemiBold"
+      }
+    }
+  ],
+  "paintStyles": [
+    {
+      "id": "S:02e2b4340fb35dc49691852c72893ac5da27f0df,",
+      "name": "KittyBank/Brand/Sunrise"
+    }
+  ]
+}

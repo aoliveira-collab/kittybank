@@ -1,0 +1,42 @@
+type KittyBankHelpMessageProps = {
+  className?: string;
+  author?: "Assistant" | "Customer";
+  message?: string;
+};
+
+export default function KittyBankHelpMessage({ className, author = "Assistant", message = "Olá! Em qual etapa posso ajudar?" }: KittyBankHelpMessageProps) {
+  const isCustomer = author === "Customer";
+  return (
+    <div className={className || `content-stretch flex flex-col gap-[var(--kb-space-8,8px)] items-start p-[var(--kb-space-16,16px)] relative rounded-[var(--kb-radius-16,16px)] w-[300px] ${isCustomer ? "bg-[var(--kb-color-bg-brand-soft,#ffe3d9)]" : "bg-[var(--kb-color-bg-subtle,#f5eae5)]"}`} id={isCustomer ? "node-12_1034" : "node-12_1031"}>
+      <p className="font-['Poppins:Medium'] leading-[16px] relative shrink-0 text-[12px] text-[color:var(--kb-color-text-brand,#923c2d)] whitespace-nowrap" id={isCustomer ? "node-12_1035" : "node-12_1032"}>
+        {isCustomer ? "Você" : "KittyBank"}
+      </p>
+      {author === "Assistant" && (
+        <p className="font-['Poppins:Regular'] leading-[20px] min-w-full relative shrink-0 text-[14px] text-[color:var(--kb-color-text-primary,#39242c)] w-[min-content]" data-node-id="12:1033">
+          {message}
+        </p>
+      )}
+      {isCustomer && (
+        <p className="font-['Poppins:Regular'] leading-[20px] min-w-full relative shrink-0 text-[14px] text-[color:var(--kb-color-text-primary,#39242c)] w-[min-content]" data-node-id="12:1036">
+          Quero ajuda para abrir minha conta.
+        </p>
+      )}
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: KittyBank/Caption: Font(family: "Poppins", style: Medium, size: 12, weight: 500, lineHeight: 16, letterSpacing: 0), KittyBank/Body/Small: Font(family: "Poppins", style: Regular, size: 14, weight: 400, lineHeight: 20, letterSpacing: 0).
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## KittyBank/Help/Message
+**Node ID:** 12:1037
+
+Bolha de conversa com autor explícito. Nunca solicitar senha ou código de segurança no chat.
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

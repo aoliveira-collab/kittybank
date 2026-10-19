@@ -1,0 +1,15 @@
+node_modules/
+dist/
+catalog-dist/
+.code-connect/
+playwright-report/
+test-results/
+coverage/
+.env
+.env.*
+!.env.example
+.DS_Store
+
+.playwright/
+
+*.tgz

@@ -1,0 +1,66 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/c095f675-089a-4c98-b64c-de25c0fb7897";
+const imgFrame = `${assetPathPrefix}/53b88.svg`;
+const imgFrame1 = `${assetPathPrefix}/b2a63.svg`;
+
+type KittyBankNavigationTabItemProps = {
+  className?: string;
+  icon?: React.ReactNode | null;
+  label?: string;
+  state?: "Default" | "Selected";
+};
+
+export default function KittyBankNavigationTabItem({ className, icon = null, label = "Início", state = "Default" }: KittyBankNavigationTabItemProps) {
+  const isDefault = state === "Default";
+  const isSelected = state === "Selected";
+  return (
+    <div className={className || `content-stretch flex flex-col gap-[var(--kb-space-4,4px)] items-center p-[var(--kb-space-8,8px)] relative rounded-[var(--kb-radius-12,12px)] w-[80px] ${isSelected ? "bg-[var(--kb-color-bg-brand-soft,#ffe3d9)]" : "bg-[var(--kb-color-bg-surface,white)]"}`} id={isSelected ? "node-11_577" : "node-11_572"}>
+      {isDefault &&
+        (icon || (
+          <div className="content-stretch flex gap-[var(--kb-space-0,0px)] items-start p-[var(--kb-space-0,0px)] relative shrink-0 w-[24px]" data-node-id="11:573" data-name="KittyBank/Icon/Home">
+            <div className="relative shrink-0 size-[24px]" data-node-id="I11:573;5:55" data-name="Frame">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame} />
+            </div>
+          </div>
+        ))}
+      {isDefault && (
+        <p className="[word-break:break-word] font-['Poppins:Medium'] leading-[16px] not-italic relative shrink-0 text-[12px] text-[color:var(--kb-color-text-secondary,#6e5058)] whitespace-nowrap" data-node-id="11:576">
+          {label}
+        </p>
+      )}
+      {isSelected &&
+        (icon || (
+          <div className="content-stretch flex gap-[var(--kb-space-0,0px)] items-start p-[var(--kb-space-0,0px)] relative shrink-0 w-[24px]" data-node-id="11:578" data-name="KittyBank/Icon/Home">
+            <div className="relative shrink-0 size-[24px]" data-node-id="I11:578;5:55" data-name="Frame">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame1} />
+            </div>
+          </div>
+        ))}
+      {isSelected && (
+        <p className="[word-break:break-word] font-['Poppins:Medium'] leading-[16px] not-italic relative shrink-0 text-[12px] text-[color:var(--kb-color-text-brand,#923c2d)] whitespace-nowrap" data-node-id="11:581">
+          {label}
+        </p>
+      )}
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: KittyBank/Caption: Font(family: "Poppins", style: Medium, size: 12, weight: 500, lineHeight: 16, letterSpacing: 0).
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## KittyBank/Navigation/TabItem
+**Node ID:** 11:582
+
+Aba com ícone e rótulo sempre visível. Seleção não depende apenas da cor.
+
+## KittyBank/Icon/Home
+**Node ID:** 5:54
+
+Ícone Home. Usar como instância dentro de uma área de toque de 44 px.
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

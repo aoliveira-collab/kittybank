@@ -1,0 +1,564 @@
+[
+  {
+    "component": "Logo",
+    "figmaName": "KittyBank/Brand/Logo",
+    "nodeId": "5:182",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=5-182",
+    "source": "src/components/brand.tsx",
+    "template": "code-connect/Logo.figma.ts",
+    "variants": {
+      "tone": ["White", "Primary", "Coral"]
+    },
+    "figmaProperties": ["Tone"]
+  },
+  {
+    "component": "Button",
+    "figmaName": "KittyBank/Button",
+    "nodeId": "6:124",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=6-124",
+    "source": "src/components/controls.tsx",
+    "template": "code-connect/Button.figma.ts",
+    "variants": {
+      "hierarchy": ["Primary", "Secondary", "Ghost"],
+      "state": ["Default", "Pressed", "Focus", "Disabled", "Loading"]
+    },
+    "figmaProperties": ["Icon", "Show icon", "Label", "Hierarchy", "State"]
+  },
+  {
+    "component": "IconButton",
+    "figmaName": "KittyBank/IconButton",
+    "nodeId": "6:219",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=6-219",
+    "source": "src/components/controls.tsx",
+    "template": "code-connect/IconButton.figma.ts",
+    "variants": {
+      "state": ["Default", "Pressed", "Focus", "Disabled"]
+    },
+    "figmaProperties": ["Icon", "State"]
+  },
+  {
+    "component": "TextField",
+    "figmaName": "KittyBank/Field/Text",
+    "nodeId": "6:314",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=6-314",
+    "source": "src/components/controls.tsx",
+    "template": "code-connect/TextField.figma.ts",
+    "variants": {
+      "state": ["Empty", "Filled", "Focus", "Error", "Disabled"],
+      "type": ["Text", "Password"]
+    },
+    "figmaProperties": ["Label", "Value", "Helper", "Show helper", "State", "Type"]
+  },
+  {
+    "component": "SelectField",
+    "figmaName": "KittyBank/Field/Select",
+    "nodeId": "6:445",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=6-445",
+    "source": "src/components/controls.tsx",
+    "template": "code-connect/SelectField.figma.ts",
+    "variants": {
+      "state": ["Empty", "Filled", "Open", "Error", "Disabled"]
+    },
+    "figmaProperties": ["Label", "Value", "State"]
+  },
+  {
+    "component": "Checkbox",
+    "figmaName": "KittyBank/Selection/Checkbox",
+    "nodeId": "6:514",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=6-514",
+    "source": "src/components/controls.tsx",
+    "template": "code-connect/Checkbox.figma.ts",
+    "variants": {
+      "state": ["Unchecked", "Checked", "Error", "Disabled"]
+    },
+    "figmaProperties": ["Label", "State"]
+  },
+  {
+    "component": "Switch",
+    "figmaName": "KittyBank/Selection/Switch",
+    "nodeId": "6:549",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=6-549",
+    "source": "src/components/controls.tsx",
+    "template": "code-connect/Switch.figma.ts",
+    "variants": {
+      "state": ["Off", "On", "Disabled"]
+    },
+    "figmaProperties": ["State"]
+  },
+  {
+    "component": "ChoiceCard",
+    "figmaName": "KittyBank/Onboarding/ChoiceCard",
+    "nodeId": "7:250",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=7-250",
+    "source": "src/components/onboarding.tsx",
+    "template": "code-connect/ChoiceCard.figma.ts",
+    "variants": {
+      "state": ["Default", "Selected", "Disabled"]
+    },
+    "figmaProperties": ["Icon", "Title", "Description", "State"]
+  },
+  {
+    "component": "CodeCell",
+    "figmaName": "KittyBank/Security/CodeCell",
+    "nodeId": "7:289",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=7-289",
+    "source": "src/components/security.tsx",
+    "template": "code-connect/CodeCell.figma.ts",
+    "variants": {
+      "state": ["Empty", "Focus", "Filled", "Error"]
+    },
+    "figmaProperties": ["Digit", "State"]
+  },
+  {
+    "component": "OTP",
+    "figmaName": "KittyBank/Security/OTP",
+    "nodeId": "7:359",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=7-359",
+    "source": "src/components/security.tsx",
+    "template": "code-connect/OTP.figma.ts",
+    "variants": {
+      "state": ["Empty", "Filled", "Error"]
+    },
+    "figmaProperties": ["Label", "State"]
+  },
+  {
+    "component": "StepProgress",
+    "figmaName": "KittyBank/Onboarding/StepProgress",
+    "nodeId": "7:437",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=7-437",
+    "source": "src/components/onboarding.tsx",
+    "template": "code-connect/StepProgress.figma.ts",
+    "variants": {
+      "step": ["1", "2", "3"]
+    },
+    "figmaProperties": ["Label", "Step"]
+  },
+  {
+    "component": "DocumentUpload",
+    "figmaName": "KittyBank/Security/DocumentUpload",
+    "nodeId": "7:488",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=7-488",
+    "source": "src/components/security.tsx",
+    "template": "code-connect/DocumentUpload.figma.ts",
+    "variants": {
+      "state": ["Empty", "Uploading", "Success", "Error"]
+    },
+    "figmaProperties": ["Title", "Description", "State"]
+  },
+  {
+    "component": "Biometric",
+    "figmaName": "KittyBank/Security/Biometric",
+    "nodeId": "7:548",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=7-548",
+    "source": "src/components/security.tsx",
+    "template": "code-connect/Biometric.figma.ts",
+    "variants": {
+      "state": ["Ready", "Scanning", "Success", "Error"]
+    },
+    "figmaProperties": ["Title", "Instructions", "State"]
+  },
+  {
+    "component": "PasswordRules",
+    "figmaName": "KittyBank/Security/PasswordRules",
+    "nodeId": "7:618",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=7-618",
+    "source": "src/components/security.tsx",
+    "template": "code-connect/PasswordRules.figma.ts",
+    "variants": {
+      "state": ["Pending", "Valid"]
+    },
+    "figmaProperties": ["State"]
+  },
+  {
+    "component": "ActionFooter",
+    "figmaName": "KittyBank/Onboarding/ActionFooter",
+    "nodeId": "7:692",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=7-692",
+    "source": "src/components/onboarding.tsx",
+    "template": "code-connect/ActionFooter.figma.ts",
+    "variants": {
+      "state": ["Incomplete", "Ready", "Submitting"]
+    },
+    "figmaProperties": ["State"]
+  },
+  {
+    "component": "Header",
+    "figmaName": "KittyBank/Navigation/Header",
+    "nodeId": "11:533",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=11-533",
+    "source": "src/components/navigation.tsx",
+    "template": "code-connect/Header.figma.ts",
+    "variants": {
+      "context": ["Onboarding", "Account", "Overlay"]
+    },
+    "figmaProperties": ["Title", "Context"]
+  },
+  {
+    "component": "TabItem",
+    "figmaName": "KittyBank/Navigation/TabItem",
+    "nodeId": "11:582",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=11-582",
+    "source": "src/components/navigation.tsx",
+    "template": "code-connect/TabItem.figma.ts",
+    "variants": {
+      "state": ["Default", "Selected"]
+    },
+    "figmaProperties": ["Icon", "Label", "State"]
+  },
+  {
+    "component": "BottomBar",
+    "figmaName": "KittyBank/Navigation/BottomBar",
+    "nodeId": "11:699",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=11-699",
+    "source": "src/components/navigation.tsx",
+    "template": "code-connect/BottomBar.figma.ts",
+    "variants": {
+      "active": ["Home", "Cards", "Activity", "Profile"]
+    },
+    "figmaProperties": ["Active"]
+  },
+  {
+    "component": "Balance",
+    "figmaName": "KittyBank/Banking/Balance",
+    "nodeId": "11:822",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=11-822",
+    "source": "src/components/banking.tsx",
+    "template": "code-connect/Balance.figma.ts",
+    "variants": {
+      "state": ["Visible", "Hidden", "Loading"]
+    },
+    "figmaProperties": ["Amount", "State"]
+  },
+  {
+    "component": "PaymentCard",
+    "figmaName": "KittyBank/Banking/PaymentCard",
+    "nodeId": "11:875",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=11-875",
+    "source": "src/components/banking.tsx",
+    "template": "code-connect/PaymentCard.figma.ts",
+    "variants": {
+      "state": ["Active", "Frozen"]
+    },
+    "figmaProperties": ["Holder", "State"]
+  },
+  {
+    "component": "TransactionRow",
+    "figmaName": "KittyBank/Banking/TransactionRow",
+    "nodeId": "11:930",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=11-930",
+    "source": "src/components/banking.tsx",
+    "template": "code-connect/TransactionRow.figma.ts",
+    "variants": {
+      "type": ["Incoming", "Outgoing", "Pending"]
+    },
+    "figmaProperties": ["Title", "Meta", "Amount", "Type"]
+  },
+  {
+    "component": "QuickAction",
+    "figmaName": "KittyBank/Banking/QuickAction",
+    "nodeId": "11:982",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=11-982",
+    "source": "src/components/banking.tsx",
+    "template": "code-connect/QuickAction.figma.ts",
+    "variants": {
+      "state": ["Default", "Pressed", "Disabled"]
+    },
+    "figmaProperties": ["Icon", "Label", "State"]
+  },
+  {
+    "component": "SummaryRow",
+    "figmaName": "KittyBank/Banking/SummaryRow",
+    "nodeId": "11:1012",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=11-1012",
+    "source": "src/components/banking.tsx",
+    "template": "code-connect/SummaryRow.figma.ts",
+    "variants": {
+      "emphasis": ["Default", "Total"]
+    },
+    "figmaProperties": ["Label", "Value", "Emphasis"]
+  },
+  {
+    "component": "Badge",
+    "figmaName": "KittyBank/Feedback/Badge",
+    "nodeId": "12:801",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=12-801",
+    "source": "src/components/feedback.tsx",
+    "template": "code-connect/Badge.figma.ts",
+    "variants": {
+      "tone": ["Success", "Warning", "Error", "Info"]
+    },
+    "figmaProperties": ["Tone"]
+  },
+  {
+    "component": "Alert",
+    "figmaName": "KittyBank/Feedback/Alert",
+    "nodeId": "12:844",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=12-844",
+    "source": "src/components/feedback.tsx",
+    "template": "code-connect/Alert.figma.ts",
+    "variants": {
+      "tone": ["Success", "Warning", "Error", "Info"]
+    },
+    "figmaProperties": ["Title", "Description", "Tone"]
+  },
+  {
+    "component": "StateBlock",
+    "figmaName": "KittyBank/Feedback/StateBlock",
+    "nodeId": "12:921",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=12-921",
+    "source": "src/components/feedback.tsx",
+    "template": "code-connect/StateBlock.figma.ts",
+    "variants": {
+      "state": ["Success", "Empty", "Error", "Loading"]
+    },
+    "figmaProperties": ["Title", "Description", "State"]
+  },
+  {
+    "component": "Confirmation",
+    "figmaName": "KittyBank/Overlay/Confirmation",
+    "nodeId": "12:1000",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=12-1000",
+    "source": "src/components/feedback.tsx",
+    "template": "code-connect/Confirmation.figma.ts",
+    "variants": {
+      "intent": ["ResumeLater", "ConfirmTransfer"]
+    },
+    "figmaProperties": ["Intent"]
+  },
+  {
+    "component": "Message",
+    "figmaName": "KittyBank/Help/Message",
+    "nodeId": "12:1037",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=12-1037",
+    "source": "src/components/help.tsx",
+    "template": "code-connect/Message.figma.ts",
+    "variants": {
+      "author": ["Assistant", "Customer"]
+    },
+    "figmaProperties": ["Message", "Author"]
+  },
+  {
+    "component": "Composer",
+    "figmaName": "KittyBank/Help/Composer",
+    "nodeId": "12:1068",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=12-1068",
+    "source": "src/components/help.tsx",
+    "template": "code-connect/Composer.figma.ts",
+    "variants": {
+      "state": ["Empty", "Ready", "Sending"]
+    },
+    "figmaProperties": ["Message", "State"]
+  },
+  {
+    "component": "Mark",
+    "figmaName": "KittyBank/Brand/Mark",
+    "nodeId": "13:941",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=13-941",
+    "source": "src/components/brand.tsx",
+    "template": "code-connect/Mark.figma.ts",
+    "variants": {
+      "tone": ["Coral", "White"]
+    },
+    "figmaProperties": ["Tone"]
+  },
+  {
+    "component": "ArrowRightIcon",
+    "figmaName": "KittyBank/Icon/ArrowRight",
+    "nodeId": "5:6",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=5-6",
+    "source": "src/components/icons.tsx",
+    "template": "code-connect/icons/ArrowRightIcon.figma.ts",
+    "variants": {},
+    "figmaProperties": []
+  },
+  {
+    "component": "BackIcon",
+    "figmaName": "KittyBank/Icon/Back",
+    "nodeId": "5:14",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=5-14",
+    "source": "src/components/icons.tsx",
+    "template": "code-connect/icons/BackIcon.figma.ts",
+    "variants": {},
+    "figmaProperties": []
+  },
+  {
+    "component": "CloseIcon",
+    "figmaName": "KittyBank/Icon/Close",
+    "nodeId": "5:22",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=5-22",
+    "source": "src/components/icons.tsx",
+    "template": "code-connect/icons/CloseIcon.figma.ts",
+    "variants": {},
+    "figmaProperties": []
+  },
+  {
+    "component": "CheckIcon",
+    "figmaName": "KittyBank/Icon/Check",
+    "nodeId": "5:30",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=5-30",
+    "source": "src/components/icons.tsx",
+    "template": "code-connect/icons/CheckIcon.figma.ts",
+    "variants": {},
+    "figmaProperties": []
+  },
+  {
+    "component": "ChevronDownIcon",
+    "figmaName": "KittyBank/Icon/ChevronDown",
+    "nodeId": "5:38",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=5-38",
+    "source": "src/components/icons.tsx",
+    "template": "code-connect/icons/ChevronDownIcon.figma.ts",
+    "variants": {},
+    "figmaProperties": []
+  },
+  {
+    "component": "EyeIcon",
+    "figmaName": "KittyBank/Icon/Eye",
+    "nodeId": "5:46",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=5-46",
+    "source": "src/components/icons.tsx",
+    "template": "code-connect/icons/EyeIcon.figma.ts",
+    "variants": {},
+    "figmaProperties": []
+  },
+  {
+    "component": "HomeIcon",
+    "figmaName": "KittyBank/Icon/Home",
+    "nodeId": "5:54",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=5-54",
+    "source": "src/components/icons.tsx",
+    "template": "code-connect/icons/HomeIcon.figma.ts",
+    "variants": {},
+    "figmaProperties": []
+  },
+  {
+    "component": "CardIcon",
+    "figmaName": "KittyBank/Icon/Card",
+    "nodeId": "5:62",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=5-62",
+    "source": "src/components/icons.tsx",
+    "template": "code-connect/icons/CardIcon.figma.ts",
+    "variants": {},
+    "figmaProperties": []
+  },
+  {
+    "component": "TransferIcon",
+    "figmaName": "KittyBank/Icon/Transfer",
+    "nodeId": "5:70",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=5-70",
+    "source": "src/components/icons.tsx",
+    "template": "code-connect/icons/TransferIcon.figma.ts",
+    "variants": {},
+    "figmaProperties": []
+  },
+  {
+    "component": "UserIcon",
+    "figmaName": "KittyBank/Icon/User",
+    "nodeId": "5:78",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=5-78",
+    "source": "src/components/icons.tsx",
+    "template": "code-connect/icons/UserIcon.figma.ts",
+    "variants": {},
+    "figmaProperties": []
+  },
+  {
+    "component": "HelpIcon",
+    "figmaName": "KittyBank/Icon/Help",
+    "nodeId": "5:86",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=5-86",
+    "source": "src/components/icons.tsx",
+    "template": "code-connect/icons/HelpIcon.figma.ts",
+    "variants": {},
+    "figmaProperties": []
+  },
+  {
+    "component": "LockIcon",
+    "figmaName": "KittyBank/Icon/Lock",
+    "nodeId": "5:95",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=5-95",
+    "source": "src/components/icons.tsx",
+    "template": "code-connect/icons/LockIcon.figma.ts",
+    "variants": {},
+    "figmaProperties": []
+  },
+  {
+    "component": "DocumentIcon",
+    "figmaName": "KittyBank/Icon/Document",
+    "nodeId": "5:103",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=5-103",
+    "source": "src/components/icons.tsx",
+    "template": "code-connect/icons/DocumentIcon.figma.ts",
+    "variants": {},
+    "figmaProperties": []
+  },
+  {
+    "component": "CameraIcon",
+    "figmaName": "KittyBank/Icon/Camera",
+    "nodeId": "5:111",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=5-111",
+    "source": "src/components/icons.tsx",
+    "template": "code-connect/icons/CameraIcon.figma.ts",
+    "variants": {},
+    "figmaProperties": []
+  },
+  {
+    "component": "UploadIcon",
+    "figmaName": "KittyBank/Icon/Upload",
+    "nodeId": "5:119",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=5-119",
+    "source": "src/components/icons.tsx",
+    "template": "code-connect/icons/UploadIcon.figma.ts",
+    "variants": {},
+    "figmaProperties": []
+  },
+  {
+    "component": "BellIcon",
+    "figmaName": "KittyBank/Icon/Bell",
+    "nodeId": "5:127",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=5-127",
+    "source": "src/components/icons.tsx",
+    "template": "code-connect/icons/BellIcon.figma.ts",
+    "variants": {},
+    "figmaProperties": []
+  },
+  {
+    "component": "SearchIcon",
+    "figmaName": "KittyBank/Icon/Search",
+    "nodeId": "5:135",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=5-135",
+    "source": "src/components/icons.tsx",
+    "template": "code-connect/icons/SearchIcon.figma.ts",
+    "variants": {},
+    "figmaProperties": []
+  },
+  {
+    "component": "PlusIcon",
+    "figmaName": "KittyBank/Icon/Plus",
+    "nodeId": "5:143",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=5-143",
+    "source": "src/components/icons.tsx",
+    "template": "code-connect/icons/PlusIcon.figma.ts",
+    "variants": {},
+    "figmaProperties": []
+  },
+  {
+    "component": "WarningIcon",
+    "figmaName": "KittyBank/Icon/Warning",
+    "nodeId": "5:151",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=5-151",
+    "source": "src/components/icons.tsx",
+    "template": "code-connect/icons/WarningIcon.figma.ts",
+    "variants": {},
+    "figmaProperties": []
+  },
+  {
+    "component": "SpinnerIcon",
+    "figmaName": "KittyBank/Icon/Spinner",
+    "nodeId": "5:159",
+    "url": "https://www.figma.com/design/RJaBgLXi6Vf9whEbBVw3tY/Kitty-Bank-Design-System?node-id=5-159",
+    "source": "src/components/icons.tsx",
+    "template": "code-connect/icons/SpinnerIcon.figma.ts",
+    "variants": {},
+    "figmaProperties": []
+  }
+]

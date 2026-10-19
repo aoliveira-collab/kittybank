@@ -1,0 +1,90 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/66e1e408-ecd9-4369-8ad1-ebe1b6a8a4be";
+const imgFrame = `${assetPathPrefix}/d8615.svg`;
+
+type KittyBankFieldSelectProps = {
+  className?: string;
+  label?: string;
+  state?: "Empty" | "Filled" | "Open" | "Error" | "Disabled";
+  value?: string;
+};
+
+export default function KittyBankFieldSelect({ className, label = "Tipo de documento", state = "Empty", value = "Selecione uma opção" }: KittyBankFieldSelectProps) {
+  const isDisabled = state === "Disabled";
+  const isEmpty = state === "Empty";
+  const isError = state === "Error";
+  const isFilled = state === "Filled";
+  const isFilledOrOpenOrErrorOrDisabled = ["Filled", "Open", "Error", "Disabled"].includes(state);
+  const isOpen = state === "Open";
+  return (
+    <div className={className || "content-stretch flex flex-col gap-[var(--kb-space-8,8px)] items-start p-[var(--kb-space-0,0px)] relative w-[360px]"} id={isDisabled ? "node-6_438" : isError ? "node-6_430" : isOpen ? "node-6_419" : isFilled ? "node-6_412" : "node-6_405"}>
+      <p className="[word-break:break-word] font-['Poppins:SemiBold'] leading-[20px] not-italic relative shrink-0 text-[14px] text-[color:var(--kb-color-text-primary,#39242c)] whitespace-nowrap" data-node-id="6:406">
+        {label}
+      </p>
+      <div className={`border-[length:var(--kb-stroke-1,1px)] border-solid content-stretch flex gap-[var(--kb-space-12,12px)] items-start p-[var(--kb-space-16,16px)] relative rounded-[var(--kb-radius-12,12px)] shrink-0 w-full ${isDisabled ? "bg-[var(--kb-color-bg-disabled,#f5eae5)] border-[var(--kb-color-border-default,#78616a)]" : isError ? "bg-[var(--kb-color-bg-surface,white)] border-[var(--kb-color-border-error,#b42318)]" : isOpen ? "bg-[var(--kb-color-bg-surface,white)] border-[var(--kb-color-border-focus,#ad285e)]" : "bg-[var(--kb-color-bg-surface,white)] border-[var(--kb-color-border-default,#78616a)]"}`} id={isDisabled ? "node-6_440" : isError ? "node-6_432" : isOpen ? "node-6_421" : isFilled ? "node-6_414" : "node-6_407"} data-name="Select container">
+        {isFilledOrOpenOrErrorOrDisabled && (
+          <>
+            <p className="[word-break:break-word] flex-[1_0_0] font-['Poppins:Regular'] leading-[24px] min-w-px not-italic relative text-[16px] text-[color:var(--kb-color-text-primary,#39242c)]" id={isDisabled ? "node-6_441" : isError ? "node-6_433" : isOpen ? "node-6_422" : "node-6_415"}>
+              RG
+            </p>
+            <div className="content-stretch flex gap-[var(--kb-space-0,0px)] items-start p-[var(--kb-space-0,0px)] relative shrink-0 w-[24px]" id={isDisabled ? "node-6_442" : isError ? "node-6_434" : isOpen ? "node-6_423" : "node-6_416"} data-name="KittyBank/Icon/ChevronDown">
+              <div className="relative shrink-0 size-[24px]" id={isDisabled ? "node-I6_442-5_39" : isError ? "node-I6_434-5_39" : isOpen ? "node-I6_423-5_39" : "node-I6_416-5_39"} data-name="Frame">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame} />
+              </div>
+            </div>
+          </>
+        )}
+        {isEmpty && (
+          <>
+            <p className="[word-break:break-word] flex-[1_0_0] font-['Poppins:Regular'] leading-[24px] min-w-px not-italic relative text-[16px] text-[color:var(--kb-color-text-primary,#39242c)]" data-node-id="6:408">
+              {value}
+            </p>
+            <div className="content-stretch flex gap-[var(--kb-space-0,0px)] items-start p-[var(--kb-space-0,0px)] relative shrink-0 w-[24px]" data-node-id="6:409" data-name="KittyBank/Icon/ChevronDown">
+              <div className="relative shrink-0 size-[24px]" data-node-id="I6:409;5:39" data-name="Frame">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame} />
+              </div>
+            </div>
+          </>
+        )}
+      </div>
+      {isOpen && (
+        <div className="[word-break:break-word] bg-[var(--kb-color-bg-surface,white)] border-[length:var(--kb-stroke-1,1px)] border-[var(--kb-color-border-subtle,#ddc9c1)] border-solid content-stretch flex flex-col gap-[var(--kb-space-16,16px)] items-start not-italic p-[var(--kb-space-16,16px)] relative rounded-[var(--kb-radius-12,12px)] shrink-0 w-full whitespace-nowrap" data-node-id="6:426" data-name="Options">
+          <p className="font-['Poppins:SemiBold'] leading-[20px] relative shrink-0 text-[14px] text-[color:var(--kb-color-text-brand,#923c2d)]" data-node-id="6:427">
+            RG
+          </p>
+          <p className="font-['Poppins:Regular'] leading-[24px] relative shrink-0 text-[16px] text-[color:var(--kb-color-text-primary,#39242c)]" data-node-id="6:428">
+            CNH
+          </p>
+          <p className="font-['Poppins:Regular'] leading-[24px] relative shrink-0 text-[16px] text-[color:var(--kb-color-text-primary,#39242c)]" data-node-id="6:429">
+            RNE
+          </p>
+        </div>
+      )}
+      {isError && (
+        <p className="[word-break:break-word] font-['Poppins:Medium'] leading-[16px] not-italic relative shrink-0 text-[12px] text-[color:var(--kb-color-text-error,#b42318)] whitespace-nowrap" data-node-id="6:437">
+          Escolha um documento.
+        </p>
+      )}
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: KittyBank/Label: Font(family: "Poppins", style: SemiBold, size: 14, weight: 600, lineHeight: 20, letterSpacing: 0), KittyBank/Body/Large: Font(family: "Poppins", style: Regular, size: 16, weight: 400, lineHeight: 24, letterSpacing: 0), KittyBank/Caption: Font(family: "Poppins", style: Medium, size: 12, weight: 500, lineHeight: 16, letterSpacing: 0).
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## KittyBank/Field/Select
+**Node ID:** 6:445
+
+O estado Open representa a lista de opções. Seleção real e fechamento serão ligados no protótipo da jornada.
+
+## KittyBank/Icon/ChevronDown
+**Node ID:** 5:38
+
+Ícone ChevronDown. Usar como instância dentro de uma área de toque de 44 px.
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

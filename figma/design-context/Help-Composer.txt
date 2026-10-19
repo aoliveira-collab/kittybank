@@ -1,0 +1,88 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/2f271037-05de-4df4-8b83-5f8ca37d2668";
+const imgFrame = `${assetPathPrefix}/f7450.svg`;
+const imgFrame1 = `${assetPathPrefix}/298fd.svg`;
+
+type KittyBankHelpComposerProps = {
+  className?: string;
+  message?: string;
+  state?: "Empty" | "Ready" | "Sending";
+};
+
+export default function KittyBankHelpComposer({ className, message = "Escreva sua mensagem…", state = "Empty" }: KittyBankHelpComposerProps) {
+  const isEmpty = state === "Empty";
+  const isReady = state === "Ready";
+  const isReadyOrSending = ["Ready", "Sending"].includes(state);
+  const isSending = state === "Sending";
+  return (
+    <div className={className || "bg-[var(--kb-color-bg-surface,white)] border-[length:var(--kb-stroke-1,1px)] border-[var(--kb-color-border-subtle,#ddc9c1)] border-solid content-stretch flex gap-[var(--kb-space-12,12px)] items-start p-[var(--kb-space-12,12px)] relative rounded-[var(--kb-radius-16,16px)] w-[390px]"} id={isSending ? "node-12_1062" : isReady ? "node-12_1056" : "node-12_1050"}>
+      {isReadyOrSending && (
+        <>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Poppins:Regular'] leading-[20px] min-w-px not-italic relative text-[14px] text-[color:var(--kb-color-text-secondary,#6e5058)]" id={isSending ? "node-12_1063" : "node-12_1057"}>
+            {isSending ? "Enviando…" : isReady ? "Preciso de ajuda" : ""}
+          </p>
+          <div className="bg-[var(--kb-color-bg-subtle,#f5eae5)] content-stretch flex gap-[var(--kb-space-8,8px)] items-center justify-center p-[var(--kb-space-0,0px)] relative rounded-[var(--kb-radius-12,12px)] shrink-0 size-[48px]" id={isSending ? "node-12_1064" : "node-12_1058"} data-name="KittyBank/IconButton">
+            {isReady && (
+              <div className="content-stretch flex gap-[var(--kb-space-0,0px)] items-start p-[var(--kb-space-0,0px)] relative shrink-0 w-[24px]" data-node-id="I12:1058;6:204" data-name="KittyBank/Icon/ArrowRight">
+                <div className="relative shrink-0 size-[24px]" data-node-id="I12:1058;6:204;5:7" data-name="Frame">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame} />
+                </div>
+              </div>
+            )}
+            {isSending && (
+              <div className="content-stretch flex gap-[var(--kb-space-0,0px)] items-start p-[var(--kb-space-0,0px)] relative shrink-0 w-[24px]" data-node-id="I12:1064;6:204" data-name="KittyBank/Icon/Spinner">
+                <div className="relative shrink-0 size-[24px]" data-node-id="I12:1064;6:204;5:160" data-name="Frame">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame1} />
+                </div>
+              </div>
+            )}
+          </div>
+        </>
+      )}
+      {isEmpty && (
+        <>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Poppins:Regular'] leading-[20px] min-w-px not-italic relative text-[14px] text-[color:var(--kb-color-text-secondary,#6e5058)]" data-node-id="12:1051">
+            {message}
+          </p>
+          <div className="bg-[var(--kb-color-bg-subtle,#f5eae5)] content-stretch flex gap-[var(--kb-space-8,8px)] items-center justify-center opacity-45 p-[var(--kb-space-0,0px)] relative rounded-[var(--kb-radius-12,12px)] shrink-0 size-[48px]" data-node-id="12:1052" data-name="KittyBank/IconButton">
+            <div className="content-stretch flex gap-[var(--kb-space-0,0px)] items-start p-[var(--kb-space-0,0px)] relative shrink-0 w-[24px]" data-node-id="I12:1052;6:216" data-name="KittyBank/Icon/ArrowRight">
+              <div className="relative shrink-0 size-[24px]" data-node-id="I12:1052;6:216;5:7" data-name="Frame">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame} />
+              </div>
+            </div>
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: KittyBank/Body/Small: Font(family: "Poppins", style: Regular, size: 14, weight: 400, lineHeight: 20, letterSpacing: 0).
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## KittyBank/Help/Composer
+**Node ID:** 12:1068
+
+Entrada do chat. Empty e Sending bloqueiam envio; Ready permite enviar.
+
+## KittyBank/IconButton
+**Node ID:** 6:219
+
+Ação de ícone 48 × 48. Implementação deve fornecer rótulo acessível.
+
+## KittyBank/Icon/ArrowRight
+**Node ID:** 5:6
+
+Ícone ArrowRight. Usar como instância dentro de uma área de toque de 44 px.
+
+## KittyBank/Icon/Spinner
+**Node ID:** 5:159
+
+Ícone Spinner. Usar como instância dentro de uma área de toque de 44 px.
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

@@ -1,0 +1,37 @@
+type KittyBankOnboardingStepProgressProps = {
+  className?: string;
+  step?: "1" | "2" | "3";
+};
+
+export default function KittyBankOnboardingStepProgress({ className, step = "1" }: KittyBankOnboardingStepProgressProps) {
+  const is2 = step === "2";
+  const is3 = step === "3";
+  return (
+    <div className={className || "content-stretch flex flex-col gap-[var(--kb-space-8,8px)] items-start p-[var(--kb-space-0,0px)] relative w-[360px]"} id={is3 ? "node-7_431" : is2 ? "node-7_425" : "node-7_419"}>
+      <p className="[word-break:break-word] font-['Poppins:Medium'] leading-[16px] not-italic relative shrink-0 text-[12px] text-[color:var(--kb-color-text-secondary,#6e5058)] whitespace-nowrap" id={is3 ? "node-7_432" : is2 ? "node-7_426" : "node-7_420"}>
+        {is3 ? "Etapa 3 de 3" : is2 ? "Etapa 2 de 3" : "Etapa 1 de 3"}
+      </p>
+      <div className="content-stretch flex gap-[var(--kb-space-8,8px)] items-start p-[var(--kb-space-0,0px)] relative shrink-0 w-full" id={is3 ? "node-7_433" : is2 ? "node-7_427" : "node-7_421"} data-name="Progress segments">
+        <div className="bg-[var(--kb-color-bg-brand-strong,#4a202a)] flex-[1_0_0] h-[4px] min-w-px relative rounded-[var(--kb-radius-999,999px)]" id={is3 ? "node-7_434" : is2 ? "node-7_428" : "node-7_422"} data-name="Step 1" />
+        <div className={`flex-[1_0_0] h-[4px] min-w-px relative rounded-[var(--kb-radius-999,999px)] ${["2", "3"].includes(step) ? "bg-[var(--kb-color-bg-brand-strong,#4a202a)]" : "bg-[var(--kb-color-bg-subtle,#f5eae5)]"}`} id={is3 ? "node-7_435" : is2 ? "node-7_429" : "node-7_423"} data-name="Step 2" />
+        <div className={`flex-[1_0_0] h-[4px] min-w-px relative rounded-[var(--kb-radius-999,999px)] ${is3 ? "bg-[var(--kb-color-bg-brand-strong,#4a202a)]" : "bg-[var(--kb-color-bg-subtle,#f5eae5)]"}`} id={is3 ? "node-7_436" : is2 ? "node-7_430" : "node-7_424"} data-name="Step 3" />
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: KittyBank/Caption: Font(family: "Poppins", style: Medium, size: 12, weight: 500, lineHeight: 16, letterSpacing: 0).
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## KittyBank/Onboarding/StepProgress
+**Node ID:** 7:437
+
+Progresso por macroetapas, com legenda textual. Não inferir percentual a partir da quantidade de campos.
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

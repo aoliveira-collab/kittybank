@@ -1,0 +1,42 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/510c4077-f0f2-434e-9c3a-17c7f9a6c931";
+const imgVector = `${assetPathPrefix}/5dccc.svg`;
+const imgVector1 = `${assetPathPrefix}/23f55.svg`;
+const imgVector2 = `${assetPathPrefix}/1f378.svg`;
+
+type KittyBankBrandMarkProps = {
+  className?: string;
+  tone?: "Coral" | "White";
+};
+
+export default function KittyBankBrandMark({ className, tone = "Coral" }: KittyBankBrandMarkProps) {
+  const isWhite = tone === "White";
+  return (
+    <div className={className || "content-stretch flex flex-col gap-[var(--kb-space-8,8px)] items-start p-[var(--kb-space-0,0px)] relative w-[48px]"} id={isWhite ? "node-13_937" : "node-13_933"}>
+      <div className="h-[48px] overflow-clip relative shrink-0 w-full" id={isWhite ? "node-13_938" : "node-13_934"} data-name="Frame">
+        <div className="absolute inset-[14.58%_14.58%_12.5%_14.58%]" id={isWhite ? "node-13_939" : "node-13_935"} data-name="Vector">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={isWhite ? imgVector2 : imgVector} />
+        </div>
+        <div className="absolute inset-[37.5%_33.33%]" id={isWhite ? "node-13_940" : "node-13_936"} data-name="Vector">
+          <div className="absolute inset-[-14.58%_-10.94%]">
+            <img alt="" className="block max-w-none size-full" src={imgVector1} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## KittyBank/Brand/Mark
+**Node ID:** 13:941
+
+Símbolo KittyBank: gato e confirmação. Coral com detalhe ameixa. Versão branca para superfícies escuras.
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

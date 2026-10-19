@@ -1,0 +1,11 @@
+node_modules
+dist
+catalog-dist
+.playwright
+.code-connect
+test-results
+figma/design-context
+figma/*.json
+KittyBank-Guidelines.md
+KittyBank-logo.svg
+src/assets

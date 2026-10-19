@@ -1,0 +1,76 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/fefe1d55-0e24-44cc-abf3-e91c01bf0eec";
+const imgFrame = `${assetPathPrefix}/440ab.svg`;
+
+type KittyBankSelectionCheckboxProps = {
+  className?: string;
+  label?: string;
+  state?: "Unchecked" | "Checked" | "Error" | "Disabled";
+};
+
+export default function KittyBankSelectionCheckbox({ className, label = "Li e aceito os termos de uso", state = "Unchecked" }: KittyBankSelectionCheckboxProps) {
+  if (state === "Checked") {
+    return (
+      <button className={className || "content-stretch cursor-pointer flex gap-[var(--kb-space-12,12px)] items-center p-[var(--kb-space-12,12px)] relative w-[255px]"} data-node-id="6:502" data-name="State=Checked">
+        <div className="bg-[var(--kb-color-bg-brand,#ff8a6a)] border-[length:var(--kb-stroke-1,1px)] border-[var(--kb-color-border-brand,#923c2d)] border-solid content-stretch flex gap-[var(--kb-space-0,0px)] items-start p-[var(--kb-space-0,0px)] relative rounded-[var(--kb-radius-8,8px)] shrink-0 size-[24px]" data-node-id="6:503" data-name="Control">
+          <div className="content-stretch flex gap-[var(--kb-space-0,0px)] items-start p-[var(--kb-space-0,0px)] relative shrink-0 w-[24px]" data-node-id="6:504" data-name="KittyBank/Icon/Check">
+            <div className="relative shrink-0 size-[24px]" data-node-id="I6:504;5:31" data-name="Frame">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame} />
+            </div>
+          </div>
+        </div>
+        <p className="[word-break:break-word] flex-[1_0_0] font-['Poppins:Regular'] leading-[20px] min-w-px not-italic relative text-[14px] text-[color:var(--kb-color-text-primary,#39242c)] text-left" data-node-id="6:507">
+          {label}
+        </p>
+      </button>
+    );
+  }
+  if (state === "Error") {
+    return (
+      <div className={className || "content-stretch flex gap-[var(--kb-space-12,12px)] items-center p-[var(--kb-space-12,12px)] relative w-[255px]"} data-node-id="6:508" data-name="State=Error">
+        <div className="bg-[var(--kb-color-bg-surface,white)] border-[length:var(--kb-stroke-1,1px)] border-[var(--kb-color-border-error,#b42318)] border-solid relative rounded-[var(--kb-radius-8,8px)] shrink-0 size-[24px]" data-node-id="6:509" data-name="Control" />
+        <p className="[word-break:break-word] flex-[1_0_0] font-['Poppins:Regular'] leading-[20px] min-w-px not-italic relative text-[14px] text-[color:var(--kb-color-text-primary,#39242c)]" data-node-id="6:510">
+          {label}
+        </p>
+      </div>
+    );
+  }
+  if (state === "Disabled") {
+    return (
+      <div className={className || "content-stretch flex gap-[var(--kb-space-12,12px)] items-center opacity-45 p-[var(--kb-space-12,12px)] relative w-[255px]"} data-node-id="6:511" data-name="State=Disabled">
+        <div className="bg-[var(--kb-color-bg-surface,white)] border-[length:var(--kb-stroke-1,1px)] border-[var(--kb-color-border-brand,#923c2d)] border-solid relative rounded-[var(--kb-radius-8,8px)] shrink-0 size-[24px]" data-node-id="6:512" data-name="Control" />
+        <p className="[word-break:break-word] flex-[1_0_0] font-['Poppins:Regular'] leading-[20px] min-w-px not-italic relative text-[14px] text-[color:var(--kb-color-text-primary,#39242c)]" data-node-id="6:513">
+          {label}
+        </p>
+      </div>
+    );
+  }
+  return (
+    <button className={className || "content-stretch cursor-pointer flex gap-[var(--kb-space-12,12px)] items-center p-[var(--kb-space-12,12px)] relative w-[255px]"} data-node-id="6:499" data-name="State=Unchecked">
+      <div className="bg-[var(--kb-color-bg-surface,white)] border-[length:var(--kb-stroke-1,1px)] border-[var(--kb-color-border-brand,#923c2d)] border-solid relative rounded-[var(--kb-radius-8,8px)] shrink-0 size-[24px]" data-node-id="6:500" data-name="Control" />
+      <p className="[word-break:break-word] flex-[1_0_0] font-['Poppins:Regular'] leading-[20px] min-w-px not-italic relative text-[14px] text-[color:var(--kb-color-text-primary,#39242c)] text-left" data-node-id="6:501">
+        {label}
+      </p>
+    </button>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: KittyBank/Body/Small: Font(family: "Poppins", style: Regular, size: 14, weight: 400, lineHeight: 20, letterSpacing: 0).
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## KittyBank/Selection/Checkbox
+**Node ID:** 6:514
+
+Alvo mínimo de 44 px. Consentimento nunca marcado por padrão.
+
+## KittyBank/Icon/Check
+**Node ID:** 5:30
+
+Ícone Check. Usar como instância dentro de uma área de toque de 44 px.
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

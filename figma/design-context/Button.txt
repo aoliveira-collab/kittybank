@@ -1,0 +1,102 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/8356dceb-0d68-4f79-b3a4-f583d68f6e20";
+const imgFrame = `${assetPathPrefix}/12f18.svg`;
+const imgFrame1 = `${assetPathPrefix}/d9cf7.svg`;
+const imgFrame2 = `${assetPathPrefix}/512ef.svg`;
+const imgFrame3 = `${assetPathPrefix}/85ac7.svg`;
+
+type KittyBankButtonProps = {
+  className?: string;
+  hierarchy?: "Primary" | "Secondary" | "Ghost";
+  icon?: React.ReactNode | null;
+  label?: string;
+  showIcon?: boolean;
+  state?: "Default" | "Pressed" | "Focus" | "Disabled" | "Loading";
+};
+
+export default function KittyBankButton({ className, hierarchy = "Primary", icon = null, label = "Continuar", showIcon = false, state = "Default" }: KittyBankButtonProps) {
+  const isDisabled = state === "Disabled";
+  const isGhostAndDefault = hierarchy === "Ghost" && state === "Default";
+  const isGhostAndFocus = hierarchy === "Ghost" && state === "Focus";
+  const isGhostAndLoading = hierarchy === "Ghost" && state === "Loading";
+  const isGhostAndPressed = hierarchy === "Ghost" && state === "Pressed";
+  const isLoading = state === "Loading";
+  const isLoadingAndIsSecondaryOrGhost = state === "Loading" && ["Secondary", "Ghost"].includes(hierarchy);
+  const isPrimaryAndFocus = hierarchy === "Primary" && state === "Focus";
+  const isPrimaryAndIsDefaultOrPressedOrFocus = hierarchy === "Primary" && ["Default", "Pressed", "Focus"].includes(state);
+  const isPrimaryAndPressed = hierarchy === "Primary" && state === "Pressed";
+  const isSecondaryAndDefault = hierarchy === "Secondary" && state === "Default";
+  const isSecondaryAndDisabled = hierarchy === "Secondary" && state === "Disabled";
+  const isSecondaryAndFocus = hierarchy === "Secondary" && state === "Focus";
+  const isSecondaryAndLoading = hierarchy === "Secondary" && state === "Loading";
+  const isSecondaryAndPressed = hierarchy === "Secondary" && state === "Pressed";
+  return (
+    <div className={className || `content-stretch flex gap-[var(--kb-space-8,8px)] h-[56px] items-center justify-center p-[var(--kb-space-16,16px)] relative rounded-[var(--kb-radius-12,12px)] w-[240px] ${isGhostAndPressed ? "bg-[var(--kb-color-bg-brand-soft,#ffe3d9)]" : hierarchy === "Ghost" && ["Default", "Loading"].includes(state) ? "bg-[var(--kb-color-bg-surface,white)]" : isSecondaryAndDisabled ? "bg-[var(--kb-color-bg-disabled,#f5eae5)] border-[length:var(--kb-stroke-1,1px)] border-[var(--kb-color-border-brand,#923c2d)] border-solid" : state === "Focus" && ["Secondary", "Ghost"].includes(hierarchy) ? "bg-[var(--kb-color-bg-surface,white)] border-[length:var(--kb-stroke-2,2px)] border-[var(--kb-color-border-focus,#ad285e)] border-solid" : isSecondaryAndPressed ? "bg-[var(--kb-color-bg-brand-soft,#ffe3d9)] border-[length:var(--kb-stroke-1,1px)] border-[var(--kb-color-border-brand,#923c2d)] border-solid" : hierarchy === "Secondary" && ["Default", "Loading"].includes(state) ? "bg-[var(--kb-color-bg-surface,white)] border-[length:var(--kb-stroke-1,1px)] border-[var(--kb-color-border-brand,#923c2d)] border-solid" : state === "Disabled" && ["Primary", "Ghost"].includes(hierarchy) ? "bg-[var(--kb-color-bg-disabled,#f5eae5)]" : isPrimaryAndFocus ? "bg-[var(--kb-color-bg-brand,#ff8a6a)] border-[length:var(--kb-stroke-2,2px)] border-[var(--kb-color-border-focus,#ad285e)] border-solid" : isPrimaryAndPressed ? "bg-[var(--kb-color-bg-brand-pressed,#e07a5f)] border-[length:var(--kb-stroke-1,1px)] border-[var(--kb-color-border-brand,#923c2d)] border-solid" : "bg-[var(--kb-color-bg-brand,#ff8a6a)] border-[length:var(--kb-stroke-1,1px)] border-[var(--kb-color-border-brand,#923c2d)] border-solid"}`} id={isGhostAndLoading ? "node-6_119" : hierarchy === "Ghost" && state === "Disabled" ? "node-6_114" : isGhostAndFocus ? "node-6_109" : isGhostAndPressed ? "node-6_104" : isGhostAndDefault ? "node-6_99" : isSecondaryAndLoading ? "node-6_94" : isSecondaryAndDisabled ? "node-6_89" : isSecondaryAndFocus ? "node-6_84" : isSecondaryAndPressed ? "node-6_79" : isSecondaryAndDefault ? "node-6_74" : hierarchy === "Primary" && state === "Loading" ? "node-6_69" : hierarchy === "Primary" && state === "Disabled" ? "node-6_64" : isPrimaryAndFocus ? "node-6_59" : isPrimaryAndPressed ? "node-6_54" : "node-6_49"}>
+      {(isDisabled || isSecondaryAndDefault || isSecondaryAndPressed || isSecondaryAndFocus || isGhostAndDefault || isGhostAndPressed || isGhostAndFocus) &&
+        showIcon &&
+        (icon || (
+          <div className="content-stretch flex gap-[var(--kb-space-0,0px)] items-start p-[var(--kb-space-0,0px)] relative shrink-0 w-[24px]" data-node-id="6:65" data-name="KittyBank/Icon/ArrowRight">
+            <div className="relative shrink-0 size-[24px]" data-node-id="I6:65;5:7" data-name="Frame">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame1} />
+            </div>
+          </div>
+        ))}
+      {(isSecondaryAndDefault || isSecondaryAndPressed || isSecondaryAndFocus || isGhostAndDefault || isGhostAndPressed || isGhostAndFocus) && (
+        <p className="[word-break:break-word] font-['Poppins:SemiBold'] leading-[20px] not-italic relative shrink-0 text-[14px] text-[color:var(--kb-color-text-brand,#923c2d)] whitespace-nowrap" data-node-id="6:78">
+          {label}
+        </p>
+      )}
+      {isPrimaryAndIsDefaultOrPressedOrFocus &&
+        showIcon &&
+        (icon || (
+          <div className="content-stretch flex gap-[var(--kb-space-0,0px)] items-start p-[var(--kb-space-0,0px)] relative shrink-0 w-[24px]" data-node-id="6:50" data-name="KittyBank/Icon/ArrowRight">
+            <div className="relative shrink-0 size-[24px]" data-node-id="I6:50;5:7" data-name="Frame">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame} />
+            </div>
+          </div>
+        ))}
+      {isPrimaryAndIsDefaultOrPressedOrFocus && (
+        <p className="[word-break:break-word] font-['Poppins:SemiBold'] leading-[20px] not-italic relative shrink-0 text-[14px] text-[color:var(--kb-color-text-on-brand,#4a202a)] whitespace-nowrap" data-node-id="6:53">
+          {label}
+        </p>
+      )}
+      {isDisabled && (
+        <p className="[word-break:break-word] font-['Poppins:SemiBold'] leading-[20px] not-italic relative shrink-0 text-[14px] text-[color:var(--kb-color-text-disabled,#78616a)] whitespace-nowrap" data-node-id="6:68">
+          {label}
+        </p>
+      )}
+      {isLoading && (
+        <>
+          <div className="content-stretch flex gap-[var(--kb-space-0,0px)] items-start p-[var(--kb-space-0,0px)] relative shrink-0 w-[24px]" id={isGhostAndLoading ? "node-6_120" : isSecondaryAndLoading ? "node-6_95" : "node-6_70"} data-name="KittyBank/Icon/Spinner">
+            <div className="relative shrink-0 size-[24px]" id={isGhostAndLoading ? "node-I6_120-5_160" : isSecondaryAndLoading ? "node-I6_95-5_160" : "node-I6_70-5_160"} data-name="Frame">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={isLoadingAndIsSecondaryOrGhost ? imgFrame3 : imgFrame2} />
+            </div>
+          </div>
+          <p className={`[word-break:break-word] font-["Poppins:SemiBold"] leading-[20px] not-italic relative shrink-0 text-[14px] whitespace-nowrap ${isLoadingAndIsSecondaryOrGhost ? "text-[color:var(--kb-color-text-brand,#923c2d)]" : "text-[color:var(--kb-color-text-on-brand,#4a202a)]"}`} id={isGhostAndLoading ? "node-6_123" : isSecondaryAndLoading ? "node-6_98" : "node-6_73"}>
+            Aguarde…
+          </p>
+        </>
+      )}
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: KittyBank/Label: Font(family: "Poppins", style: SemiBold, size: 14, weight: 600, lineHeight: 20, letterSpacing: 0).
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## KittyBank/Button
+**Node ID:** 6:124
+
+Ação de 56 px. Uma Primary por contexto. Loading bloqueia reenvio. Disabled não navega. Show icon e Icon configuram o ícone.
+
+## KittyBank/Icon/Spinner
+**Node ID:** 5:159
+
+Ícone Spinner. Usar como instância dentro de uma área de toque de 44 px.
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.
