@@ -40,7 +40,8 @@
     "connect:publish": "figma connect publish --config figma.config.json",
     "connect:check": "node scripts/check-code-connect.mjs",
     "format": "prettier --write src catalog code-connect tests scripts/*.mjs *.json *.ts README.md",
-    "format:check": "prettier --check src catalog code-connect tests scripts/*.mjs *.json *.ts README.md"
+    "format:check": "prettier --check src catalog code-connect tests scripts/*.mjs *.json *.ts README.md",
+    "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
     "react": ">=18.3.0",
