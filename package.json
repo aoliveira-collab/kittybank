@@ -1,6 +1,6 @@
 {
   "name": "@kittybank/react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "Componentes React do design system KittyBank e templates Code Connect parserless",
   "repository": {
