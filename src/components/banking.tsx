@@ -38,9 +38,13 @@ export function Balance({
         {state === 'loading' ? (
           'Carregando…'
         ) : hide ? (
-          <span aria-label="Saldo oculto">••••••</span>
+          <span key="hidden" className="kb-balance-value" aria-label="Saldo oculto">
+            R$ ••••••
+          </span>
         ) : (
-          amount
+          <span key="visible" className="kb-balance-value">
+            {amount}
+          </span>
         )}
       </strong>
       <small>Conta KittyBank</small>

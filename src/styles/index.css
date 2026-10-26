@@ -568,6 +568,9 @@
   font: var(--kb-type-body-small);
   width: 100%;
 }
+.kb-balance > .kb-row {
+  align-items: flex-start;
+}
 .kb-balance .kb-icon-button {
   background: transparent;
   color: inherit;
@@ -575,8 +578,14 @@
   height: 44px;
   flex-basis: 44px;
 }
+.kb-balance .kb-icon-button:disabled {
+  opacity: 1;
+}
 .kb-balance small {
   font: var(--kb-type-caption);
+}
+.kb-balance-value {
+  animation: kb-fade-in 0.15s ease-out;
 }
 .kb-payment-card {
   display: flex;
@@ -818,8 +827,14 @@
     transform: rotate(360deg);
   }
 }
+@keyframes kb-fade-in {
+  from {
+    opacity: 0;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
-  .kb-spin {
+  .kb-spin,
+  .kb-balance-value {
     animation: none;
   }
   .kb-switch-track span {
